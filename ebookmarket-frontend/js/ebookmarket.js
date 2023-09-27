@@ -1,0 +1,32 @@
+$('.side .category_base.has_child a.category_base_link').click(function(e){
+    e.preventDefault();
+    $(this).parent().toggleClass('open');
+});
+$('.toggleNavMenu').click(function(){
+    $('body').removeClass('viewSideBox');
+    $('.toggleSideBox').removeClass('active');
+    $('body').toggleClass('viewNavMenu');
+    $(this).toggleClass('active');
+});
+$('.toggleSideBox').click(function(){
+    $('body').removeClass('viewNavMenu');
+    $('.toggleNavMenu').removeClass('active');
+    $('body').toggleClass('viewSideBox');
+    $(this).toggleClass('active');
+});
+$('.auth_btn').click(function(){
+    if(!$('.auth_box').hasClass('show')){
+        $('.basket_box').removeClass('show');
+        $('.auth_box').addClass('show');
+    }else{
+        $('.auth_box').removeClass('show');
+    }
+});
+$('.basket_btn').click(function(){
+    if(!$('.basket_box').hasClass('show')){
+        $('.auth_box').removeClass('show');
+        $('.basket_box').addClass('show');
+    }else{
+        $('.basket_box').removeClass('show');
+    }
+});
