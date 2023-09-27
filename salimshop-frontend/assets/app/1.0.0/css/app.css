@@ -1,0 +1,2249 @@
+body {
+    direction: rtl;
+    text-align: right;
+    font-size: 100%;
+    color: #232323;
+    position: relative;
+}
+
+/*#### Config #################################*/
+.wrap {
+    display: block;
+    width: 1193px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap-limit {
+    display: block;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap-mini {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.wrap:after,
+.wrap-limit:after,
+.wrap-mini:after,
+.bar:after,
+.app:after,
+.app-list .list-body:after,
+.refine-range:after,
+.app-list .list-body:after,
+.app-list .list-content:after,
+.app-products:after,
+.app-productview .productview-header:after,
+.app-header .header-basket-item:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+a,
+.app-button,
+.app-image,
+.app-nav ul ul,
+.app-list .refine-check i,
+.app-productview .productview-tabs-header ul li{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.app-products .product-box .product-image .product-image-main,
+.app-products .product-box .product-quick{
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.app-products .product-box .product-control{
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+p a {
+    position: relative;
+}
+
+p a:after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    content: '';
+}
+
+.app-image {
+    position: relative;
+}
+
+.app-image:hover {
+    filter: brightness(90%);
+}
+
+.form-group {
+    position: relative
+}
+
+.form-group label {
+    font-size: 90%;
+}
+
+.form-group span {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 70%;
+    cursor: default;
+}
+
+.has_error .form-control,
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    padding-right: 10px;
+    padding-left: 40px;
+    background-position: left calc(.375em + .1875rem) center;
+}
+
+.invalid-feedback {
+    padding-right: 15px;
+    position: relative;
+}
+
+.invalid-feedback:before {
+    position: absolute;
+    content: 'X';
+    right: 0;
+    top: 0;
+}
+
+/*#### Colors ###################################*/
+/** Color Cheat Sheet *****************
+** Main : #FCD7CF
+** Dark : #232323
+** Silv : #696262
+** Light: #E5E5E5
+**/
+
+::-moz-selection {
+    background: #FCD7CF;
+}
+
+::selection {
+    background: #FCD7CF;
+}
+
+/* BG Main */
+.bar-notification {
+    background-color: #FCD7CF;
+}
+
+/* BG Mailer : #FBE9E2 */
+.app-qoute {
+    background-color: #FBE9E2;
+}
+
+/* BG Dark */
+.bar-information,
+.app-button,
+p a:after,
+.app-productview .productview-slider .carousel-indicators li.active,
+.app-productview .productview-slider-gallery .carousel-indicators li.active{
+    background-color: #232323;
+}
+
+/* BG Darker */
+.app-button:hover,
+.app-slider .carousel-indicators li.active {
+    background-color: #121212;
+}
+
+/* BG Black */
+.app-footer {
+    background-color: #000000;
+}
+
+/* BG Light */
+.app-slider .carousel-control-prev,
+.app-slider .carousel-control-next,
+.app-slider .carousel-indicators li:before{
+    background-color: #FDFDFD !important;
+}
+
+/* BG Bight */
+.app-signin .create-box,
+.app-header .header-prorol ul li:after,
+.app-header .header-control ul li:after,
+.app-list .refine-current .label,
+.app-list .refine-check i,
+.app-products .product-box .product-status-i,
+.app-newproducts .newproducts-title:after,
+.app-header .header-basket,
+.app-cart .cart-box thead,
+.app-cart .cart-remove,
+.app-cart .cart-count i:hover{
+    background-color: #E5E5E5 !important;
+}
+
+/* BG Sight */
+.app-productview .productview-header,
+.app-cart .cart-count i{
+    background-color: #F7F7F7;
+}
+
+/* CL Silv */
+.app-productview .productview-slider .carousel-indicators li,
+.app-productview .productview-slider-gallery .carousel-indicators li{
+    background-color: #696262 !important;
+}
+
+/* BG White */
+.app-nav ul ul,
+.app-header .header-search,
+.app-products .product-box .product-quick,
+.app-newproducts .newproducts-title span,
+.app-productview .productview-control{
+    background-color: #fff;
+}
+
+/* BG Mainer : #F8B6A9 */
+.app-nav ul li a.key span,
+.app-products .product-box .product-status-off,
+.app-productview .productview-percent{
+    background-color: #F8B6A9 !important;
+}
+
+/* CL Silv */
+.bar-notification,
+.app-nav ul li a,
+.app-header a,
+.refine-box,
+.app-products .product-title a,
+.app-products .product-price .product-price-currency,
+.app-products .product-box .product-status-i,
+.app-products .product-box .product-quick-modal-close,
+.app-productview .productview-slider-gallery-close,
+.app-header .header-basket-more .app-button:hover{
+    color: #696262 !important;
+}
+
+/* CL White */
+.bar-information,
+.app-footer .footer-title,
+.app-footer .footer-copyright .footer-logo,
+.app-nav ul li a.key span,
+.app-button,
+.app-button:hover,
+.app-card a.app-button:hover,
+.app-products .product-box .product-control a:hover,
+.app-products .product-box .product-status-off{
+    color: #fff !important;
+}
+
+/* CL Darker */
+p a:hover,
+.app-nav ul ul .title a,
+.app-nav ul ul a,
+.app-pagination .pagination-item a:hover,
+.app-pagination .pagination-next a:hover,
+.app-pagination .pagination-prev a:hover,
+.app-products .product-title a:hover{
+    color: #121212 !important;
+}
+
+/* Cl Dalek */
+.app-list .side-heading,
+.app-list .list-head .title,
+.app-list .refine-current .label,
+.app-list .refine-check i,
+.app-list .refine-check:hover i,
+.app-newproducts .newproducts-title{
+    color: #444 !important;
+}
+
+/* CL Main */
+.app-footer a:hover{
+    color: #FCD7CF !important;
+}
+
+/* CL Mainer : #F8B6A9 */
+a:hover,
+.app-nav ul li a:hover,
+.app-nav ul li:hover>a,
+.app-header a:hover,
+.app-header a.active,
+.app-header .header-search .search-field i:hover,
+.app-list .refine-current .label:hover,
+.app-products .product-box .product-control a.active,
+.app-products .product-box .product-quick-modal-close:hover,
+.app-productview .productview-slider-gallery-close:hover,
+.app-productview .productview-review-summary-stars i{
+    color: #F8B6A9 !important;
+}
+
+
+/* CL Xilv */
+.app-footer,
+.app-footer a,
+.app-routes ul li a,
+.app-routes ul li span,
+.app-routes ul li:after,
+.form-group label,
+.form-group span,
+.app-blog .blog-post .meta,
+.app-pagination .pagination-item a,
+.app-pagination .pagination-current a:hover,
+.app-list .refine-current .label i,
+.app-list .refine-current .label:hover i,
+.app-sort .sort-box b,
+.app-productview .productview-tabs-header ul li,
+.app-productview .productview-reviews-item-header time{
+    color: #828282 !important;
+}
+
+/* CL Dark */
+a,
+.app-card,
+.app-card a:not(.app-button),
+.app-card a:hover,
+p a,
+.app-slider .carousel-control-prev,
+.app-slider .carousel-control-next,
+.app-routes ul li a:hover,
+.app-blog .blog-post a .title,
+.app-button.button-line,
+.app-productview .productview-tabs-header ul li.active{
+    color: #232323 !important;
+}
+
+/* CL Black */
+a.app-logo,
+a.app-logo:hover {
+    color: #000000 !important;
+}
+
+/* CL Red */
+.app-productview .productview-price-off{
+    color: #DC3545 !important;
+}
+
+
+/* BR Mainer */
+.app-list .refine-check:before,
+.app-list .refine-check.checked:after {
+    border-color: #F8B6A9 !important;
+}
+
+/* BR Red */
+.app-input.is-invalid,
+.form-control.is-invalid {
+    border-color: #DC3545 !important;
+}
+
+/* BR Bight */
+.app-header,
+.app-nav,
+.app-tops .wrap,
+.app-hots .wrap,
+.app-meshes .wrap,
+.app-text .wrap,
+.app-nav ul ul,
+.app-header .header-search,
+.app-nav ul li:hover ul .title,
+.app-contact .contact-elements,
+.app-blog .blog-post,
+.app-pagination .pagination-current a,
+.app-productview .productview-specifications tr,
+.app-productview .productview-reviews-item,
+.app-cart .cart-box tbody td,
+.app-cart .cart-box tbody th,
+.app-cart .cart-totals table tr{
+    border-color: #E5E5E5 !important;
+}
+
+/* BR Xilv */
+.app-input:focus,
+.app-button.button-line:hover,
+.app-productview .productview-tabs-header ul li:hover,
+.app-header .header-basket-item{
+    border-color: #828282 !important;
+}
+
+/* BR Dark */
+.app-input,
+.app-subscribe form button,
+.app-slider .carousel-indicators li,
+.app-signin .signin-create,
+.app-button.button-line,
+.app-sort .sort-box,
+.app-productview .productview-tabs-header ul li.active,
+.app-cart .cart-count i{
+    border-color: #232323 !important;
+}
+
+/* BR Bine */
+.app-list .side-heading {
+    border-color: #999 !important;
+}
+
+/* BR Darker */
+.app-input,
+.app-subscribe form button,
+.app-footer .footer-box,
+.app-slider .carousel-indicators li.active {
+    border-color: #121212 !important;
+}
+
+/* BR Right Bight */
+.app-products .product-box .product-status-i:after{
+    border-right-color: #E5E5E5 !important;
+}
+/* BR Bottom Bight */
+.app-header .header-basket:after{
+    border-bottom-color: #E5E5E5 !important;
+}
+
+/* BR Right Mainer */
+.app-nav ul li a.key:after,
+.app-products .product-box .product-status-off:after{
+    border-right-color: #F8B6A9 !important;
+}
+
+/*#### Sections #################################*/
+.app {
+    display: block;
+}
+
+.bar {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    cursor: default;
+}
+
+
+/*#### Style #####################################*/
+
+/* General */
+.app-tops .wrap,
+.app-hots .wrap,
+.app-meshes .wrap,
+.app-text .wrap {
+    padding: 30px 0;
+    border-bottom: 1px solid transparent;
+}
+
+/* Bars */
+.bar-notification {
+    font-size: 1em;
+}
+
+.bar-information {
+    font-size: .7em;
+}
+
+.app-box {
+    padding: 50px 0;
+}
+
+.app-bot {
+    padding-bottom: 50px;
+}
+
+.app-bou {
+    padding-top: 50px;
+    padding-bottom: 0 !important;
+}
+
+/* App Title */
+.app-title {
+    font-size: 140%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    line-height: 2.2;
+}
+
+.app-title.title-big {
+    font-size: 250%;
+    line-height: 1;
+}
+
+/* App Header */
+.app-header {
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+
+.app-header .header-prorol {
+    position: absolute;
+    width: 35%;
+    right: 0;
+    top: 0;
+    text-align: right;
+}
+
+.app-header .header-control {
+    position: absolute;
+    width: 35%;
+    left: 0;
+    top: 0;
+    text-align: left;
+    direction: ltr;
+}
+
+.app-header .header-prorol,
+.app-header .header-control {
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header .header-prorol ul,
+.app-header .header-control ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    width: 100%;
+}
+
+.app-header .header-prorol ul li,
+.app-header .header-control ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.app-header .header-prorol ul li:after,
+.app-header .header-control ul li:after {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    content: '';
+}
+
+.app-header .header-prorol ul li:after {
+    left: 15px;
+}
+
+.app-header .header-control ul li:after {
+    right: 15px;
+}
+
+.app-header .header-prorol ul li:last-of-type::after,
+.app-header .header-control ul li:last-of-type::after {
+    display: none;
+}
+
+.app-header .header-prorol ul li a,
+.app-header .header-control ul li a {
+    font-size: 90%;
+    position: relative;
+    display: block;
+}
+
+.app-header .header-prorol ul li a {
+    padding-left: 40px;
+}
+
+.app-header .header-control ul li a {
+    padding-right: 40px;
+}
+
+.app-header .header-prorol ul li a b {
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.app-header .header-control ul li a b {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.app-header .header-prorol ul li a.link b,
+.app-header .header-control ul li a.link b {
+    padding-right: 0;
+}
+
+.app-header .header-prorol ul li a i,
+.app-header .header-control ul li a i {
+    position: absolute;
+    font-size: 120%;
+    top: 2px;
+
+}
+
+.app-header .header-prorol ul li a i {
+    right: 0;
+}
+
+.app-header .header-control ul li a i {
+    left: 0;
+}
+
+.app-header .header-search {
+    position: absolute;
+    width: 100%;
+    top: 219px;
+    right: 0;
+    z-index: 1010;
+    border-bottom: 1px solid transparent;
+    display: none;
+}
+
+.app-header .header-search .wrap {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.app-header .header-search .search-field {
+    text-align: center;
+    padding: 0 280px;
+    position: relative;
+}
+
+.app-header .header-search .search-field input {
+    text-align: center !important;
+    padding: 20px;
+}
+
+.app-header .header-search .search-field i {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    font-size: 130%;
+    cursor: pointer;
+}
+.app-header .header-search .search-results{
+    display: none;
+}
+.app-header .header-basket{
+    position: absolute;
+    width: 250px;
+    top: 40px;
+    left: 0;
+    z-index: 1010;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 15px;
+    display: none;
+}
+.app-header .header-basket:after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 30px;
+    top: -10px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.app-header .header-basket-more .app-button{
+    padding: 5px 0;
+    text-align: center;
+    font-size: .8em;
+}
+.app-header .header-basket-list{
+    display: block;
+}
+.app-header .header-basket-item{
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    padding: 10px 0;
+    cursor: default;
+}
+.app-header .header-basket-item-image{
+    width: 30%;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+}
+.app-header .header-basket-item-data{
+    font-size: .8em;
+    text-align: right;
+    float: left;
+    width: 70%;
+    padding-right: 10px;
+}
+.app-header .header-basket-item-data small{
+    display: block;
+    margin-bottom: 2px;
+}
+.app-header .header-basket-item-data b{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1em;
+}
+.app-header .header-basket-item-data span{
+
+}
+
+/* App Logo */
+.app-logo {
+    display: inline-block;
+    font-size: 3em;
+    line-height: 3.5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* App Nav */
+.app-nav {
+    text-align: center;
+    border-bottom: 1px solid transparent;
+    height: 50px;
+}
+
+.app-nav ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.app-nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.app-nav ul li:last-of-type {
+    margin-left: 0;
+}
+
+.app-nav ul li a {
+    display: block;
+    position: relative;
+}
+
+.app-nav ul li a b {
+    display: block;
+    padding: 16px 10px 16px 22px;
+    font-size: 75%;
+}
+
+.app-nav ul li a i {
+    position: absolute;
+    top: 19px;
+    left: 8px;
+    font-size: 70%;
+}
+
+.app-nav ul li a.key span {
+    font-size: 70%;
+    padding: 2px 20px 2px 15px;
+}
+
+.app-nav ul li a.key {
+    position: relative;
+}
+
+.app-nav ul li a.key:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10.5px solid transparent;
+    border-bottom: 10.5px solid transparent;
+    border-right: 10.5px solid transparent;
+    content: '';
+    left: -11px;
+    top: 2px;
+}
+
+.app-nav ul ul {
+    position: absolute;
+    z-index: 1009;
+    width: 100%;
+    right: 0;
+    top: 50px;
+    border-bottom: 1px solid transparent;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    min-height: 400px;
+    height: auto;
+}
+
+.app-nav ul li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    max-height: 10000px;
+    padding: 20px 0;
+}
+
+.app-nav ul ul a {
+    font-size: 80%;
+}
+
+.app-nav ul ul .title {
+    border-bottom: 1px solid transparent;
+    padding-bottom: 15px;
+    text-align: right;
+}
+
+.app-nav ul ul ul {
+    min-height: auto;
+    border-bottom: 0;
+    padding: 0 !important;
+    margin: 0 15px 0 0 !important;
+    text-align: right;
+}
+
+.app-nav ul ul ul li {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.app-nav ul ul ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.app-nav ul ul ul li a {
+    display: inline-block;
+    padding: 3px 0;
+}
+
+
+/*  App Slider */
+.app-slider {
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.app-slider .carousel-control-prev,
+.app-slider .carousel-control-next {
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    top: 48%;
+    opacity: 1;
+    font-size: 110%;
+}
+
+.app-slider .carousel-control-prev i,
+.app-slider .carousel-control-next i {
+    font-size: 210%;
+}
+
+.app-slider .carousel-control-prev {
+    left: 50px;
+}
+
+.app-slider .carousel-control-next {
+    right: 50px;
+}
+
+.app-slider .carousel-indicators {
+    flex-direction: row-reverse;
+}
+
+.app-slider .carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    position: relative;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    opacity: 1;
+}
+
+.app-slider .carousel-indicators li:before {
+    position: absolute;
+    width: 35px;
+    height: 30px;
+    top: -7px;
+    right: -10px;
+    content: '';
+    z-index: -1;
+}
+
+/* App Tops */
+.app-tops a {
+    width: 100%;
+    display: block;
+}
+
+.app-tops a img {
+    width: 100%;
+}
+
+
+/* App Hots */
+.app-hots {}
+
+.app-hots a {
+    width: 100%;
+    display: block;
+}
+
+.app-hots a img {
+    width: 100%;
+}
+
+/* App Meshes */
+.app-meshes {}
+
+.app-meshes a {}
+
+.app-meshes a img {
+    width: 100%;
+    max-height: 800px;
+}
+
+/* App Card */
+.app-card {
+    text-align: center;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card .card-title,
+.app-card .card-desc {
+    display: block;
+}
+
+.app-card .card-title {
+    margin-bottom: 10px;
+}
+
+.app-card .card-title h3 {
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+}
+
+.app-card .card-desc {
+    font-size: .8em;
+}
+
+.app-card .card-desc {
+    margin-bottom: 20px;
+}
+
+.app-card .card-content {}
+
+.app-card a,
+.app-card a:hover {
+    text-decoration: none;
+}
+
+/* App Button */
+.app-button {
+    display: inline-block;
+    padding: 6px 40px;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.app-button:hover {
+    text-decoration: none;
+}
+
+.app-button:focus {
+    outline: none;
+}
+
+.app-button.button-line {
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+/* App Input */
+.app-input {
+    border: 1px solid transparent;
+    border-radius: 0 !important;
+}
+
+.app-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* App Text */
+.app-text {
+    text-align: center;
+}
+
+.app-text .wrap {
+    display: block;
+    padding: 80px 0;
+}
+
+.app-text .title {
+    font-size: 1.3em;
+    margin: 0 0 20px 0;
+    cursor: default;
+}
+
+.app-text .content {
+    line-height: 2.2;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+/* App Subscribe */
+.app-subscribe {
+    display: block;
+}
+
+.app-subscribe .title {
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 13px;
+    cursor: default;
+    font-size: 100%;
+}
+
+.app-subscribe .desc {
+    line-height: 1;
+    padding-top: 14px;
+    cursor: default;
+    font-size: 80%;
+}
+
+.app-subscribe .wrap {
+    padding: 50px 0;
+}
+
+.app-subscribe form {
+    text-align: left;
+    display: block;
+    font-size: 80%;
+}
+
+.app-subscribe form input,
+.app-subscribe form button {
+    display: inline-block !important;
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.app-subscribe form input {
+    min-width: 60%;
+}
+
+.app-subscribe form button {
+    border: 1px solid transparent;
+    margin-right: -4px;
+}
+
+/* App Footer */
+.app-footer {
+    display: block;
+}
+
+.app-footer a {
+    text-decoration: none;
+}
+
+.app-footer .wrap {
+    padding: 70px 0 40px 0;
+}
+
+.app-footer .footer-box {
+    padding-bottom: 50px;
+    border-bottom: 1px solid transparent;
+}
+
+.app-footer .footer-title {
+    margin-bottom: 25px;
+    font-size: 80%;
+    cursor: default;
+}
+
+.app-footer .footer-links,
+.app-footer .footer-socials,
+.app-footer .footer-credits {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app-footer .footer-links li {
+    margin-bottom: 6px;
+}
+
+.app-footer .footer-links a {
+    font-size: 75%;
+}
+
+.app-footer .footer-socials li,
+.app-footer .footer-credits li {
+    display: inline-block;
+}
+
+.app-footer .footer-socials li a {
+    margin: 0 5px;
+    font-size: 130%;
+}
+
+.app-footer .footer-credits li a {
+    margin: 0 5px;
+    font-size: 210%;
+}
+
+.app-footer .footer-copyright {
+    padding: 30px 0 0 0;
+}
+
+.app-footer .footer-logo {
+    font-size: 250%;
+    cursor: default;
+}
+
+.app-footer .footer-linelinks {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 18px;
+}
+
+.app-footer .footer-linelinks li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.app-footer .footer-linelinks li a {
+    font-size: 80%;
+}
+
+.app-footer .footer-copytext {
+    text-align: left;
+    font-size: 80%;
+    padding-top: 20px;
+    cursor: default;
+}
+
+/* App Routes */
+.app-routes {
+    display: block;
+    padding: 50px 0;
+}
+
+.app-routes ul {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.app-routes ul li {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+
+.app-routes ul li a,
+.app-routes ul li span {
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.app-routes ul li span {
+    cursor: default;
+}
+
+.app-routes ul li:after {
+    position: absolute;
+    content: '/';
+    left: -5px;
+    top: 3px;
+}
+
+.app-routes ul li:last-of-type::after {
+    content: '';
+}
+
+/* App Signin */
+.app-signin {
+    display: block;
+}
+
+.app-signin .signin-box {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-signin .signin-form {
+    width: 100%;
+    display: block;
+}
+
+.app-signin .signin-form .forget {
+    float: left;
+    margin-top: 6px;
+}
+
+.app-signin .signin-create {
+    display: block;
+    padding: 20px;
+    border: 1px solid transparent;
+}
+
+.app-signin .create-box {
+    padding: 20px;
+    font-size: 90%;
+}
+
+.app-signin .create-box .title {
+    font-size: 130%;
+    margin-bottom: 10px;
+}
+
+.app-signin .create-box p {
+    margin-bottom: 10px;
+}
+
+.app-signin .create-box ul {
+    margin: 0 18px 15px 0;
+    padding: 0;
+}
+
+/* App Forget */
+.app-forget {
+    display: block;
+}
+
+.app-forget .forget-form button {
+    margin-top: 30px;
+}
+
+.app-forget .forget-desc {
+    font-size: 90%;
+    padding: 15px 0;
+    line-height: 2;
+}
+
+/* App Page */
+.app-page {
+    display: block;
+}
+
+.app-page .app-title {
+    margin-bottom: 50px;
+}
+
+/* App Typography */
+.app-typography h1,
+.app-page .page-contnet h1 {
+    font-size: 170%;
+}
+
+.app-typography h2,
+.app-page .page-contnet h2 {
+    font-size: 160%;
+}
+
+.app-typography h3,
+.app-page .page-contnet h3 {
+    font-size: 150%;
+}
+
+.app-typography h4,
+.app-page .page-contnet h4 {
+    font-size: 140%;
+}
+
+.app-typography h5,
+.app-page .page-contnet h5 {
+    font-size: 130%;
+}
+
+.app-typography h6,
+.app-page .page-contnet h6 {
+    font-size: 120%;
+}
+
+.app-typography p,
+.app-page .page-contnet p {
+    display: block;
+    line-height: 2.2;
+    text-align: justify;
+}
+
+/* App Qoute */
+.app-qoute {
+    display: block;
+    padding: 20px;
+}
+
+.app-qoute.qoute-center {
+    text-align: center;
+}
+
+.app-qoute.qoute-big {
+    font-size: 140%;
+}
+
+/* App Contact */
+.app-contact p {
+    text-align: center !important;
+}
+
+.app-contact .contact-elements {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid transparent;
+}
+
+.app-contact .contact-elements i {
+    display: block;
+    font-size: 350%;
+    margin-bottom: 10px;
+}
+
+.app-contact .contact-elements b {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 120%;
+}
+
+.app-contact .contact-elements span {
+    direction: ltr;
+}
+
+.app-contact .contact-form {
+    padding: 25px 150px;
+}
+
+.app-contact .contact-form h2 {
+    text-align: center;
+    cursor: default;
+}
+
+.app-contact .contact-submit {
+    text-align: center;
+}
+
+/* App Blog */
+.app-blog {
+    display: block;
+    padding-bottom: 50px;
+}
+
+.app-blog.app-single {
+    padding-bottom: 0;
+}
+
+.app-blog .content {
+    font-size: 90%;
+}
+
+.app-blog .blog-post {
+    border-bottom: 1px solid transparent;
+    padding: 40px 0;
+}
+
+.app-blog .blog-post:first-of-type {
+    padding-top: 0;
+}
+
+.app-blog .blog-post:last-of-type {
+    border-bottom: 0;
+}
+
+.app-blog .blog-post .cover {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.app-blog .blog-post .title {
+    font-size: 110%;
+}
+
+.app-blog .blog-post .meta {
+    font-size: 70%;
+    padding: 10px 0;
+    cursor: default;
+}
+
+.app-blog .blog-post .summary {
+    font-size: 85%;
+    cursor: default;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* App Pagination */
+.app-pagination {
+    display: block;
+}
+
+.app-pagination .pagination-list {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.app-pagination .pagination-item {
+    display: inline-block;
+}
+
+.app-pagination .pagination-item a {
+    padding: 2px 5px;
+    font-size: 75%;
+    border: 1px solid transparent;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.app-pagination .pagination-next,
+.app-pagination .pagination-prev {
+    position: absolute;
+    top: 0;
+}
+
+.app-pagination .pagination-next {
+    left: 0;
+}
+
+.app-pagination .pagination-prev {
+    right: 0;
+}
+
+.app-pagination .pagination-next a,
+.app-pagination .pagination-prev a {
+    position: relative;
+}
+
+.app-pagination .pagination-next a {
+    padding-left: 20px !important;
+}
+
+.app-pagination .pagination-prev a {
+    padding-right: 20px;
+}
+
+.app-pagination .pagination-next a i,
+.app-pagination .pagination-prev a i {
+    position: absolute;
+    top: 5px;
+    font-size: 110%;
+}
+
+.app-pagination .pagination-next a i {
+    left: 5px;
+}
+
+.app-pagination .pagination-prev a i {
+    right: 5px;
+}
+
+.app-pagination .pagination-current {}
+
+/* App List */
+.app-list {
+    display: block;
+}
+
+.app-list .list-head {
+    display: block;
+}
+
+.app-list .list-head .cover {
+    display: block;
+    margin: 0 auto;
+}
+
+.app-list .list-head .title {
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.app-list .list-body {
+    display: block;
+}
+
+.app-list .list-side {
+    width: 285px;
+    float: right;
+    padding-left: 3%;
+}
+
+.app-list .list-content {
+    width: 908px;
+    float: left;
+}
+
+.app-list .side-heading {
+    font-size: 1.05em;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted transparent;
+    cursor: default;
+}
+
+.app-list .side-category {
+    display: block;
+    margin: 0;
+    padding: 0 0 40px 0;
+    list-style: none;
+}
+
+.app-list .side-category li {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.app-list .side-category li:last-of-type {
+    margin-bottom: 0;
+}
+
+.app-list .side-category li a {
+    font-size: 0.8em;
+}
+
+.app-list .side-refine {
+    font-size: 0.8em;
+    display: block;
+    padding: 0 0 40px 0;
+}
+
+.app-list .refine-current {
+    padding-bottom: 20px;
+}
+
+.app-list .refine-current .label {
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px 18px 2px 5px;
+    font-size: 0.95em;
+    position: relative;
+}
+
+.app-list .refine-current .label i {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.app-list .refine-current .clear {
+    text-decoration: underline;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.app-list .refine-box .refine-body {
+    display: none;
+}
+
+.app-list .refine-box.active .refine-body {
+    display: block;
+}
+
+.app-list .refine-box {
+    font-size: .9em;
+    margin-bottom: 20px;
+}
+
+.app-list .refine-box:last-of-type {
+    margin-bottom: 0;
+}
+
+.app-list .refine-head {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.app-list .refine-head i {
+    position: absolute;
+    left: 0;
+    top: 11px;
+}
+
+.app-list .refine-box .refine-head i.plus {
+    display: block;
+}
+
+.app-list .refine-box .refine-head i.minus {
+    display: none;
+}
+
+.app-list .refine-box.active .refine-head i.plus {
+    display: none;
+}
+
+.app-list .refine-box.active .refine-head i.minus {
+    display: block;
+}
+
+.app-list .refine-head b {
+    font-weight: normal;
+}
+
+.app-list .range-item {
+    width: 32%;
+    margin-left: 2%;
+    float: right;
+}
+
+.app-list .range-item * {
+    font-size: .9em;
+    height: 29px;
+}
+
+.app-list .range-item .app-button {
+    width: 100%;
+    padding: 6px 0;
+}
+
+.app-list .range-item:last-of-type {
+    margin-left: 0;
+}
+
+.app-list .refine-check {
+    display: block;
+    padding: 8px 20px 8px 0;
+    position: relative;
+}
+
+.app-list .refine-check:before {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 8px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid transparent;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.app-list .refine-check.checked:after {
+    position: absolute;
+    content: '';
+    right: 5px;
+    top: 9.5px;
+    transform: rotate(45deg);
+    height: 10px;
+    width: 5px;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.app-list .refine-check i {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    padding: 4px 5px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: .9em;
+    opacity: 0;
+}
+
+.app-list .refine-check.checked:hover i {
+    opacity: 1;
+}
+.app-list .list-data{
+    padding: 50px 0;
+    font-size: .85em;
+}
+
+/* App Products */
+.app-products{
+    display: block;
+    margin-bottom: 25px;
+}
+.app-products .product-box{
+    display: block;
+    width: 32%;
+    margin-left: 2%;
+    float: right;
+    margin-bottom: 6%;
+}
+.app-products .product-box .product-figure{
+    position: relative;
+}
+.app-products .product-box .product-image{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 430px;
+    width: 100%;
+}
+.app-products .product-box .product-image .product-image-main,
+.app-products .product-box .product-image .product-image-alt{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app-products .product-box .product-image .product-image-main{
+    z-index: 1;
+}
+.app-products .product-box .product-image .product-image-alt{
+    z-index: 0;
+}
+.app-products .product-box:hover .product-image .product-image-main{
+    opacity: 0;
+}
+.app-products .product-box:nth-of-type(3n){
+    margin-left: 0;
+}
+.app-products .product-box .product-control{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+}
+.app-products .product-box:hover .product-control{
+    opacity: 1;
+}
+.app-products .product-box .product-control a{
+    display: block;
+    margin: 10px;
+}
+.app-products .product-box .product-quick{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    opacity: 0;
+    text-align: center;
+    font-size: .8em;
+}
+.app-products .product-box:hover .product-quick{
+    opacity: 1;
+}
+.app-products .product-box:hover .product-quick a,
+.app-products .product-box:hover .product-quick button{
+    margin: 0;
+}
+.app-products .product-box .product-quick-modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    background-color: rgba(1,1,1,.5);
+    z-index: 1009;
+    overflow-y: auto;
+    display: none;
+}
+.app-products .product-box .product-quick-modal-box{
+    position: relative;
+    background-color: White;
+    width: 100%;
+    min-height: 100%;
+    padding: 30px;
+}
+.app-products .product-box .product-quick-modal-header{
+}
+.app-products .product-box .product-quick-modal-close{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    cursor: pointer;
+    font-size: .8em;
+}
+.app-products .product-title{
+    display: block;
+    line-height: 1.6;
+    font-size: .8em;
+    padding: 20px 0;
+    margin: 0;
+}
+.app-products .product-box .product-price{
+    font-size: .9em;
+    position: relative;
+    cursor: default;
+}
+.app-products .product-box .product-price .product-price-currency{
+    position: absolute;
+    left: 0;
+    top: 4px;
+    cursor: default;
+    font-size: .6em;
+}
+.app-products .product-box .product-status{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+.app-products .product-box .product-status-i{
+    position: relative;
+    font-size: .8em;
+    padding: 2px 6px 1px 3px;
+    cursor: default;
+    display: block;
+    margin-bottom: 5px;
+}
+.app-products .product-box .product-status-i:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10.9px solid transparent;
+    border-bottom: 10.9px solid transparent;
+    border-right: 10.9px solid transparent;
+    content: '';
+    left: -11px;
+    top: 0px;
+}
+/* App NewProducts */
+.app-newproducts{
+    display: block;
+}
+.app-newproducts .newproducts-title{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 1.4em;
+    cursor: default;
+}
+.app-newproducts .newproducts-title:after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 50%;
+    right: 25%;
+    top: 58%;
+    z-index: -1;
+}
+.app-newproducts .newproducts-title span{
+    padding: 0 20px;
+}
+.app-newproducts .app-products .product-box,
+.app-newproducts .app-products .product-box:nth-of-type(3n){
+    display: block;
+    width: 23.5%;
+    margin-left: 2%;
+    float: right;
+    margin-bottom: 6%;
+}
+.app-newproducts .app-products .product-box:nth-of-type(4n){
+    margin-left: 0;
+}
+/* App Sort */
+.app-sort{
+    display: block;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.app-sort .sort-box{
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 5px;
+    font-size: .7em;
+    margin-right: 10px;
+}
+.app-sort .sort-box b{
+    font-weight: normal;
+    cursor: default;
+}
+.app-sort .sort-box select{
+    cursor: pointer;
+}
+.app-sort .sort-box select,
+.app-sort .sort-box select:focus{
+    border: 0;
+    outline: none;
+}
+
+/* App Product View */
+.app-productview{
+    display: block;
+}
+.app-productview .productview-header{
+    display: block;
+    margin-bottom: 20px;
+    position: relative;
+}
+.app-productview .productview-title{
+    font-size: 1.6em;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.app-productview .productview-summary{
+    font-size: .8em;
+    text-align: justify;
+    line-height: 1.8;
+}
+.app-productview .productview-control{
+    position: absolute;
+    width: 40%;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+.app-productview .productview-control .productview-control-box{
+    padding: 20px;
+}
+.app-productview .productview-percent{
+    text-align: center;
+    padding: 15px;
+    cursor: default;
+    font-size: 1.2em;
+}
+.app-productview .productview-percent b{
+    display: inline-block;
+    margin-left: 5px;
+}
+.app-productview .productview-control .productview-buy-btn{
+    padding: 15px 15px;
+}
+.app-productview .productview-review-summary{
+    padding: 10px 0 0 0;
+    cursor: default;
+}
+.app-productview .productview-review-summary-stars{
+    display: inline-block;
+}
+.app-productview .productview-review-summary-stars i{
+    -moz-transform: rotate(215deg);
+    -webkit-transform: rotate(215deg);
+    -o-transform: rotate(215deg);
+    -ms-transform: rotate(215deg);
+    transform: rotate(215deg);
+}
+.app-productview .productview-review-summary b{
+    font-weight: normal;
+    font-size: .8em;
+}
+.app-productview .productview-price{
+    padding: 20px 0;
+}
+.app-productview .productview-price-total{
+    font-size: 1.8em;
+}
+.app-productview .productview-price-total small{
+    font-size: .4em;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: default;
+}
+.app-productview .productview-price-off{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: .8em;
+}
+.app-productview .productview-price-off strong{
+    font-weight: normal;
+    display: inline-block;
+}
+.app-productview .productview-price-off span{
+    display: inline-block;
+    margin-right: 4px;
+    text-decoration: line-through;
+}
+.app-productview .productview-price-off small{
+    font-size: .8em;
+    display: inline-block;
+    margin-right: 2px;
+    cursor: default;
+}
+.app-productview .productview-slider{
+    width: 100%;
+}
+.app-productview .productview-slider .carousel-item{
+    height: 650px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.app-productview .productview-slider .carousel-item:after{
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    top: 0;
+    cursor: zoom-in;
+    content: '';
+}
+.app-productview .productview-slider-images{
+    cursor: col-resize;
+}
+.app-productview .productview-slider .carousel-indicators,
+.app-productview .productview-slider-gallery .carousel-indicators{
+    bottom: -70px;
+}
+.app-productview .productview-slider .carousel-indicators li,
+.app-productview .productview-slider-gallery .carousel-indicators li{
+    height: 15px;
+    width: 15px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.app-productview .productview-slider-gallery{
+    position: fixed;
+    background-color: rgba(255,255,255,.99);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1009;
+    padding: 50px;
+    overflow-y: auto;
+    display: none;
+}
+.app-productview .productview-slider-gallery-close{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    z-index: 1010;
+}
+.app-productview .productview-slider-gallery .carousel-item{
+    text-align: center;
+}
+.app-productview .productview-slider-gallery .carousel-item img{
+    max-height: 80vh;
+    max-width: 100%;
+    cursor: zoom-in;
+}
+.app-productview .productview-content{
+    font-size: .85em;
+    padding: 50px 0;
+}
+.app-productview .productview-tabs{
+    display: block;
+}
+.app-productview .productview-tabs-header{
+    display: block;
+    margin-bottom: 20px;
+}
+.app-productview .productview-tabs-header ul{
+    display: block;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.app-productview .productview-tabs-header ul li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 8px 15px;
+    border-bottom: 1px solid transparent;
+    font-size: 1.1em;
+}
+.app-productview .productview-tabs-body{
+
+}
+.app-productview .productview-tabs-i{
+    display: none;
+}
+.app-productview .productview-tabs-i.active{
+    display: block;
+}
+.app-productview .productview-specifications{
+    display: block;
+}
+.app-productview .productview-specifications table,
+.app-productview .productview-specifications tbody{
+    width: 100%;
+}
+.app-productview .productview-specifications tr{
+    width: 100%;
+    border-bottom: 1px solid transparent;
+}
+.app-productview .productview-specifications tr:last-of-type{
+    border-bottom: 0;
+}
+.app-productview .productview-specifications td{
+    padding: 15px;
+}
+.app-productview .productview-specifications tr td:first-of-type{
+    width: 20%;
+}
+.app-productview .productview-specifications tr td:last-of-type{
+    font-size: .8em;
+    line-height: 1.8;
+    text-align: justify;
+}
+.app-productview .productview-reviews{
+    display: block;
+}
+.app-productview .productview-reviews .productview-review-summary{
+    font-size: 1.3em;
+    text-align: center;
+}
+.app-productview .productview-reviews .productview-review-summary b{
+    display: block;
+    padding: 5px 0;
+}
+.app-productview .productview-reviews-list{
+    padding: 20px 0;
+}
+.app-productview .productview-reviews-item{
+    display: block;
+    border-bottom: 1px solid transparent;
+    padding: 15px 0;
+}
+.app-productview .productview-reviews-item-header{
+    position: relative;
+    margin-bottom: 8px;
+}
+.app-productview .productview-reviews-item-header b{
+    display: block;
+    padding-bottom: 5px;
+}
+.app-productview .productview-reviews-item-header time{
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: .8em;
+}
+.app-productview .productview-reviews-item-body{
+    font-size: .9em;
+    text-align: justify;
+    line-height: 1.8;
+}
+.app-productview .productview-reviews-new{
+    padding: 20px 0;
+}
+.app-productview .productview-reviews-new-title{
+    text-align: center;
+    font-size: 1.2em;
+    cursor: default;
+}
+.app-productview .productview-reviews-new .productview-review-summary-stars{
+    font-size: 1.5em;
+}
+.app-productview .productview-reviews-new .productview-review-summary-stars i{
+    cursor: pointer;
+}
+/* App Cart */
+.app-cart{
+    display: block;
+}
+.app-cart .cart-box{
+    display: block;
+}
+.app-cart .cart-box tbody td,
+.app-cart .cart-box tbody th{
+    border-bottom: 1px solid transparent;
+}
+.app-cart .cart-remove{
+    font-size: .8em;
+    padding: 4px 6px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.app-cart .cart-count{
+    display: inline-block;
+    position: relative;
+    margin: 0 30px 0 0;
+}
+.app-cart .cart-count input::-webkit-outer-spin-button,
+.app-cart .cart-count input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.app-cart .cart-count input[type=number] {
+  -moz-appearance: textfield;
+}
+.app-cart .cart-count input{
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+}
+.app-cart .cart-count i{
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.app-cart .cart-count i.cart-count-plus{
+    right: -30px;
+}
+.app-cart .cart-count i.cart-count-minus{
+    left: -30px;
+}
+.app-cart .cart-totals{
+    padding: 20px 0 0 0;
+}
+.app-cart .cart-totals table{
+    width: 40%;
+    float: left;
+}
+.app-cart .cart-totals table tr{
+    border-bottom: 1px solid transparent;
+}
+.app-cart .cart-totals table tr:last-of-type td{
+    text-align: center;
+}
+.app-cart .cart-totals table td,
+.app-cart .cart-totals table th{
+    padding: 10px 0;
+}
+.app-cart .cart-totals table th{
+    cursor: default;
+    width: 150px;
+}
+.app-cart .cart-totals table tr:last-of-type{
+    border-bottom: 0;
+}
+.app-cart .cart-totals table td{
+    text-align: left;
+}
+.app-cart .cart-totals:after{
+    display: block;
+    clear: both;
+    content: '';
+}
