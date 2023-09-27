@@ -1,0 +1,949 @@
+/*
+* Fonts
+*/
+@font-face {
+  font-family: Samim;
+  src: url('../fonts/samim/Samim-FD.eot');
+  src: url('../fonts/samim/Samim-FD.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/samim/Samim-FD.woff') format('woff'),
+       url('../fonts/samim/Samim-FD.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Samim;
+  src: url('../fonts/samim/Samim-Bold-FD.eot');
+  src: url('../fonts/samim/Samim-Bold-FD.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/samim/Samim-Bold-FD.woff') format('woff'),
+       url('../fonts/samim/Samim-Bold-FD.ttf') format('truetype');
+  font-weight: bold;
+}
+
+/* 
+* Design 
+*/
+body{
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    font-size: 100%;
+    position: relative;
+    font-family: Samim;
+}
+a{
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    text-decoration: none;
+}
+h1{
+    font-size: 190%;
+}
+nav#RajmanTopNav{
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 60px;
+    z-index: 1019;
+}
+nav#RajmanTopNav button#RajmanToggleRightSide{
+    background-color: transparent;
+    display: block;
+    float: right;
+    font-size: 170%;
+    padding: 12px 16px 8px 16px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    color: #6F6F6F;
+}
+nav#RajmanTopNav button#RajmanToggleRightSide:hover{
+    background-color: #f7f7f7;
+}
+nav#RajmanTopNav button#RajmanToggleLeftSide{
+    background-color: transparent;
+    display: block;
+    float: left;
+    font-size: 170%;
+    padding: 12px 16px 8px 16px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    color: #6F6F6F;
+}
+nav#RajmanTopNav button#RajmanToggleLeftSide:hover{
+    background-color: #f7f7f7;
+}
+nav#RajmanTopNav button#RajmanToggleNightMode{
+    background-color: transparent;
+    display: block;
+    float: left;
+    font-size: 170%;
+    padding: 12px 16px 8px 16px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    color: #6F6F6F;
+}
+nav#RajmanTopNav button#RajmanToggleNightMode:hover{
+    background-color: #f7f7f7;
+}
+nav#RajmanTopNav button#RajmanToggleNightMode #RajmanToggleNightMode_Day{
+    display: none;
+}
+body.nightmode nav#RajmanTopNav button#RajmanToggleNightMode #RajmanToggleNightMode_Day{
+    display: block;
+    margin-top: 5px;
+    padding-bottom: 8px;
+}
+body.nightmode nav#RajmanTopNav button#RajmanToggleNightMode #RajmanToggleNightMode_Night{
+    display: none;
+}
+nav#RajmanTopNav .profile{
+    float: right;
+    position: relative;
+}
+nav#RajmanTopNav .profile:hover,
+nav#RajmanTopNav .profile.show,
+nav#RajmanTopNav .profile #RajmanProfileBox,
+nav#RajmanTopNav .notification.show,
+nav#RajmanTopNav .notification .notificationBox,
+nav#RajmanTopNav .quickaccess ul li a:hover{
+    background-color: #f7f7f7;
+}
+nav#RajmanTopNav .profile #RajmanToggleProfile{
+    cursor: pointer;
+    display: block;
+    position: relative;
+    padding: 17px 35px 18px 35px;
+    color: #6F6F6F;
+}
+nav#RajmanTopNav .profile #RajmanToggleProfile:after{
+    content: "\e924";
+    font-family: 'icomoon';
+    position: absolute;
+    left: 10px;
+    top: 17px;
+}
+nav#RajmanTopNav .profile #RajmanToggleProfile span{
+    position: absolute;
+    top: 20px;
+    right: 13px;
+}
+nav#RajmanTopNav .profile #RajmanProfileBox{
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 220px;
+    height: auto;
+    z-index: 1020;
+    display: none;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+nav#RajmanTopNav .profile.show #RajmanProfileBox{
+    display: block;
+}
+nav#RajmanTopNav .profile #RajmanProfileBox ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+nav#RajmanTopNav .profile #RajmanProfileBox ul li{
+    list-style: none;
+    display: block;
+    border-bottom: 1px solid #dbdbdb;
+}
+nav#RajmanTopNav .profile #RajmanProfileBox ul li:last-of-type{
+    border-bottom: 0;
+}
+nav#RajmanTopNav .profile #RajmanProfileBox ul li a{
+    display: block;
+    padding: 10px 10px;
+    color: #6F6F6F;
+    font-size: 70%;
+}
+nav#RajmanTopNav .profile #RajmanProfileBox ul li a:hover{
+    background-color: #ebebeb;
+}
+nav#RajmanTopNav .notification{
+    float: right;
+    position: relative;
+    width: 70px;
+    height: 60px;
+}
+nav#RajmanTopNav .notification .notificationToggle{
+    position: relative;
+    display: block;
+    padding: 17px 0;
+    cursor: pointer;
+    height: 59px;
+}
+nav#RajmanTopNav .notification .notificationToggle:hover{
+    background-color: #f7f7f7;
+}
+nav#RajmanTopNav .notification .notificationToggle span{
+    position: absolute;
+    font-size: 170%;
+    right: 22px;
+    top: 16px;
+    color: #6F6F6F;
+}
+nav#RajmanTopNav .notification .notificationToggle b{
+    position: absolute;
+    background-color: #d15f5f;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    padding: 2px 7px;
+    color: #fff;
+    font-size: 70%;
+    top: 8px;
+    right: 10px;
+}
+nav#RajmanTopNav .notification .notificationBox{
+    display: none;
+    width: 250px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+nav#RajmanTopNav .notification.show .notificationBox{
+    display: block;
+}
+nav#RajmanTopNav .notification .notificationBox header{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    color: #6F6F6F;
+    cursor: default;
+}
+nav#RajmanTopNav .notification .notificationBox footer{
+    border-top: 1px solid #dbdbdb;
+    text-align: center;
+}
+nav#RajmanTopNav .notification .notificationBox footer a{
+    padding: 8px 0 0 0;
+    font-size: 140%;
+    display: block;
+    color: #6F6F6F;
+    background-color: #e6e6e6;
+}
+nav#RajmanTopNav .notification .notificationBox footer a:hover{
+    background-color: #dbdbdb;
+}
+nav#RajmanTopNav .notification .notificationBox ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+        height: 200px;
+    overflow-y: auto;
+}
+nav#RajmanTopNav .notification .notificationBox ul li{
+    margin: 0;
+    padding: 0;
+    display: block;
+    border-bottom: 1px solid #dbdbdb;
+}
+nav#RajmanTopNav .notification .notificationBox ul li:last-of-type{
+    border-bottom: 0;
+}
+nav#RajmanTopNav .notification .notificationBox ul li a{
+    display: block;
+    padding: 10px 10px;
+    color: #6F6F6F;
+    font-size: 70%;
+    position: relative;
+}
+nav#RajmanTopNav .notification .notificationBox ul li a:hover{
+    background-color: #e6e6e6;
+}
+nav#RajmanTopNav .notification .notificationBox ul li a b{
+    font-weight: bold;
+}
+nav#RajmanTopNav .notification .notificationBox ul li a time{
+    position: absolute;
+    left: 5px;
+    top: 13px;
+    font-size: 70%;
+}
+nav#RajmanTopNav .search{
+    float: right;
+    display: block;
+    padding: 0 20px;
+}
+nav#RajmanTopNav .search input{
+    padding: 8px 20px;
+     -webkit-border-radius: 18px;
+    border-radius: 18px;
+    border: 1px solid #ededed;
+    margin-top: 11px;
+    min-width: 300px;
+    font-size: 80%;
+    color: #6F6F6F;
+}
+nav#RajmanTopNav .search input:focus{
+    outline: none;
+    border: 1px solid #cecece;
+}
+nav#RajmanTopNav .quickaccess{
+    float: left;
+    display: block;
+}
+nav#RajmanTopNav .quickaccess ul{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+nav#RajmanTopNav .quickaccess ul li{
+    list-style: none;
+    float: left;
+    display: block;
+}
+nav#RajmanTopNav .quickaccess ul li a{
+    display: block;
+    color: #6F6F6F;
+    padding: 17px 20px 18px 20px;
+}
+menu#RajmanTopMenu{
+    width: 100%;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    height: 60px;
+    z-index: 1018;
+    margin: 0;
+    display: block;
+    cursor: default;
+}
+menu#RajmanTopMenu ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+menu#RajmanTopMenu ul li{
+    display: inline-block;
+}
+menu#RajmanTopMenu ul li a{
+    padding: 20px 30px 19px 25px;
+    display: block;
+    color: #6f6f6f;
+    position: relative;
+    font-size: 85%;
+    margin: 0 5px;
+}
+menu#RajmanTopMenu ul li a:hover{
+    background-color: #f0f0f0;
+}
+menu#RajmanTopMenu ul li.active a{
+    -webkit-box-shadow:inset 0 -3px 0 0 #2B937F;
+    box-shadow:inset 0 -3px 0 0 #2B937F;
+}
+menu#RajmanTopMenu ul li a b{
+    padding-right: 15px;
+}
+menu#RajmanTopMenu ul li a span{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 130%
+}
+menu#RajmanTopMenu ul li.active a span{
+    color: #2B937F;
+}
+aside#RajmanRightSide{
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+aside#RajmanRightSide .logo{
+    text-align: center;
+    padding: 11px 0 11px 0;
+}
+aside#RajmanRightSide .logo a{
+    color: #6F6F6F;
+}
+aside#RajmanRightSide .logo b{
+    font-size: 160%;
+}
+aside#RajmanRightSide ul{
+    margin: 0;
+    padding: 0;
+}
+aside#RajmanRightSide ul li{
+    padding: 0;
+    text-align: center;
+}
+aside#RajmanRightSide ul li span{
+    display: inline-block;
+    font-size: 150%;
+}
+aside#RajmanRightSide ul li b{
+    display: block;
+    margin-top: -5px;
+    font-size: 80%
+}
+aside#RajmanRightSide ul li a{
+    display: block;
+    padding: 8px 0;
+    color: #6f6f6f;
+}
+aside#RajmanRightSide ul li a:hover{
+    color: #4a4a4a;
+    background-color: #fafafa;
+}
+aside#RajmanLeftSide{
+    width: 20%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 1030;
+}
+main#RajmanMainBody{
+    width: 100%;
+    padding-top: 120px;
+}
+#RajmanFadeAll{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(1,1,1,0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1029;
+}
+section#RajmanMainRoute{
+    padding: 10px 20px;
+}
+section#RajmanMainRoute ul{
+    margin: 0;
+    padding: 0;
+}
+section#RajmanMainRoute ul li{
+    list-style: none;
+    float: right;
+    margin-left: 25px;
+    position: relative;
+}
+section#RajmanMainRoute ul li:after{
+    content: "\e925";
+    font-family: 'icomoon';
+    position: absolute;
+    top: 2px;
+    left: -20px;
+    color: #b7b7b7;
+}
+section#RajmanMainRoute ul li:last-of-type::after{
+    content: "";
+}
+section#RajmanMainRoute ul li a{
+    font-size: 90%;
+    color: #969696;
+}
+section#RajmanMainRoute ul li a:hover{
+    color: #717171;
+}
+header#RajmanMainHeader{
+    display: block;
+    padding: 10px 20px;
+}
+header#RajmanMainHeader h1{
+    cursor: default;
+}
+section#RajmanMainBox{
+    padding: 0 20px;
+}
+article.RajmanWidget{
+    margin-bottom: 20px;
+}
+header.RajmanWidgetHeader{
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px;
+}
+header.RajmanWidgetHeader b{
+    cursor: default;
+}
+main.RajmanWidgetBody{
+    font-size: 100%;
+}
+main.RajmanWidgetBody .RajmanContent{
+    padding: 20px;
+}
+
+header.RajmanTabHeader{
+    display: block
+}
+header.RajmanTabHeader:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+header.RajmanTabHeader ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+header.RajmanTabHeader ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    cursor: pointer;
+    padding: 15px 25px;
+    border-left: 1px solid #e6e6e6;
+    font-weight: bold;
+    color: #808080;
+}
+header.RajmanTabHeader ul li:hover{
+    background-color: #ebeaea;
+}
+header.RajmanTabHeader ul li.show{
+    -webkit-box-shadow:inset 0 -5px 0 0 #2B937F;
+    box-shadow:inset 0 -5px 0 0 #2B937F;
+}
+main.RajmanTabBody section.RajmanTabBody_i{
+    display: none;
+}
+main.RajmanTabBody section.RajmanTabBody_i.show{
+    display: block;
+}
+
+/** 
+* Colors
+*/
+/* Main Color */
+body{
+    color: #656565;
+}
+a{
+    color: #2B937F;
+}
+a:hover{
+    color: #1f7464;
+}
+/* Main Background */
+body{
+    background-color: #eaeaea;
+}
+/* Section Background */
+nav#RajmanTopNav,
+aside#RajmanLeftSide,
+aside#RajmanRightSide,
+article.RajmanWidget{
+    background-color: #FFFFFF;
+}
+/* Second Section Background */
+menu#RajmanTopMenu,
+header.RajmanTabHeader{
+    background-color: #f8f8f8;
+}
+/* Left Border */
+aside#RajmanRightSide,
+aside#RajmanRightSide ul li a{    
+    -webkit-box-shadow:inset 1px 0 0 0 #dbdbdb;
+    box-shadow:inset 1px 0 0 0 #dbdbdb;
+    z-index: 1020;
+}
+/* Right Border */
+aside#RajmanLeftSide{    
+    -webkit-box-shadow:inset -1px 0 0 0 #dbdbdb;
+    box-shadow:inset -1px 0 0 0 #dbdbdb;
+}
+/* Bottom Border */
+menu#RajmanTopMenu,
+nav#RajmanTopNav,
+aside#RajmanRightSide .logo,
+nav#RajmanTopNav button#RajmanToggleRightSide:hover,
+nav#RajmanTopNav button#RajmanToggleNightMode:hover,
+nav#RajmanTopNav button#RajmanToggleLeftSide:hover{
+    -webkit-box-shadow:inset 0 -1px 0 0 #dbdbdb;
+    box-shadow:inset 0 -1px 0 0 #dbdbdb;
+}
+
+/**
+* Size
+*/
+/* Right aside width */
+aside#RajmanRightSide{
+    width: 4%;
+}
+/* Right padding of right aside */
+nav#RajmanTopNav,
+main#RajmanMainBody,
+menu#RajmanTopMenu{
+    padding-right: 4%;
+}
+/**
+* Transition
+*/
+a,
+button,
+nav#RajmanTopNav .search input,
+#RajmanFadeAll,
+nav#RajmanTopNav .profile,
+header.RajmanTabHeader ul li{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+/**
+* Main Radius
+*/
+article.RajmanWidget{
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+}
+/**
+* Box Shadow
+*/
+article.RajmanWidget,
+nav#RajmanTopNav .profile #RajmanProfileBox,
+nav#RajmanTopNav .notification .notificationBox{
+    -webkit-box-shadow: 1px 1px 10px 0 #b5b5b5;
+    box-shadow: 1px 1px 10px 0 #b5b5b5; 
+}
+/* Left Box Shadow*/
+aside#RajmanRightSide ul li.active a{
+    -webkit-box-shadow:inset 4px 0 0 0 #2B937F;
+    box-shadow:inset 4px 0 0 0 #2B937F;
+    color: #2B937F !important;
+}
+
+/**
+* Box Border
+*/
+article.RajmanWidget{
+    border: 1px solid #cccccc;
+}
+
+/**
+* Control Elements
+*/
+aside#RajmanRightSide.hide,
+aside#RajmanLeftSide,
+#RajmanFadeAll{
+    display: none;
+}
+aside#RajmanRightSide.hide ~ main#RajmanMainBody,
+aside#RajmanRightSide.hide ~ menu#RajmanTopMenu,
+aside#RajmanRightSide.hide ~ nav#RajmanTopNav{
+    padding-right: 0;
+}
+aside#RajmanLeftSide.show,
+aside#RajmanLeftSide.show ~ #RajmanFadeAll{
+    display: block;
+}
+
+/* Clear */
+section#RajmanMainRoute:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/** TypoGraphy **/
+#RajmanMainBody h1{
+    font-size: 200%;
+    font-weight: bold;
+}
+#RajmanMainBody h2{
+    font-size: 190%;
+    font-weight: bold;
+}
+#RajmanMainBody h3{
+    font-size: 180%;
+    font-weight: bold;
+}
+#RajmanMainBody h4{
+    font-size: 170%;
+    font-weight: bold;
+}
+#RajmanMainBody h5{
+    font-size: 160%;
+    font-weight: bold;
+}
+#RajmanMainBody h6{
+    font-size: 150%;
+    font-weight: bold;
+}
+#RajmanMainBody p{
+    text-align: justify;
+    line-height: 1.8;
+}
+#RajmanMainBody del{
+    color: #D15F5F;
+}
+#RajmanMainBody blockquote.blockquote{
+    border-right: 10px solid #d0d0d0;
+    padding: 8px 10px;
+    background-color: #eee;  
+}
+#RajmanMainBody ul,
+#RajmanMainBody ol{
+    margin-right: 0;
+    padding-right: 0px;
+}
+#RajmanMainBody ul ul,
+#RajmanMainBody ul ol,
+#RajmanMainBody ol ul,
+#RajmanMainBody ol ol{
+    padding-right: 40px;
+}
+#RajmanMainBody code{
+    color: #2B937F;
+}
+#RajmanMainBody kbd{
+    cursor: default;
+    background-color: #656565;
+    color: #d9d9d9;
+}
+#RajmanMainBody td,
+#RajmanMainBody th{
+    border-top: 0;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+#RajmanMainBody table{
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+#RajmanMainBody td:last-of-type{
+    border-left: 0;
+}
+#RajmanMainBody thead{
+    background-color: #eee;
+}
+#RajmanMainBody thead th:last-of-type{
+    border-left: 0;
+}
+#RajmanMainBody .alert{
+    border: 0;
+    padding-right: 20px;
+}
+#RajmanMainBody .alert button{
+    left: 0 !important;
+    top: 2px !important;
+}
+#RajmanMainBody a.badge{
+    cursor: pointer;
+}
+#RajmanMainBody .badge{
+    cursor: default;
+}
+#RajmanMainBody button.btn{
+    border: 0;
+}
+#RajmanMainBody button.btn:focus,
+#RajmanMainBody .form-control:focus,
+#RajmanMainBody .custom-checkbox .custom-control-label::before,
+#RajmanMainBody .custom-radio .custom-control-label::before{
+    box-shadow: none !important;
+}
+#RajmanMainBody .form-control:focus{
+    border-color: #2B937F;
+}
+#RajmanMainBody .custom-file-label::after{
+    background-color: #E9ECEF;
+    border-color: #E9ECEF;
+    content: "انتخاب";
+}
+#RajmanMainBody .alert-primary,
+#RajmanMainBody .badge-primary,
+#RajmanMainBody .badge-primary:hover,
+#RajmanMainBody .btn-primary{
+    background-color: #EEEEEE;
+    color: #6f6f6f;
+}
+#RajmanMainBody .btn-primary:hover{
+    background-color: #cecece;
+}
+#RajmanMainBody .alert-success,
+#RajmanMainBody .badge-success,
+#RajmanMainBody .badge-success:hover,
+#RajmanMainBody .btn-success{
+    background-color: #2B937F;
+    color: #e4fffa;
+}
+#RajmanMainBody .btn-success:hover{
+    background-color: #267b6a;
+}
+#RajmanMainBody .alert-danger,
+#RajmanMainBody .badge-danger,
+#RajmanMainBody .badge-danger:hover,
+#RajmanMainBody .btn-danger{
+    background-color: #D15F5F;
+    color: #f4f1f1;
+}
+#RajmanMainBody .btn-danger:hover{
+    background-color: #af5050;
+}
+#RajmanMainBody .alert-warning,
+#RajmanMainBody .badge-warning,
+#RajmanMainBody .badge-warning:hover,
+#RajmanMainBody .btn-warning{
+    background-color: #FFF3CD;
+    color: #38321f;
+}
+#RajmanMainBody .btn-warning:hover{
+    background-color: #d9d0b2;
+}
+#RajmanMainBody .alert-info,
+#RajmanMainBody .badge-info,
+#RajmanMainBody .badge-info:hover,
+#RajmanMainBody .btn-info{
+    background-color: #a7d3e6;
+    color: #17495f;
+}
+#RajmanMainBody .btn-info:hover{
+    background-color: #95b9c9;
+}
+#RajmanMainBody .alert-dark,
+#RajmanMainBody .badge-dark,
+#RajmanMainBody .badge-dark:hover,
+#RajmanMainBody .btn-dark{
+    background-color: #656565;
+    color: #e3e3e3;
+}
+#RajmanMainBody .btn-dark:hover{
+    background-color: #484848;
+}
+
+#RajmanMainBody .custom-checkbox .custom-control-label,
+#RajmanMainBody .custom-radio .custom-control-label{
+    padding-right: 20px;
+    cursor: pointer;
+}
+#RajmanMainBody .custom-checkbox .custom-control-label::before,
+#RajmanMainBody .custom-checkbox .custom-control-label::after,
+#RajmanMainBody .custom-radio .custom-control-label::before,
+#RajmanMainBody .custom-radio .custom-control-label::after{
+    right: 0;
+}
+#RajmanMainBody .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+#RajmanMainBody .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #51A49D;
+}
+#RajmanMainBody .custom-checkbox .custom-control-input:disabled ~ .custom-control-label::before,
+#RajmanMainBody .custom-radio .custom-control-input:disabled ~ .custom-control-label::before{
+    background-color: #b4b4b4 !important;
+}
+
+#RajmanMainBody .custom-control-inline {
+    margin-right: 0;
+}
+#RajmanMainBody .custom-file-label{
+    padding-right: 90px; 
+}
+
+
+/** Responsive **/
+
+@media only screen and (max-width: 1700px){
+    /* Right aside width */
+    aside#RajmanRightSide{
+        width: 5%;
+    }
+    /* Right padding of right aside */
+    nav#RajmanTopNav,
+    main#RajmanMainBody,
+    menu#RajmanTopMenu{
+        padding-right: 5%;
+    }
+}
+@media only screen and (max-width: 1400px){
+    nav#RajmanTopNav .quickaccess{
+        display: none;
+    }
+    /* Right aside width */
+    aside#RajmanRightSide{
+        width: 6%;
+    }
+    /* Right padding of right aside */
+    nav#RajmanTopNav,
+    main#RajmanMainBody,
+    menu#RajmanTopMenu{
+        padding-right: 6%;
+    }
+}
+@media only screen and (max-width: 1100px){
+    /* Right aside width */
+    aside#RajmanRightSide{
+        width: 20%;
+        z-index: 1031 !important;
+    }
+    aside#RajmanRightSide ul li{
+        position: relative;
+        font-size: 120%;
+    }
+    aside#RajmanRightSide ul li a{
+        padding: 12px 0;
+    }
+    aside#RajmanRightSide ul li span{
+        position: absolute;
+        right: 10px;
+        top: 8px;
+    }
+    aside#RajmanRightSide ul li b{
+        display: block;
+        text-align: right;
+        padding-right: 50px;
+    }
+    /* Right padding of right aside */
+    nav#RajmanTopNav,
+    main#RajmanMainBody,
+    menu#RajmanTopMenu{
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 900px){
+    aside#RajmanRightSide{
+        width: 30%;
+        z-index: 1031 !important;
+    }
+    nav#RajmanTopNav .search{
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px){
+    menu#RajmanTopMenu ul li a{
+        padding: 20px 30px 19px 15px;
+        margin: 0;
+    }
+    menu#RajmanTopMenu ul li a span{
+        right: 5px;    
+    }
+}
+@media only screen and (max-width: 680px){
+    menu#RajmanTopMenu ul li a{
+        padding: 20px 10px 19px 10px;
+        margin: 0;
+    }
+    menu#RajmanTopMenu ul li a span{
+        display: none;
+    }
+    menu#RajmanTopMenu ul li a b{
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 550px){
+    aside#RajmanRightSide{
+        width: 60%;
+        z-index: 1031 !important;
+    }
+    nav#RajmanTopNav .notification{
+        display: none;
+    }
+}
+@media only screen and (max-width: 450px){
+    menu#RajmanTopMenu ul li{
+        margin: 0 -2px;
+    }
+}

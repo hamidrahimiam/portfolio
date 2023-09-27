@@ -1,0 +1,175 @@
+/* Main Background */
+.nightmode{
+    background-color: #1A1A1A;
+    color: #c6c6c6;
+}
+.nightmode a{
+    color: #2B937F;
+}
+.nightmode a:hover{
+    color: #1f7464;
+}
+.nightmode article.RajmanWidget main.RajmanWidgetBody{
+    color: #898989;
+}
+/* Section Background */
+.nightmode nav#RajmanTopNav,
+.nightmode aside#RajmanLeftSide,
+.nightmode aside#RajmanRightSide,
+.nightmode article.RajmanWidget,
+.nightmode nav#RajmanTopNav .profile.show #RajmanProfileBox{
+    background-color: #252525;
+}
+/* Second Section Background */
+.nightmode menu#RajmanTopMenu{
+    background-color: #242424;
+}
+.nightmode header.RajmanTabHeader{
+    background-color: #212121;
+}
+.nightmode header.RajmanTabHeader ul li{
+    border-color: #2c2c2c;
+}
+.nightmode header.RajmanTabHeader ul li:hover{
+    background-color: #343434;
+}
+/* Left Border */
+.nightmode aside#RajmanRightSide{    
+    -webkit-box-shadow:inset 1px 0 0 0 #313131;
+    box-shadow:inset 1px 0 0 0 #313131;
+    z-index: 1020;
+}
+/* Right Border */
+.nightmode aside#RajmanLeftSide,
+.nightmode aside#RajmanRightSide ul li a{    
+    -webkit-box-shadow:inset -1px 0 0 0 #313131;
+    box-shadow:inset -1px 0 0 0 #313131;
+}
+/* Bottom Border */
+.nightmode menu#RajmanTopMenu,
+.nightmode nav#RajmanTopNav,
+.nightmode aside#RajmanRightSide .logo,
+.nightmode nav#RajmanTopNav button#RajmanToggleRightSide:hover,
+.nightmode nav#RajmanTopNav button#RajmanToggleNightMode:hover,
+.nightmode nav#RajmanTopNav button#RajmanToggleLeftSide:hover{
+    -webkit-box-shadow:inset 0 -1px 0 0 #313131;
+    box-shadow:inset 0 -1px 0 0 #313131;
+}
+/**
+* Box Shadow
+*/
+.nightmode article.RajmanWidget,
+.nightmode nav#RajmanTopNav .profile.show #RajmanProfileBox,
+.nightmode nav#RajmanTopNav .notification .notificationBox{
+    -webkit-box-shadow: 1px 1px 10px 0 #151515;
+    box-shadow: 1px 1px 10px 0 #151515; 
+}
+
+/**
+* Box Border
+*/
+.nightmode article.RajmanWidget{
+    border: 1px solid #151515;
+}
+
+/**
+* Design
+*/
+.nightmode header.RajmanWidgetHeader{
+    border-bottom: 1px solid #1f1f1f;
+}
+.nightmode aside#RajmanRightSide ul li a:hover{
+    background-color: #1f1f1f;
+    color: #b2b2b2;
+}
+.nightmode menu#RajmanTopMenu ul li a:hover{
+    background-color: #1f1f1f;
+}
+.nightmode aside#RajmanRightSide ul li.active a{
+    -webkit-box-shadow:inset 4px 0 0 0 #2B937F;
+    box-shadow:inset 4px 0 0 0 #2B937F;
+    color: #2B937F;
+}
+.nightmode menu#RajmanTopMenu li.active > a{
+    color: #fff;
+}
+.nightmode nav#RajmanTopNav button#RajmanToggleRightSide:hover{
+    background-color: #1f1f1f;
+}
+.nightmode nav#RajmanTopNav button#RajmanToggleNightMode:hover{
+    background-color: #1f1f1f;
+}
+.nightmode nav#RajmanTopNav button#RajmanToggleLeftSide:hover{
+    background-color: #1f1f1f;
+}
+.nightmode nav#RajmanTopNav .quickaccess ul li a:hover{
+    background-color: #1f1f1f;
+}
+.nightmode nav#RajmanTopNav .profile:hover,
+.nightmode nav#RajmanTopNav .profile.show,
+.nightmode nav#RajmanTopNav .profile.show #RajmanProfileBox,
+.nightmode nav#RajmanTopNav .notification .notificationToggle:hover,
+.nightmode nav#RajmanTopNav .notification.show,
+.nightmode nav#RajmanTopNav .notification .notificationBox{
+    background-color: #1f1f1f;
+}
+.nightmode nav#RajmanTopNav .profile #RajmanProfileBox ul li a:hover,
+.nightmode nav#RajmanTopNav .notification .notificationBox ul li a:hover{
+    background-color: #1a1a1a;
+}
+.nightmode nav#RajmanTopNav .profile #RajmanProfileBox ul li,
+.nightmode nav#RajmanTopNav .notification .notificationBox header,
+.nightmode nav#RajmanTopNav .notification .notificationBox ul li,
+.nightmode nav#RajmanTopNav .notification .notificationBox footer{
+    border-color: #292929;
+}
+.nightmode nav#RajmanTopNav .notification .notificationBox footer a{
+    background-color: #292929;
+}
+.nightmode nav#RajmanTopNav .notification .notificationBox footer a:hover{
+    background-color: #333333;
+}
+.nightmode nav#RajmanTopNav .search input{
+    background-color: #252525;
+    border: 1px solid #313131;
+    color: #8e8e8e;
+}
+.nightmode nav#RajmanTopNav .search input:focus{
+    background-color: #414141;
+}
+
+.nightmode #RajmanMainBody table,
+.nightmode #RajmanMainBody td,
+.nightmode #RajmanMainBody th{
+    border-color: #1d1d1d;
+}
+.nightmode #RajmanMainBody thead{
+    background-color: #1d1d1d;
+}
+.nightmode #RajmanMainBody blockquote.blockquote{
+    border-color: #171717;
+    background-color: #1f1f1f;  
+}
+.nightmode #RajmanMainBody .form-control,
+.nightmode #RajmanMainBody .custom-file-label{
+    background-color: #4a4a4a;
+    border-color: #212121;
+    color: #fff;
+}
+.nightmode #RajmanMainBody .custom-file-label::after{
+    background-color: #191919;
+    border-color: #333;
+    content: "انتخاب";
+}
+.nightmode #RajmanMainBody .custom-checkbox .custom-control-input ~ .custom-control-label::before,
+.nightmode #RajmanMainBody .custom-radio .custom-control-input ~ .custom-control-label::before{
+    background-color: #4A4A4A;
+}
+.nightmode #RajmanMainBody .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.nightmode #RajmanMainBody .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #2B937F;
+}
+.nightmode #RajmanMainBody .custom-checkbox .custom-control-input:disabled ~ .custom-control-label::before,
+.nightmode #RajmanMainBody .custom-radio .custom-control-input:disabled ~ .custom-control-label::before{
+    background-color: #1c1c1c !important;
+}
