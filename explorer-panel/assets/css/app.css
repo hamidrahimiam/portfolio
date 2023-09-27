@@ -1,0 +1,1014 @@
+/**
+** Import Fonts
+**/
+@font-face {
+	font-family: IRANYekan;
+	font-style: normal;
+	font-weight: 600;
+	src: url('../font/iranyekan/iranyekanwebbold.eot');
+	src: url('../font/iranyekan/iranyekanwebbold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../font/iranyekan/iranyekanwebbold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../font/iranyekan/iranyekanwebbold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../font/iranyekan/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: IRANYekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../font/iranyekan/iranyekanweblight.eot');
+	src: url('../font/iranyekan/iranyekanweblight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../font/iranyekan/iranyekanweblight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../font/iranyekan/iranyekanweblight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../font/iranyekan/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: IRANYekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../font/iranyekan/iranyekanwebregular.eot');
+	src: url('../font/iranyekan/iranyekanwebregular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */ url('../font/iranyekan/iranyekanwebregular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/ url('../font/iranyekan/iranyekanwebregular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../font/iranyekan/iranyekanwebregular.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap');
+
+/**
+** Base
+**/
+body{
+    font-family: IRANYekan;
+    font-size: 100%;
+    direction: rtl;
+    text-align: right;
+}
+.farsi{
+    font-family: IRANYekan;
+}
+body.app_mode_en{
+    direction: ltr;
+    text-align: left;
+    font-family: 'Manrope', sans-serif !important;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b{
+    font-weight: bold;
+}
+table tbody tr:last-of-type,
+table tbody tr:last-of-type td,
+table tbody tr:last-of-type th{
+    border-bottom: 0;
+}
+.text-bold{
+    font-weight: bold;
+}
+.text-allcenter,
+.app_list th{
+    text-align: center;
+    vertical-align: middle;
+}
+.text-ltr{
+    direction: ltr;
+}
+.text-right{
+    text-align: right;
+}
+.text-wrap,
+.app_list td,
+.app_data_value{
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
+}
+.app_list_btn{
+    font-weight: bolder;
+    font-size: .9em;
+    padding: 12px 20px;
+}
+.app_data_btn{
+    font-weight: bolder;
+    font-size: .8em;
+    padding: 8px 30px;
+}
+.table-responsive-stack tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+
+.table-responsive-stack td,
+.table-responsive-stack th {
+    display:block;
+    /*      
+    flex-grow | flex-shrink | flex-basis   */
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.table-responsive-stack .table-responsive-stack-thead{
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .table-responsive-stack tr {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 3px solid #ccc;
+    display:block;
+    
+    }
+    /*  IE9 FIX   */
+    .table-responsive-stack td {
+    float: left\9;
+    width:100%;
+    }
+
+    .app_list_btn{
+        display: block;
+    }
+}
+
+.app_full_transition,
+.app_aside,
+.app_main,
+a,
+.app_body_elements .element .element_options .option{
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+/**
+** Colors 
+**/
+body,
+.app_summary,
+.app_box{
+    background-color: #FEFEFF;
+}
+body.app_mode_night{
+    background-color: #131419;
+}
+.btn-light,
+.app_aside_networks,
+.app_aside_menu ul li a:hover,
+.app_body_elements .element .element_button,
+.app_body_elements .element .element_options{
+    background-color: #FFFFFF;
+}
+body.app_mode_night .app_aside_networks,
+body.app_mode_night .app_list thead th,
+body.app_mode_night .app_aside_menu ul li a:hover,
+body.app_mode_night .app_body_elements .element .element_button,
+body.app_mode_night .btn-light,
+body.app_mode_night .app_body_elements .element .element_options,
+body.app_mode_night .app_summary,
+body.app_mode_night .app_box{
+    background-color: #3B3F4C;
+}
+.app_list thead{
+    background-color: #F5F5F8;
+}
+.app_aside,
+.app_body,
+.app_nav .search input,
+.app_nav .control .ctrl,
+.app_nav .language a{
+    background-color: #E5E7EE;
+}
+body.app_mode_night .app_aside,
+body.app_mode_night .app_body,
+body.app_mode_night .app_nav .search input,
+body.app_mode_night .app_nav .control .ctrl,
+body.app_mode_night .app_nav .language a{
+    background-color: #2E3038;
+}
+.app_nav .language a span.active,
+.app_aside_networks a:after,
+.app_aside_menu ul li.active a,
+.app_aside_menu ul li.active a:hover,
+body.app_mode_night .app_aside_menu ul li.active a:hover{
+    background-color: #4C6FFE;
+    color: #fff;
+}
+body,
+.app_aside_networks a.active,
+.app_body_elements .element .element_options .option:hover,
+.app_tab_items .app_tab_item.active{
+    color: #13141A;
+}
+body.app_mode_night,
+body.app_mode_night .app_list table{
+    color: #E2E5F1;
+}
+body.app_mode_night .app_aside_networks a.active,
+body.app_mode_night .app_body_elements .element .element_options .option:hover{
+    color: #DCE0F1;
+}
+body.app_mode_night a,
+body.app_mode_night .app_tab_items .app_tab_item:hover{
+    color: #898EA6;
+}
+body.app_mode_night .app_nav .search input,
+body.app_mode_night .btn-light,
+body.app_mode_night .btn-light.text-primary,
+body.app_mode_night .app_tab_items .app_tab_item.active{
+    color: #fff !important;
+}
+.app_aside_networks a,
+.app_body_elements .element .element_options .option,
+.app_data_btn,
+body.app_mode_night .app_aside_networks a:hover{
+    color: #A5A9C0;
+}
+body.app_mode_night .app_aside_networks a,
+.app_tab_items .app_tab_item:hover{
+    color: #5C6077;
+}
+.app_aside_menu ul li a,
+.text-graymuted,
+.app_body_elements .element .element_button b,
+.app_list thead th,
+body.app_mode_night .app_list thead th,
+.app_data_title,
+.app_result_title,
+.app_summary_title,
+.app_tab_items .app_tab_item,
+.app_aside_networks a:hover,
+.table-responsive-stack .table-responsive-stack-thead{
+    color: #6F7389;
+}
+
+body.app_mode_night .app_body_elements .element .element_button b{
+    color: #888DA7;
+}
+.text-ultramuted{
+    color: #A7ABBF;
+}
+a,
+body.app_mode_night a,
+.text-primary,
+.app_body_elements .element .element_options .option.selected,
+body.app_mode_night .app_body_elements .element .element_options .option.selected{
+    color: #4C6FFE;
+}
+
+.app_aside_networks a,
+.app_body_elements .element .element_options .option{
+    border-bottom: 1px solid #E2E4EE;
+}
+body.app_mode_night .app_aside_networks a,
+body.app_mode_night .app_body_elements .element .element_options .option{
+    border-bottom: 1px solid #505265;
+}
+
+.app_aside_networks a:before{
+    border: 2px solid #E2E4EE;
+}
+body.app_mode_night .app_aside_networks a:before{
+    border-color: #5E6172;
+}
+.app_aside_networks a.active:before,
+body.app_mode_night .app_aside_networks a.active:before{
+    border-color: #4C6FFE;
+}
+.app_list tr{
+    border-color: #C4C7D9;
+}
+@media (max-width: 768px) {
+    table tbody tr:last-of-type td{
+        border-bottom: 1px solid #C4C7D9;
+    }
+    table tbody tr:last-of-type td:last-of-type{
+        border-bottom: 0;
+    }
+    body.app_mode_night table tbody tr:last-of-type td{
+        border-bottom: 1px solid #464955;
+    }
+    body.app_mode_night table tbody tr:last-of-type td:last-of-type{
+        border-bottom: 0;
+    }
+    table tbody tr{
+        border-bottom: 0;
+    }
+}
+.app_data_row .app_data_value,
+.app_bottom_border{
+    border-bottom: 1px solid #C4C7D9;
+}
+.app_result_row{
+    border-bottom: 1px dashed #C4C7D9;
+}
+.app_data_row:last-of-type .app_data_value,
+.app_result_row:last-of-type
+.app_zerobottom_border,
+.app_result_row:last-of-type{
+    border-bottom: 0;
+}
+body.app_mode_night .app_list tr,
+body.app_mode_night .btn-light,
+body.app_mode_night .app_data_row .app_data_value,
+body.app_mode_night .app_bottom_border,
+body.app_mode_night .app_result_row{
+    border-color: #464955;
+}
+
+
+/**
+** General Effects
+**/
+.app_all_radius,
+.app_aside,
+.app_body,
+.app_nav .search input,
+.app_nav .language a{
+    -webkit-border-radius: 32px;
+    border-radius: 32px;
+}
+.app_nav .control .ctrl,
+.app_aside_networks,
+.app_aside_menu ul li a,
+.app_summary,
+.app_box{
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+}
+.app_body_elements .element .element_button,
+.app_list_btn,
+.app_body_elements .element .element_options,
+.app_data_btn{
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+}
+.app_nav .language a span{
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.app_aside_networks a:before,
+.app_aside_networks a:after{
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.app_all_padding{
+    padding: 20px;
+}
+.app_forty_padding,
+.app_summary,
+.app_box{
+    padding: 40px;
+}
+@media (max-width: 766px) {
+    .app_forty_padding,
+    .app_summary,
+    .app_box{
+        padding: 20px;
+    }
+}
+.app_zerotop_padding{
+    padding-top: 0;
+}
+
+/**
+** General Elements
+**/
+.app_clear:after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.app_container{
+    padding: 30px;
+}
+.app_aside{
+    display: block;
+    min-height: 90vh;
+    width: 20%;
+    float: right;
+    padding: 40px;
+}
+body.app_mode_en .app_aside{
+    float: left;
+}
+body.app_mode_miniaside .app_aside{
+    width: 8%;
+}
+@media (max-width: 1768px) {
+    body.app_mode_miniaside .app_aside{
+        padding: 20px;
+    }
+}
+.app_main{
+    display: block;
+    width: 78%;
+    float: left;
+}
+body.app_mode_en .app_main{
+    float: right;
+}
+body.app_mode_miniaside .app_main{
+    width: 90%;
+}
+@media (max-width: 1500px) {
+    .app_aside{
+        width: 25%;
+    }
+    .app_main{
+        width: 73%;
+    }
+}
+@media (max-width: 1250px) {
+    body.app_mode_miniaside .app_container{
+        padding: 20px;
+    }
+    body.app_mode_miniaside .app_aside{
+        width: 10%;
+        padding: 15px 8px;
+    }
+    body.app_mode_miniaside .app_main{
+        width: 88%;
+    }
+}
+@media (max-width: 1100px) {
+    .app_container{
+        padding: 20px;
+    }
+    .app_aside{
+        width: 29%;
+    }
+    .app_main{
+        width: 69%;
+    }
+}
+@media (max-width: 960px) {
+    /* body.app_mode_miniaside .app_container{
+        padding: 10px;
+    } */
+    body.app_mode_miniaside .app_aside{
+        width: 12%;
+    }
+    body.app_mode_miniaside .app_main{
+        width: 86%;
+    }
+}
+@media (max-width: 770px) {
+    body.app_mode_miniaside .app_aside{
+        width: 14%;
+    }
+    body.app_mode_miniaside .app_main{
+        width: 84%;
+    }
+}
+@media (max-width: 600px) {
+    body.app_mode_miniaside .app_aside{
+        width: 16%;
+    }
+    body.app_mode_miniaside .app_main{
+        width: 82%;
+    }
+}
+@media (max-width: 550px) {
+    body.app_mode_miniaside .app_aside{
+        width: 18%;
+    }
+    body.app_mode_miniaside .app_main{
+        width: 80%;
+    }
+}
+
+.app_icon .night{
+    display: none;
+}
+.app_icon .day{
+    display: block;
+}
+body.app_mode_night .app_icon .night{
+    display: block;
+}
+body.app_mode_night .app_icon .day{
+    display: none;
+}
+.app_nav{
+    margin-bottom: 20px;
+}
+.app_nav .search{
+    width: 70%;
+    float: right;
+    position: relative;
+}
+body.app_mode_en .app_nav .search{
+    float: left;
+}
+body.app_mode_en .app_nav .language{
+    float: right;
+}
+.app_nav .control{
+    width: 25%;
+    float: left;
+}
+body.app_mode_en .app_nav .control{
+    float: right;
+}
+.app_nav .search input{
+    border: 0;
+    padding: 15px 70px 15px 20px;
+    font-size: .75em;
+}
+body.app_mode_en .app_nav .search input{
+    padding: 15px 20px 15px 70px;
+}
+.app_nav .search input:focus,
+.app_nav .search input:active{
+    box-shadow: none !important;
+    outline: none !important;
+}
+.app_nav .search .app_icon{
+    position: absolute;
+    position: absolute;
+    right: 30px;
+    top: 12px;
+}
+body.app_mode_en .app_nav .search .app_icon{
+    left: 30px;
+    right: auto;
+}
+.app_nav .control .ctrl{
+    float: left;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    margin-right: 5px;
+}
+body.app_mode_en .app_nav .control .ctrl{
+    float: right;
+}
+.app_nav .control .ctrl .app_icon{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.app_nav .control .ctrl:nth-of-type(2) .app_icon{
+    right: 12px;
+}
+body.app_mode_en .app_nav .language{
+    margin-right: 10px;
+}
+.app_nav .language a{
+    float: left;
+    display: block;
+    height: 48px;
+    width: 90px;
+    padding: 5px;
+}
+.app_nav .language a span{
+    display: block;
+    width: 50%;
+    float: left;
+    height: 38px;
+    text-align: center;
+    padding: 6px 0 0 0;
+}
+@media (max-width: 1270px) {
+    .app_nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .app_nav .search{
+        width: 100%;
+        float: none;
+        order: 2;
+    }
+    .app_nav .control{
+        order: 1;
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+}
+
+.app_aside_networks{
+    margin-bottom: 30px;
+}
+body.app_mode_miniaside .app_aside_networks{
+    margin-bottom: 10px;
+}
+.app_aside_networks a{
+    display: block;
+    padding: 13px 60px 13px 20px;
+    font-size: .9em;
+    position: relative;
+}
+body.app_mode_en .app_aside_networks a{
+    padding: 13px 20px 13px 60px;
+}
+body.app_mode_miniaside .app_aside_networks a{
+    padding: 13px 5px;
+}
+body.app_mode_miniaside .app_aside_networks a span{
+    display: block;
+    text-align: center;
+    font-size: .65em;
+}
+
+.app_aside_networks a.active{
+    font-weight: bold;
+}
+.app_aside_networks a:last-of-type{
+    border: 0;
+}
+body.app_mode_night .app_aside_networks a:last-of-type{
+    border: 0;
+}
+.app_aside_networks a:before{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    content: '';
+    right: 20px;
+    top: 12px;
+}
+body.app_mode_en .app_aside_networks a:before{
+    left: 20px;
+    right: auto;
+}
+.app_aside_networks a.active:after{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    content: '';
+    right: 25px;
+    top: 17px;
+}
+body.app_mode_en .app_aside_networks a.active:after{
+    left: 25px;
+    right: auto;
+}
+body.app_mode_miniaside .app_aside_networks a:before,
+body.app_mode_miniaside .app_aside_networks a:after{
+    display: none;
+}
+.app_aside_control{
+    margin-bottom: 30px;
+    display: block;
+}
+.app_aside_control span{
+    float: left;
+}
+body.app_mode_en .app_aside_control span{
+    float: right;
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+body.app_mode_miniaside .app_aside_control{
+    text-align: center;
+}
+body.app_mode_miniaside .app_aside_control span{
+    float: none;
+    display: inline-block;
+    text-align: center;
+}
+body.app_mode_miniaside .app_aside_control .app_icon{
+    -moz-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+body.app_mode_en.app_mode_miniaside .app_aside_control span{
+    -moz-transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+body.app_mode_miniaside .app_aside_control .app_icon .day{
+    display: inline-block;
+}
+body.app_mode_miniaside .app_aside_control .app_icon .night{
+    display: none;
+}
+body.app_mode_night.app_mode_miniaside .app_aside_control .app_icon .night{
+    display: inline-block;
+}
+body.app_mode_night.app_mode_miniaside .app_aside_control .app_icon .day{
+    display: none;
+}
+.app_aside_menu{
+    display: block;
+}
+.app_aside_menu ul,
+.app_aside_menu ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.app_aside_menu ul li{
+    position: relative;
+    margin-bottom: 10px;
+}
+.app_aside_menu ul li a{
+    display: block;
+    position: relative;
+    padding: 13px 60px 13px 20px;
+}
+body.app_mode_en .app_aside_menu ul li a{
+    padding: 13px 20px 13px 60px;
+}
+body.app_mode_miniaside .app_aside_menu ul li a{
+    padding: 13px 10px;
+    text-align: center;
+}
+.app_aside_menu ul li a .app_icon{
+    position: absolute;
+    top: 13px;
+    right: 20px;
+}
+body.app_mode_en .app_aside_menu ul li a .app_icon{
+    left: 20px;
+    right: auto;
+}
+body.app_mode_en.app_mode_miniaside .app_aside_menu ul li a .app_icon{
+    left: auto;
+}
+body.app_mode_miniaside .app_aside_menu ul li a b{
+    display: block;
+    text-align: center;
+    font-size: .7em;
+    padding-top: 2px;
+}
+body.app_mode_miniaside .app_aside_menu ul li a .app_icon{
+    text-align: center;
+    position: relative;
+    top: auto;
+    right: auto;
+    display: block;
+}
+body.app_mode_miniaside .app_aside_menu ul li a .app_icon .day{
+    display: inline-block;
+}
+body.app_mode_miniaside .app_aside_menu ul li a .app_icon .night{
+    display: none;
+}
+body.app_mode_night.app_mode_miniaside .app_aside_menu ul li a .app_icon .night{
+    display: inline-block;
+}
+body.app_mode_night.app_mode_miniaside .app_aside_menu ul li a .app_icon .day{
+    display: none;
+}
+
+.app_body_header{
+    display: inline-block;
+}
+.app_body_header .title{
+    font-weight: 600;
+    font-weight: bold;
+    font-size: 1.9em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+body.app_mode_en .app_body_header .title{
+    margin-left: 0;
+    margin-right: 10px;
+}
+@media (max-width: 770px){
+    .app_body_header .title{
+        font-size: 1.6em;
+    }
+}
+.app_body_elements{
+    display: inline-block;
+}
+.app_body_elements .element{
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.app_body_elements .element .element_button{
+    display: block;
+    padding: 15px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.app_body_elements .element .element_stats,
+.app_body_elements .element .element_stats *{
+    cursor: default;
+}
+.app_body_elements .element .element_button span{
+    text-align: left;
+    direction: ltr;
+}
+.app_body_elements .element .element_button.element_select{
+    padding-right: 50px;
+    padding-left: 45px;
+}
+.app_body_elements .element .element_button i{
+    position: absolute;
+    right: 17px;
+    top: 13px;
+}
+body.app_mode_en .app_body_elements .element .element_button i{
+    right: auto;
+    left: 17px;
+}
+.app_body_elements .element .element_button i img{
+    width: 22px;
+}
+.app_body_elements .element .element_button strong{
+    position: absolute;
+    left: 18px;
+    top: 23px;
+}
+body.app_mode_en .app_body_elements .element .element_button strong{
+    left: auto;
+    right: 18px;
+}
+.app_body_elements .element .element_options{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    margin-top: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 109;
+}
+.app_body_elements .element .element_options.show{
+    visibility: visible;
+    opacity: 1;
+}
+.app_body_elements .element .element_options .option{
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.app_body_elements .element .element_options .option:last-of-type,
+body.app_mode_night .app_body_elements .element .element_options .option:last-of-type{
+    border-bottom: 0;
+}
+.app_list{
+    display: block;
+}
+.app_list thead,
+.app_list thead th{
+    border: 0;
+}
+.app_list tbody td,
+.app_list tbody th{
+    padding: 20px;
+}
+.app_list thead th{
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.app_margin_down{
+    display: block;
+    margin-bottom: 20px;
+}
+/* .app_list tr td:first-of-type,
+.app_list tbody tr th{
+    padding-right: 50px;
+}
+.app_list tr td:last-of-type{
+    padding-left: 50px;
+} */
+
+.app_data{
+    display: block;
+    box-sizing: padding-box;
+}
+.app_data_row,
+.app_result_row,
+.app_result_title,
+.app_summary_title,
+.app_tab_items .app_tab_item{
+    font-size: 1.1em;
+}
+.app_data_title,
+.app_result_title{
+    padding: 20px 40px 20px 20px;
+    display: block;
+}
+body.app_mode_en .app_data_title,
+body.app_mode_en .app_result_title{
+    padding: 20px 20px 20px 40px;
+}
+@media (max-width: 1100px) {
+    .app_summary_box{
+        margin: 20px 0;
+    }
+}
+@media (max-width: 766px) {
+    .app_data_title,
+    .app_result_title,
+    body.app_mode_en .app_data_title,
+    body.app_mode_en .app_result_title{
+        padding: 20px 20px 0 20px;
+    }
+}
+.app_data_value,
+.app_result_row{
+    padding: 20px 20px 20px 40px;
+    display: block;
+}
+body.app_mode_en .app_data_value,
+body.app_mode_en .app_result_row{
+    padding: 20px 20px 20px 20px;
+}
+.app_summary,
+.app_summary_box{
+    text-align: center;
+}
+.app_summary_title,
+.app_summary_value{
+    display: block;
+}
+.app_summary_title{
+    margin-bottom: 8px;
+}
+.app_summary_value{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.app_tab_items{
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 920px) {
+    .app_tab_items{
+        flex-wrap: wrap;
+    }
+    .app_tab_items .app_tab_item{
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+.app_tab_items .app_tab_item{
+    font-weight: bold;
+    cursor: pointer;
+}
+.app_tab_bodies{
+    display: block;
+}
+.app_tab_body{
+    display: none;
+    padding-bottom: 20px;
+}
+.app_tab_body.active{
+    display: block;
+}
+
+.app_chart{
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.app_chart canvas{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

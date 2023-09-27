@@ -1,0 +1,1199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="expires" content="Sun, 01 Jan 2014 00:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/app.css?v=0.0.7" rel="stylesheet">
+
+    <title>Explorer Panel</title>
+</head>
+<body class="app_mode_en"> <!-- app_mode_en   app_mode_night  app_mode_miniside -->
+
+    <div class="app_container app_clear">
+        <aside class="app_aside">
+            <div class="app_aside_control app_clear">
+                <a href="" id="AppToggleAside">
+                    <span class="app_icon">
+                        <img class="day" src="assets/icon/Dark/Right.svg">
+                        <img class="night" src="assets/icon/Dark/Right.svg">
+                    </span>
+                </a>
+            </div>
+            <div class="app_aside_networks">
+                <a href="" class="active"><span>Mainnet</span></a>
+                <a href=""><span>Testnet</a>
+                <a href=""><span>Stagenet</span></a>
+            </div>
+            <div class="app_aside_menu">
+                <ul>
+                    <li class="active">
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/White/Home.svg">
+                                <img class="night" src="assets/icon/White/Home.svg">
+                            </span>
+                            <b>Home</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/White/Services.svg">
+                                <img class="night" src="assets/icon/White/Services.svg">
+                            </span>
+                            <b>Blocks</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/Dark/Services.svg">
+                                <img class="night" src="assets/icon/White/Services.svg">
+                            </span>
+                            <b>Peers</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/Dark/Services.svg">
+                                <img class="night" src="assets/icon/White/Services.svg">
+                            </span>
+                            <b>Nodes</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/Dark/Settings.svg">
+                                <img class="night" src="assets/icon/White/Settings.svg">
+                            </span>
+                            <b>Settings</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/Dark/Guide.svg">
+                                <img class="night" src="assets/icon/White/Guide.svg">
+                            </span>
+                            <b>Guide</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="app_icon">
+                                <img class="day" src="assets/icon/Dark/Exite.svg">
+                                <img class="night" src="assets/icon/White/Exite.svg">
+                            </span>
+                            <b>Exit</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <main class="app_main">
+            <nav class="app_nav app_clear">
+                <div class="search">
+                    <span class="app_icon">
+                        <img class="day" src="assets/icon/White/Search.svg">
+                        <img class="night" src="assets/icon/Dark/Search.svg">
+                    </span>
+                    <input class="form-control" placeholder="Search between data, addresses, transactions, blocks and ...">
+                </div>
+                <div class="control app_clear">
+                    <a href="" class="ctrl" id="act_change_light">
+                        <span class="app_icon">
+                            <img class="day" src="assets/icon/White/Light.svg">
+                            <img class="night" src="assets/icon/White/Light.svg">
+                        </span>
+                    </a>
+                    <a href="" class="ctrl">
+                        <span class="app_icon">
+                            <img class="day" src="assets/icon/White/Notifications.svg">
+                            <img class="night" src="assets/icon/Dark/Notifications.svg">
+                        </span>
+                        <small class="position-absolute top-0 end-50 translate-middle badge rounded-pill bg-danger">2</small>
+                    </a>
+                    <div class="language app_clear">
+                        <a href="index.html" class="app_clear">
+                            <span class="farsi">فا</span>
+                            <span class="active">EN</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Home</h1>
+                    </header>
+                    <section class="app_body_elements">
+                        <div class="element">
+                            <div class="element_button element_stats">
+                                <b>Increase Rate: </b>
+                                <span>%8.03+</span>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="element_button element_stats">
+                                <b>Total: </b>
+                                <span>123,456</span>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="element_button element_select" data-target="#header_select_1">
+                                <i class="app_icon">
+                                    <img class="day" src="assets/icon/White/Filter.svg">
+                                    <img class="night" src="assets/icon/Dark/Filter.svg">
+                                </i>    
+                                <b>Filter by: </b>
+                                <span></span>
+                                <strong class="app_icon">
+                                    <img class="day" src="assets/icon/White/Down.svg">
+                                    <img class="night" src="assets/icon/Dark/Down.svg">
+                                </strong>
+                            </div>
+                            <div class="element_options" data-target="#header_select_1"></div>
+                            <select class="d-none" id="header_select_1">
+                                <option value="">Most Recent</option>
+                                <option value="new">Most New</option>
+                                <option value="old">Most Old</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <div class="app_forty_padding">
+                    <div class="app_chart">
+                        <canvas id="AppChartCanvas"></canvas>
+                    </div>
+                </div>
+                <div class="app_list">
+                    <table class="table table-responsive-stack" id="AppTable1">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-light app_list_btn text-primary">Read More</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-light app_list_btn text-primary">Read More</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-light app_list_btn text-primary">Read More</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <a href="" class="btn btn-light app_list_btn text-primary">Read More</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+
+
+            <div class="app_margin_down"></div>
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Blocks</h1>
+                    </header>
+                    <section class="app_body_elements">
+                        <div class="element">
+                            <div class="element_button element_stats">
+                                <b>Total No. Blocks: </b>
+                                <span>123,456</span>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="element_button element_select" data-target="#header_select_2">
+                                <i class="app_icon">
+                                    <img class="day" src="assets/icon/White/Filter.svg">
+                                    <img class="night" src="assets/icon/Dark/Filter.svg">
+                                </i>    
+                                <b>Filter by: </b>
+                                <span></span>
+                                <strong class="app_icon">
+                                    <img class="day" src="assets/icon/White/Down.svg">
+                                    <img class="night" src="assets/icon/Dark/Down.svg">
+                                </strong>
+                            </div>
+                            <div class="element_options" data-target="#header_select_2"></div>
+                            <select class="d-none" id="header_select_2">
+                                <option value="">Most Recent</option>
+                                <option value="new">Most New</option>
+                                <option value="old">Most Old</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <div class="app_list">
+                    <table class="table table-responsive-stack" id="AppTable2">
+                        <thead>
+                            <tr>
+                                <th>Block Number</th>
+                                <th>Base Target</th>
+                                <th>Time</th>
+                                <th>Generator / ID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <b>48</b>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <b>48</b>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <b>48</b>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <b>48</b>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center">
+                                        <b>48</b>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center">
+                                        <div><span>11.06.2021</span></div>
+                                        <div><span>19:47:33</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Block <span class="text-primary">2628753</span> contains 56 transactions</div>
+                                        <div class="text-ultramuted">ID: ALWuJW3QS2XM4mPuDP2Tu3iW4B...</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+
+            <div class="app_margin_down"></div>
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Peers</h1>
+                    </header>
+                    <section class="app_body_elements">
+                        <div class="element">
+                            <div class="element_button element_stats">
+                                <b>Total No. Peers: </b>
+                                <span>123,456</span>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="element_button element_select" data-target="#header_select_3">
+                                <i class="app_icon">
+                                    <img class="day" src="assets/icon/White/Filter.svg">
+                                    <img class="night" src="assets/icon/Dark/Filter.svg">
+                                </i>    
+                                <b>Filter by: </b>
+                                <span></span>
+                                <strong class="app_icon">
+                                    <img class="day" src="assets/icon/White/Down.svg">
+                                    <img class="night" src="assets/icon/Dark/Down.svg">
+                                </strong>
+                            </div>
+                            <div class="element_options" data-target="#header_select_3"></div>
+                            <select class="d-none" id="header_select_3">
+                                <option value="">Most Recent</option>
+                                <option value="new">Most New</option>
+                                <option value="old">Most Old</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <div class="app_list">
+                    <table class="table table-responsive-stack" id="AppTable3">
+                        <thead>
+                            <tr>
+                                <th>Address</th>
+                                <th>Declared Address</th>
+                                <th>Node</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Node-<span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Node-<span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Node-<span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>95.217.34.59:40666/</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <div class="text-bold">Node-<span class="text-primary">2628753</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+            <div class="app_margin_down"></div>
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Nodes</h1>
+                    </header>
+                    <section class="app_body_elements">
+                        <div class="element">
+                            <div class="element_button element_stats">
+                                <b>Total No. Nodes: </b>
+                                <span>123,456</span>
+                            </div>
+                        </div>
+                        <div class="element">
+                            <div class="element_button element_select" data-target="#header_select_4">
+                                <i class="app_icon">
+                                    <img class="day" src="assets/icon/White/Filter.svg">
+                                    <img class="night" src="assets/icon/Dark/Filter.svg">
+                                </i>    
+                                <b>Filter by: </b>
+                                <span></span>
+                                <strong class="app_icon">
+                                    <img class="day" src="assets/icon/White/Down.svg">
+                                    <img class="night" src="assets/icon/Dark/Down.svg">
+                                </strong>
+                            </div>
+                            <div class="element_options" data-target="#header_select_4"></div>
+                            <select class="d-none" id="header_select_4">
+                                <option value="">Most Recent</option>
+                                <option value="new">Most New</option>
+                                <option value="old">Most Old</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <div class="app_list">
+                    <table class="table table-responsive-stack" id="AppTable4">
+                        <thead>
+                            <tr>
+                                <th>Node</th>
+                                <th>Base Target</th>
+                                <th>Current Height</th>
+                                <th>Maintainer</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr text-bold">
+                                        <a href=" https://aratoo.ir"> https://aratoo.ir</a>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>60</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>2628829</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>Aratoo</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr text-bold">
+                                        <a href=" https://aratoo.ir"> https://aratoo.ir</a>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>60</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>2628829</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>Aratoo</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr text-bold">
+                                        <a href=" https://aratoo.ir"> https://aratoo.ir</a>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>60</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>2628829</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>Aratoo</b>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr text-bold">
+                                        <a href=" https://aratoo.ir"> https://aratoo.ir</a>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>60</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>2628829</b>
+                                    </div>
+                                </td>
+                                <td class="text-allcenter">
+                                    <div class="text-center text-ltr">
+                                        <b>Aratoo</b>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+
+
+            
+            <div class="app_margin_down"></div>
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Transactions</h1>
+                    </header>
+                    <section class="app_body_elements"></section>
+                </div>
+                <div class="app_data app_bottom_border">
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>ID</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>39AGFmSvuULqSpaWiFJub5jHtuh6tggayncikDYSkoUK</span> <button class="btn btn-light app_data_btn">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Type</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Status</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>Succeed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Time</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>10.06.2021, 15:26:43</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Block</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>2628887</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Address</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>3P9ZegsKUtsEpdRPNVrMH7nHEEqY5MrmjDp</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Sender</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>abcdefghij</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Reciever</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>abcdefghij</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Fee</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>0.005 Akino</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Proofs</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>5r1ffPadNiVJkKY43xLcZ7LLfvs2xtsdTtrsL49Ba1GJyb6VZzeW3nV3qqf1WAxkEEdNeLgX7rF2wa</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app_result">
+                    <div class="row">
+                        <div class="col-md-2 text-right d-flex align-items-center">
+                            <b class="app_result_title">Results</b>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="app_result_row">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>IntegerEntry</span>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>key: bullCollateral</span>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>value: 147980309112</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app_result_row">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>IntegerEntry</span>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>key: bullCollateral</span>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>value: 147980309112</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="app_result_row">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>IntegerEntry</span>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>key: bullCollateral</span>
+                                    </div>
+                                    <div class="col-sm-12 col-md-3">
+                                        <span>value: 147980309112</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+            
+            <div class="app_margin_down"></div>
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Address</h1>
+                    </header>
+                    <section class="app_body_elements"></section>
+                </div>
+                <div class="app_data">
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Address</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>39AGFmSvuULqSpaWiFJub5jHtuh6tggayncikDYSkoUK</span> <button class="btn btn-light app_data_btn">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row"></div>
+                </div>
+                <div class="app_forty_padding">
+                    <div class="app_summary">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="app_summary_box">
+                                    <b class="app_summary_title">Regular Balance</b>
+                                    <span class="app_summary_value">31.447</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="app_summary_box">
+                                    <b class="app_summary_title">Generation Balance</b>
+                                    <span class="app_summary_value">31.447</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="app_summary_box">
+                                    <b class="app_summary_title">Available Balance</b>
+                                    <span class="app_summary_value">31.447</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="app_summary_box">
+                                    <b class="app_summary_title">Effective Balance</b>
+                                    <span class="app_summary_value">31.447</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app_tab" id="AppTabAddress">
+                    <div class="app_tab_items app_forty_padding app_zerotop_padding">
+                        <div class="app_tab_item active" data-target="#AppTabAddress" data-item="transaction">Transactions</div>
+                        <div class="app_tab_item" data-target="#AppTabAddress" data-item="names">Aliases</div>
+                        <div class="app_tab_item" data-target="#AppTabAddress" data-item="assets">Assets</div>
+                        <div class="app_tab_item" data-target="#AppTabAddress" data-item="tokens">Non-fungible tokens</div>
+                        <div class="app_tab_item" data-target="#AppTabAddress" data-item="data">Data</div>
+                        <div class="app_tab_item" data-target="#AppTabAddress" data-item="script">Script</div>
+                    </div>
+                    <div class="app_tab_bodies">
+                        <div class="app_tab_body active" data-item="transaction">
+                            <div class="app_list">
+                                <table class="table table-responsive-stack" id="AppTable5">
+                                    <thead>
+                                        <tr>
+                                            <th>Address</th>
+                                            <th>Address</th>
+                                            <th>Address</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-allcenter">
+                                                <div class="text-center text-ltr">
+                                                    <b>95.217.34.59:40666/</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-allcenter">
+                                                <div class="text-center text-ltr">
+                                                    <b>95.217.34.59:40666/</b>
+                                                </div>
+                                            </td>
+                                            <td class="text-allcenter">
+                                                <div class="text-center text-ltr">
+                                                    <div class="text-bold">Node-<span class="text-primary">2628753</span></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="app_tab_body" data-item="names">
+                            <div class="app_forty_padding app_zerotop_padding">
+                                names
+                            </div>
+                        </div>
+                        <div class="app_tab_body" data-item="assets">
+                            <div class="app_forty_padding app_zerotop_padding">
+                            assets
+                            </div>
+                        </div>
+                        <div class="app_tab_body" data-item="tokens">
+                            <div class="app_forty_padding app_zerotop_padding">
+                            tokens
+                            </div>
+                        </div>
+                        <div class="app_tab_body" data-item="data">
+                            <div class="app_forty_padding app_zerotop_padding">
+                            data
+                            </div>
+                        </div>
+                        <div class="app_tab_body" data-item="script">
+                            <div class="app_forty_padding app_zerotop_padding">
+                                <div class="app_box">
+                                    asd
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <div class="app_margin_down"></div>
+
+
+            <article class="app_body">
+                <div class="app_forty_padding">
+                    <header class="app_body_header">
+                        <h1 class="title">Block</h1>
+                    </header>
+                    <section class="app_body_elements"></section>
+                </div>
+                <div class="app_data">
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Block Number</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>2628887</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Version</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>16</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Time</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>1400/02/23 - 19:47:33</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Parent Block</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>C5S4aPX9kuYXvfpn7sjaQfTsJRDcSHf5dRKtExRy4caJ</span> <button class="btn btn-light app_data_btn">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Generator</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>3P2pTpQhGbZrJXATKr75A1uZjeTrb4PHMYf</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Signature</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>4MM7YBjkHQgay5MbJ1jvkxBCmBBpCVyLNuYKrcLRDSYq63kUChK8wW9p...</span> <button class="btn btn-light app_data_btn">Copy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>ID</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>E6hNiuAD7RbBLVZEPD1Q23PuyfCbRLquCd1JPpdk1KR4</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Fee</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>0.005 Akino</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>Size</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>16248 bytes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app_data_row">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="app_data_title">
+                                    <b>VRF</b>
+                                </div>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="app_data_value">
+                                    <span>7HPDJb7d4TK9ZUnWQ29Tcvs3W6ubhzkZAQdcdUbaMjBx</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+    </div>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/app.js?v=0.0.7"></script>
+</body>
+</html>
