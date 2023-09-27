@@ -1,0 +1,448 @@
+@font-face {
+  font-family: Samim;
+  src: url('../fonts/samim/Samim-FD.eot');
+  src: url('Samim.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/samim/Samim-FD.woff') format('woff'),
+       url('../fonts/samim/Samim-FD.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Samim;
+  src: url('../fonts/samim/Samim-Bold-FD.eot');
+  src: url('../fonts/samim/Samim-Bold-FD.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/samim/Samim-Bold-FD.woff') format('woff'),
+       url('../fonts/samim/Samim-Bold-FD.ttf') format('truetype');
+  font-weight: bold;
+}
+body{
+    font-family: Samim;
+    background-color: #f2f1f1;
+    direction: rtl;
+    text-align: right;
+    color: #5D5E5E;
+    font-size: 100%;
+    overflow-x: hidden
+}
+a{
+    text-decoration: none;
+    color: #51A49D;
+}
+a:hover{
+    text-decoration: none;
+    color: #3d817b;
+}
+aside#RajmanAppsSide{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background-color: #232D37;
+    -webkit-box-shadow:inset 1px 0 0 0 #1e262f;
+    box-shadow:inset 1px 0 0 0 #1e262f;
+    overflow-y: auto;
+    color: #fff;
+    z-index: 9999;
+}
+aside#RajmanAppsSide #RajmanAppsSideHide{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    color: #58728b;
+    border: 0;
+    outline: none;
+    font-size: 280%;
+    padding: 15px 20px 2px 20px;
+    display: none;
+    cursor: pointer;
+}
+aside#RajmanAppsSide #RajmanAppsSideHide:hover{
+    background-color: #1d252c;
+}
+aside#RajmanAppsSide.hide{
+    display: none;
+}
+aside#RajmanAppsSide.hide ~ main#RajmanAppsMain{
+    margin-right: 0;
+}
+aside#RajmanAppsSide.resaponsive > #RajmanAppsSideHide{
+    display: block;
+}
+aside#RajmanAppsSide .logo{
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+aside#RajmanAppsSide .logo img{
+    max-width: 30%;
+}
+aside#RajmanAppsSide .logo img:hover{
+    opacity: 0.8;
+}
+aside#RajmanAppsSide menu{
+    display: block;
+    margin: 0;
+    padding: 20px;
+}
+aside#RajmanAppsSide menu:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+aside#RajmanAppsSide menu a{
+    float: right;
+    display: block;
+    width: 27%;
+    margin: 0 3% 10px 3%;
+    text-align: center;
+    padding: 20px 3px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+aside#RajmanAppsSide menu a:hover,
+aside#RajmanAppsSide menu a.active{
+    background-color: #243443;
+    color: #51A49D;
+}
+aside#RajmanAppsSide menu a span{
+    display: block;
+    font-size: 200%;
+}
+aside#RajmanAppsSide menu a b{
+    display: block;
+    font-size: 85%;
+    margin-top: 10px;
+    font-weight: normal;
+}
+aside#RajmanAppsSide .profile{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 85.5%;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    color: #51A49D;
+}
+aside#RajmanAppsSide .profile b{
+    cursor: default;
+    font-size: 120%;
+    display: block;
+    margin-bottom: 5px;
+}
+aside#RajmanAppsSide .profile span{
+    display: block;
+    cursor: default;
+}
+aside#RajmanAppsSide .profile span em{
+    font-style: normal;
+}
+aside#RajmanAppsSide .profile span i{
+    font-style: normal;
+}
+#RajmanToggleNightMode{
+    color: #5CB6D8 !important;
+}
+#RajmanToggleNightMode #RajmanToggleNightMode_isNight{
+    display: none;
+}
+#RajmanToggleNightMode.night #RajmanToggleNightMode_isNight{
+    display: block;
+}
+#RajmanToggleNightMode.night #RajmanToggleNightMode_isDay{
+    display: none;
+}
+#RajmanToggleNightMode.night{
+    color: #E1E39E !important;
+}
+main#RajmanAppsMain{
+    margin-right: 25%;
+    position: relative;
+}
+main#RajmanAppsMain header#RajmanAppsMainHeader{
+    background-color: #fafafa;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 9998;
+}
+main#RajmanAppsMain header#RajmanAppsMainHeader:after{
+    display: block;
+    clear: both;
+    content: "";
+}
+main#RajmanAppsMain header#RajmanAppsMainHeader h1{
+    font-size: 150%;
+    font-weight: bold;
+    color: #8d8d8d;
+    cursor: default;
+    float: right;
+    padding: 10px 15px 4px 15px;
+}
+main#RajmanAppsMain header#RajmanAppsMainHeader button#RajmanToggleAppSide{
+    float: right;
+    border: 0;
+    outline: none;
+    padding: 9px 15px;
+    font-size: 150%;
+    cursor: pointer;
+    color: #6a6a6a;
+    background-color: transparent;
+}
+main#RajmanAppsMain header#RajmanAppsMainHeader button#RajmanToggleAppSide:hover{
+    background-color: #e3e3e3;
+}
+main.RajmanAppsMainBody{
+    font-size: 100%;
+}
+article.RajmanWidget{
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    margin: 10px 10px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+/* TypoGraphy */
+.RajmanAppsMainBody h1,
+.RajmanAppsMainBody .h1{
+    font-size: 190%;
+    font-weight: bold;
+}
+.RajmanAppsMainBody h2,
+.RajmanAppsMainBody .h2{
+    font-size: 180%;
+    font-weight: bold;
+}
+.RajmanAppsMainBody h3,
+.RajmanAppsMainBody .h3{
+    font-size: 170%;
+    font-weight: bold;
+}
+.RajmanAppsMainBody h4,
+.RajmanAppsMainBody .h4{
+    font-size: 160%;
+    font-weight: bold;
+}
+.RajmanAppsMainBody h5,
+.RajmanAppsMainBody .h5{
+    font-size: 150%;
+    font-weight: bold;
+}
+.RajmanAppsMainBody h6,
+.RajmanAppsMainBody .h6{
+    font-size: 140%;
+    font-weight: bold;
+}
+.RajmanAppsMainBody ul,
+.RajmanAppsMainBody ol{
+    margin: 0;
+    padding-right: 20px;
+}
+.RajmanAppsMainBody ul ul,
+.RajmanAppsMainBody ul ol,
+.RajmanAppsMainBody ol ol,
+.RajmanAppsMainBody ol ul{
+    padding-right: 40px;
+}
+.RajmanAppsMainBody del{
+    color: #d45858;
+}
+.RajmanAppsMainBody blockquote.blockquote{
+    background-color: #f8f8f8;
+    border-right: 10px solid #d1d1d1;
+    padding: 20px;
+}
+.RajmanAppsMainBody code{
+    color: #379585;
+}
+.RajmanAppsMainBody kbd{
+    direction: ltr;
+    text-align: left;
+    cursor: default;
+    background-color: #232D37;
+}
+.RajmanAppsMainBody table.table{
+    border: 1px solid #D1D1D1;
+}
+.RajmanAppsMainBody table.table thead{
+    background-color: #F8F8F8;
+    border: 0;
+}
+.RajmanAppsMainBody .alert{
+    border: 0;
+}
+.RajmanAppsMainBody .alert.alert-dismissible{
+    padding-right: 20px;
+}
+.RajmanAppsMainBody .alert button{
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.RajmanAppsMainBody button.btn{
+    border: 0;
+}
+.RajmanAppsMainBody button.btn:focus,
+.RajmanAppsMainBody input:focus,
+.RajmanAppsMainBody select:focus,
+.RajmanAppsMainBody textarea:focus,
+.RajmanAppsMainBody .custom-checkbox .custom-control-label::before,
+.RajmanAppsMainBody .custom-radio .custom-control-label::before{
+    -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.RajmanAppsMainBody .alert-primary,
+.RajmanAppsMainBody .alert-light,
+.RajmanAppsMainBody .alert-secondary,
+.RajmanAppsMainBody .badge-primary,
+.RajmanAppsMainBody .badge-primary:hover,
+.RajmanAppsMainBody .badge-secondary,
+.RajmanAppsMainBody .badge-secondary:hover,
+.RajmanAppsMainBody .badge-light,
+.RajmanAppsMainBody .badge-light:hover,
+.RajmanAppsMainBody .btn-primary,
+.RajmanAppsMainBody .btn-secondary,
+.RajmanAppsMainBody .btn-light{
+    background-color: #ebebeb;
+    color: #6d6d6d;
+}
+.RajmanAppsMainBody .btn-primary:hover,
+.RajmanAppsMainBody .btn-primary:focus,
+.RajmanAppsMainBody .btn-secondary:hover,
+.RajmanAppsMainBody .btn-secondary:focus,
+.RajmanAppsMainBody .btn-light:hover,
+.RajmanAppsMainBody .btn-light:focus{
+    background-color: #d3d3d3 !important;
+    color: #6d6d6d;
+}
+.RajmanAppsMainBody .alert-success,
+.RajmanAppsMainBody .badge-success,
+.RajmanAppsMainBody .badge-success:hover,
+.RajmanAppsMainBody .btn-success{
+    background-color: #51A49D;
+    color: #ffffff;
+}
+.RajmanAppsMainBody .btn-success:hover,
+.RajmanAppsMainBody .btn-success:focus{
+    background-color: #3c7b75 !important;
+    color: #ffffff;
+}
+.RajmanAppsMainBody .alert-danger,
+.RajmanAppsMainBody .badge-danger,
+.RajmanAppsMainBody .btn-danger{
+    background-color: #d45858;
+    color: #ffffff;
+}
+.RajmanAppsMainBody .btn-danger:hover,
+.RajmanAppsMainBody .btn-danger:focus{
+    background-color: #b24949 !important;
+    color: #ffffff;
+}
+.RajmanAppsMainBody .alert-warning,
+.RajmanAppsMainBody .badge-warning,
+.RajmanAppsMainBody .btn-warning{
+    background-color: #e1e39e;
+    color: #5b5d12;
+}
+.RajmanAppsMainBody .btn-warning:hover,
+.RajmanAppsMainBody .btn-warning:focus{
+    background-color: #b2b475 !important;
+    color: #5b5d12;
+}
+.RajmanAppsMainBody .alert-info,
+.RajmanAppsMainBody .badge-info,
+.RajmanAppsMainBody .btn-info{
+    background-color: #5cb6d8;
+    color: #fcfcfc;
+}
+.RajmanAppsMainBody .btn-info:hover,
+.RajmanAppsMainBody .btn-info:focus{
+    background-color: #4a8fa8 !important;
+    color: #fcfcfc;
+}
+.RajmanAppsMainBody .alert-dark,
+.RajmanAppsMainBody .badge-dark,
+.RajmanAppsMainBody .btn-dark{
+    background-color: #232D37;
+    color: #ffffff;
+}
+.RajmanAppsMainBody .btn-dark:hover,
+.RajmanAppsMainBody .btn-dark:focus{
+    background-color: #192027 !important;
+    color: #ffffff;
+}
+.RajmanAppsMainBody .form-group{
+    margin-bottom: 20px;
+}
+.RajmanAppsMainBody input:focus,
+.RajmanAppsMainBody select:focus,
+.RajmanAppsMainBody textarea:focus{
+    border-color: #51A49D;
+}
+.RajmanAppsMainBody .custom-checkbox .custom-control-label,
+.RajmanAppsMainBody .custom-radio .custom-control-label{
+    padding-right: 20px;
+    cursor: pointer;
+}
+.RajmanAppsMainBody .custom-checkbox .custom-control-label::before,
+.RajmanAppsMainBody .custom-checkbox .custom-control-label::after,
+.RajmanAppsMainBody .custom-radio .custom-control-label::before,
+.RajmanAppsMainBody .custom-radio .custom-control-label::after{
+    right: 0;
+}
+.RajmanAppsMainBody .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.RajmanAppsMainBody .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #51A49D;
+}
+
+.RajmanAppsMainBody .custom-control-inline {
+    margin-right: 0;
+}
+.RajmanAppsMainBody .custom-file-label{
+    padding-right: 90px; 
+}
+
+
+/* Transition */
+a,
+aside#RajmanAppsSide .logo img,
+main#RajmanAppsMain header#RajmanAppsMainHeader button#RajmanToggleAppSide,
+aside#RajmanAppsSide #RajmanAppsSideHide{
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1920px) {
+    aside#RajmanAppsSide menu a{
+        width: 29%;
+        margin: 0 2% 10px 2%;
+        padding: 10px 0;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    aside#RajmanAppsSide{
+        width: 350px;
+    }
+    aside#RajmanAppsSide menu a{
+        width: 29%;
+        margin: 0 2% 10px 2%;
+        padding: 10px 0;
+    }
+}
+@media only screen and (max-width: 500px) {
+    aside#RajmanAppsSide{
+        width: 100%;
+    }
+}

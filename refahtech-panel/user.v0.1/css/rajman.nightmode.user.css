@@ -1,0 +1,93 @@
+body.nightmode{
+    background-color: #12181d;
+}
+.nightmode main#RajmanAppsMain header#RajmanAppsMainHeader{
+    background-color: #1c242c;
+}
+.nightmode main#RajmanAppsMain header#RajmanAppsMainHeader h1{
+    color: #c1cdd9;
+}
+.nightmode main#RajmanAppsMain header#RajmanAppsMainHeader button#RajmanToggleAppSide{
+    color: #c1cdd9;
+}
+.nightmode main#RajmanAppsMain header#RajmanAppsMainHeader button#RajmanToggleAppSide:hover{
+    background-color: #182027;
+}
+.nightmode article.RajmanWidget{
+    background-color: #1C242C;
+    border-color: #181f26;
+    color: #fff;
+}
+.nightmode .RajmanAppsMainBody blockquote.blockquote{
+    border-right: 10px solid #171d24;
+    background-color: #1a2027;
+}
+.nightmode .RajmanAppsMainBody table.table{
+    border-color: #171d24;
+}
+.nightmode .RajmanAppsMainBody table.table thead{
+    background-color: #1a2027;
+}
+.nightmode .RajmanAppsMainBody table.table th,
+.nightmode .RajmanAppsMainBody table.table td{
+    border: 0;
+}
+.nightmode .RajmanAppsMainBody table.table tr{
+    border-bottom: 1px solid #1a2027;
+}
+.nightmode .RajmanAppsMainBody kbd{
+    background-color: #1A2027;
+}
+.nightmode .RajmanAppsMainBody .alert-primary,
+.nightmode .RajmanAppsMainBody .alert-light,
+.nightmode .RajmanAppsMainBody .alert-secondary,
+.nightmode .RajmanAppsMainBody .badge-primary,
+.nightmode .RajmanAppsMainBody .badge-primary:hover,
+.nightmode .RajmanAppsMainBody .badge-secondary,
+.nightmode .RajmanAppsMainBody .badge-secondary:hover,
+.nightmode .RajmanAppsMainBody .badge-light,
+.nightmode .RajmanAppsMainBody .badge-light:hover,
+.nightmode .RajmanAppsMainBody .btn-primary,
+.nightmode .RajmanAppsMainBody .btn-secondary,
+.nightmode .RajmanAppsMainBody .btn-light{
+    background-color: #202b36;
+    color: #6286aa;
+}
+.nightmode .RajmanAppsMainBody .btn-primary:hover,
+.nightmode .RajmanAppsMainBody .btn-primary:focus,
+.nightmode .RajmanAppsMainBody .btn-secondary:hover,
+.nightmode .RajmanAppsMainBody .btn-secondary:focus,
+.nightmode .RajmanAppsMainBody .btn-light:hover,
+.nightmode .RajmanAppsMainBody .btn-light:focus{
+    background-color: #141a21 !important;
+    color: #6286aa;
+}
+.nightmode .RajmanAppsMainBody .form-control,
+.nightmode .RajmanAppsMainBody .custom-file-label{
+    background-color: #26313b;
+    border-color: #1a2127; 
+    color: #fff;
+}
+.nightmode .RajmanAppsMainBody .form-control:focus{
+    border-color: #319382; 
+}
+.nightmode .RajmanAppsMainBody .custom-file-label::after,
+.nightmode .RajmanAppsMainBody .input-group-text{
+    background-color: #12181D;
+    border-color: #12181D;
+    content: "انتخاب";
+    color: #fff;
+}
+
+.nightmode .RajmanAppsMainBody .custom-checkbox .custom-control-input ~ .custom-control-label::before,
+.nightmode .RajmanAppsMainBody .custom-radio .custom-control-input ~ .custom-control-label::before{
+    background-color: #2b3540;
+}
+.nightmode .RajmanAppsMainBody .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+.nightmode .RajmanAppsMainBody .custom-radio .custom-control-input:checked ~ .custom-control-label::before{
+    background-color: #4E9F97;
+}
+.nightmode .RajmanAppsMainBody .custom-checkbox .custom-control-input:disabled ~ .custom-control-label::before,
+.nightmode .RajmanAppsMainBody .custom-radio .custom-control-input:disabled ~ .custom-control-label::before{
+    background-color: #242d38 !important;
+}
