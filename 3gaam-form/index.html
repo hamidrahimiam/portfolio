@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3gaam front-end</title>
+    <link rel="stylesheet" type="text/css" href="assets/plugins/3gaam-icons/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/yekan/yekan.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <!-- <link rel="stylesheet/less" type="text/css" href="assets/less/app.less">
+    <script src="//cdn.jsdelivr.net/npm/less@4.1.1" ></script> -->
+</head>
+<body>
+    <nav class="app_nav">
+        <div class="controls">
+            <div class="control">
+                <button class="btn" id="togggleAside"><i class="icon-fas-fa-bars"></i></button>
+            </div>
+        </div>
+        <div class="logo">
+            <a href=""><b>3 گام</b></a>
+        </div>
+        <div class="access">
+            <ul>
+                <li>
+                    <a href="">ورود</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="app_prog" data-progress="0">
+        <ul>
+            <li class="done">
+                <span><i></i></span>
+                <b>آزمون و رشته</b>
+            </li>
+            <li class="done">
+                <span><i></i></span>
+                <b>کارنامه</b>
+            </li>
+            <li class="active">
+                <span><i></i></span>
+                <b>اعلام احتمالات</b>
+            </li>
+            <li class="">
+                <span><i></i></span>
+                <b>چیدمان پیشنهادی</b>
+            </li>
+            <li class="">
+                <span><i></i></span>
+                <b>مشاور مجازی</b>
+            </li>
+            <li class="">
+                <span><i></i></span>
+                <b>فرم نهایی</b>
+            </li>
+        </ul>
+        <div class="prog"></div>
+    </nav>
+    <main class="app_main">
+        <div class="wrap">
+            <article class="app_body">
+                <div class="inner-wrap">
+                    <div class="app_alert">
+                        <i class="icon-fas-fa-book-open"></i>
+                        <b>شما در حدود 981 کد رشته دفترچه سنجش قبول می شوید. برای مشاهده، یکی از طرح های زیر را انتخاب کنید</b>
+                    </div>
+
+                    <div class="app_plans">
+                        <div class="app_title"><b>طرح‌ها</b></div>
+                        <div class="plans">
+                            <div class="plan selected">
+                                <div class="title">
+                                    <b>برنزی</b>
+                                    <span>چند تا از قبولی هات رو ببین</span>
+                                </div>
+                                <div class="items">
+                                    <ul>
+                                        <li><span>مدت نامحدود</span></li>
+                                        <li><span>جستجوی پیشرفته</span></li>
+                                        <li><span>اعلام احتمالات(400 تا)</span></li>
+                                    </ul>
+                                </div>
+                                <div class="pricing">
+                                    <o><span>50،000</span> <small>تومان</small></o>
+                                    <b><span>43،000</span> <small>تومان</small></b>
+                                    <div class="select">
+                                        <button class="btn">انتخاب شد</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan">
+                                <div class="title">
+                                    <b>نقره ای</b>
+                                    <span>همه قبولی هات رو ببین، راحت و دقیق بچین</span>
+                                </div>
+                                <div class="items">
+                                    <ul>
+                                        <li><span>مدت نامحدود</span></li>
+                                        <li><span>جستجوی پیشرفته</span></li>
+                                        <li><span>اعلام احتمالات(400 تا)</span></li>
+                                        <li><span>چیدمان پیشنهادی</span></li>
+                                        <li><span>کد رشته/دانشگاه</span></li>
+                                    </ul>
+                                </div>
+                                <div class="pricing">
+                                    <o><span>50،000</span> <small>تومان</small></o>
+                                    <b><span>43،000</span> <small>تومان</small></b>
+                                    <div class="select">
+                                        <button class="btn">انتخاب طرح</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="plan">
+                                <div class="title">
+                                    <b>طلایی</b>
+                                    <span>همه قبولی هات رو ببین، با استعداد سنجی لیست چیده شده رو دقیق تری بگیر</span>
+                                </div>
+                                <div class="items">
+                                    <ul>
+                                        <li><span>مدت نامحدود</span></li>
+                                        <li><span>جستجوی پیشرفته</span></li>
+                                        <li><span>اعلام احتمالات(400 تا)</span></li>
+                                        <li><span>چیدمان پیشنهادی</span></li>
+                                        <li><span>کد رشته/دانشگاه</span></li>
+                                        <li><span>استعداد سنجی</span></li>
+                                        <li><span>مشاور مجازی</span></li>
+                                    </ul>
+                                </div>
+                                <div class="pricing">
+                                    <o><span>50،000</span> <small>تومان</small></o>
+                                    <b><span>43،000</span> <small>تومان</small></b>
+                                    <div class="select">
+                                        <button class="btn">انتخاب طرح</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app_more_details" id="BoxPlansMoreDetails">
+                        <div class="app_title see_more"><b id="ActionTogglePlansMoreDetails" data-target="#BoxPlansMoreDetails"><i class="icon-far-fa-chevron-down"></i> <span>معرفی امکانات</span></b></div>
+                        <div class="items">
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-far-fa-hourglass"></i>
+                                </div>
+                                <div class="content">
+                                    <b>مدت نامحدود</b>
+                                    <span>ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-fas-fa-file-search"></i>
+                                </div>
+                                <div class="content">
+                                    <b>جستجوی پیشرفته</b>
+                                    <span>... جستجوی راحت در همه دانشگاه های یک رشته و یا همه روزانه های یک استان و یا </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-far-fa-bars"></i>
+                                </div>
+                                <div class="content">
+                                    <b>لیست احتمالات</b>
+                                    <span>مشخص کردن امکان قبولی در کد رشته در سه سطح کم احتمال، خوشبینانه و پراحتمال</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-fas-fa-stream"></i>
+                                </div>
+                                <div class="content">
+                                    <b>چیدمان پیشنهادی</b>
+                                    <span>ارائه لیست چیده شدهع انتخاب های شما در فرم 150 تایی سنجش به ترتیب اولویت قبولی</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-fas-fa-book-open"></i>
+                                </div>
+                                <div class="content">
+                                    <b>کد رشته/دانشگاه</b>
+                                    <span>ارائه کدرشته دانشگاه برای وارد کردن در سامانه سنجش</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-far-fa-head-side-brain"></i>
+                                </div>
+                                <div class="content">
+                                    <b>استعدادسنجی</b>
+                                    <span>برگزاری آنلاین آزمون استعداد سنجی هالند و امتیازدهی به رشته ها براساس استعداد شما</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="icon-fas-fa-tasks"></i>
+                                </div>
+                                <div class="content">
+                                    <b>مشاور مجازی</b>
+                                    <span>لیست چیده شده انتخاب های شما در فرم 150 تایی سنجش بر مبنای اولویت بندی اختصاصی</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app_more_details" id="BoxPlansMoreDetailsResponsive">
+                        <div class="app_title see_more"><b id="ActionTogglePlansMoreDetailsResponsive" data-target="#BoxPlansMoreDetailsResponsive"><i class="icon-far-fa-chevron-down"></i> <span>مقایسه امکانات طرح ها</span></b></div>    
+                        <div class="items">
+                            <table class="app_table table_bordered">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>برنزی</th>
+                                        <th>نقره‌ای</th>
+                                        <th>طلایی</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>طلایی <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th>جستجوی پیشرفته <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th>اعلام احتمالات <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td>400</td>
+                                        <td>+4000</td>
+                                        <td>+4000</td>
+                                    </tr>
+                                    <tr>
+                                        <th>چیدمان پیشنهادی <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th>کد رشته/دانشگاه <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th>استعدادسنجی <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th>مشاور مجازی <span class="info"><i class="icon-far-fa-info-circle"></i><b class="tooltip">ذخیره و تغییر انتخاب ها در کل بازه انتخاب سازمان سنجش</b></span></th>
+                                        <td></td>
+                                        <td></td>
+                                        <td><i class="icon-far-fa-check"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="app_factor">
+                        <div class="app_title"><b>فاکتور</b></div>
+                        <div class="factor">
+                            <div class="item pre">
+                                <b class="title">قیمت طرح طلایی</b>
+                                <span class="value">
+                                    <strong>50،000</strong>
+                                    <small>تومان</small>
+                                </span>
+                            </div>
+                            <div class="item off">
+                                <b class="title">تخفیف طرح</b>
+                                <span class="value">
+                                    <strong>7،000</strong>
+                                    <small>تومان</small>
+                                </span>
+                            </div>
+                            <div class="item final">
+                                <b class="title">قیمت نهایی</b>
+                                <span class="value">
+                                    <strong>43،000</strong>
+                                    <small>تومان</small>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="offbox">
+                            <div class="offi">
+                                <div class="app_switch">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="offi">
+                                <b class="offi_text">کد تخفیف</b>
+                            </div>
+                            <div class="offi">
+                                <div class="app_input">
+                                    <input type="text" id="PhoneNumber" value="SG236569">
+                                    <span class="status">تایید شده</span>
+                                    <button class="btn trash">
+                                        <i class="icon-far-fa-trash"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app_infobox">
+                        <div class="app_title"><b>اطلاعات شخصی</b></div>
+                        <div class="infobox">
+                            <div class="item">
+                                <div class="app_input with_label">
+                                    <label for="NameFamily">نام و نام خانوادگی</label>
+                                    <input type="text" id="NameFamily" value="مهدی مرتضوی">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_checkbox">
+                                    <label class="checkbox">کد رهگیری برام پیامک بشه
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_input with_label">
+                                    <label for="PhoneNumber">شماره همراه</label>
+                                    <input type="text" id="PhoneNumber" placeholder="09118882744">
+                                    <span class="status">تایید شده</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_input">
+                                    <div class="input_title">تست با عنوان</div>
+                                    <input type="text" placeholder="09118882744">
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_input has_error">
+                                    <input type="text" placeholder="09118882744">
+                                    <span class="message">این یک پیغام خطا می‌باشد</span>
+                                    <span class="status">خطا</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_input has_success">
+                                    <input type="text" placeholder="09118882744">
+                                    <span class="message">این یک پیغام موفق می‌باشد</span>
+                                    <span class="status">تایید شده</span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_select with_label">
+                                    <label for="Country">کشور</label>
+                                    <select id="Country">
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="iran">ایران</option>
+                                    </select>
+                                    <i class="app_select_icon icon-far-fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_select">
+                                    <div class="select_title">تست با عنوان</div>
+                                    <select>
+                                        <option value="">انتخاب کنید</option>
+                                        <option value="iran">ایران</option>
+                                    </select>
+                                    <i class="app_select_icon icon-far-fa-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="app_textarea">
+                                    <div class="textarea_title">تست با عنوان</div>
+                                    <textarea rows="6"></textarea>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <button class="app_button button_block button_primary">
+                                    <b>دکمه</b>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="app_button button_block button_secondary">
+                                    <b>دکمه</b>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="app_button button_block button_success">
+                                    <b>دکمه</b>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="app_button button_block button_danger">
+                                    <b>دکمه</b>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="app_button button_block button_dark">
+                                    <b>دکمه</b>
+                                </button>
+                            </div>
+                            <div class="item">
+                                <button class="app_button button_block button_platin">
+                                    <b>دکمه</b>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app_selectpaymentgateway">
+                        <div class="app_title"><b>تغییر درگاه پرداخت</b></div>
+                        <div class="selectpaymentgateway">
+                            <div class="app_radio">
+                                <label class="radio">پارسیان
+                                    <input type="radio" name="gateway" selected>
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio">سامان
+                                    <input type="radio" name="gateway">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio">ملت
+                                    <input type="radio" name="gateway">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="app_transfer">
+                        <a href="" class="btn back"><span>مرحله قبل</span></a>
+                        <a href="" class="btn next"><span>پرداخت <i class="icon-far-fa-angle-left"></i></span></a>
+                    </div>
+
+                    <div class="app_banner">
+                        <a href="" class="banner_action action_background"><b>تکمیل کارنامه</b></a>
+                        <i class="banner_icon icon-far-fa-info-circle"></i>
+                        <div class="banner_content">
+                            <b>نتایجتو دقیقتر کن</b>
+                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
+                        </div>
+                    </div>
+
+                    <div class="app_banner light_banner">
+                        <a href="" class="banner_action action_icon"><b>دریافت مشاوره</b> <i class="icon-far-fa-angle-left"></i></a>
+                        <img class="banner_icon" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='60.299' height='49.116' viewBox='0 0 60.299 49.116'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:none;%7D.b%7Bfill:%23d8dee8;%7D.c%7Bfill:%23fff;%7D.d%7Bfill:url(%23a);%7D.e,.f%7Bopacity:0.5;%7D.f%7Bmix-blend-mode:soft-light;%7D.f,.q%7Bisolation:isolate;%7D.g%7Bclip-path:url(%23b);%7D.h%7Bfill:url(%23c);%7D.i%7Bfill:url(%23d);%7D.j%7Bfill:url(%23e);%7D.k%7Bfill:url(%23f);%7D.l%7Bfill:url(%23g);%7D.m%7Bfill:url(%23h);%7D.n%7Bfill:%2326264f;%7D.o%7Bfill:url(%23i);%7D.p%7Bfill:url(%23j);%7D.q%7Bopacity:0.3;mix-blend-mode:multiply;%7D.r%7Bfill:url(%23k);%7D%3C/style%3E%3ClinearGradient id='a' y1='0.5' x2='1' y2='0.5' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='0.996' stop-color='%23ebeff2'/%3E%3C/linearGradient%3E%3CclipPath id='b'%3E%3Cpath class='a' d='M-1291.507,1153.2l-43.021,1.787V1114.45l43.021.236Z' transform='translate(1334.528 -1114.45)'/%3E%3C/clipPath%3E%3ClinearGradient id='c' x1='0.9' y1='-0.814' x2='0.33' y2='1.255' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23ff9085'/%3E%3Cstop offset='1' stop-color='%23fb6fbb'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' x1='0.478' y1='1.967' x2='0.509' y2='-0.575' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23311944'/%3E%3Cstop offset='0.555' stop-color='%236f2b60'/%3E%3Cstop offset='1' stop-color='%23a03976'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' x1='0.528' y1='0.734' x2='0.743' y2='1.639' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23ffc444'/%3E%3Cstop offset='0.996' stop-color='%23f36f56'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' x1='0.501' y1='0.37' x2='0.463' y2='2.575' xlink:href='%23e'/%3E%3ClinearGradient id='g' x1='3.143' y1='-2.937' x2='2.969' y2='4.922' xlink:href='%23e'/%3E%3ClinearGradient id='h' x1='0.529' y1='-0.396' x2='0.325' y2='6.722' xlink:href='%23e'/%3E%3ClinearGradient id='i' x1='0.863' y1='-13.174' x2='0.544' y2='-1.426' xlink:href='%23e'/%3E%3ClinearGradient id='j' x1='-6.764' y1='0.5' x2='-5.764' y2='0.5' gradientUnits='objectBoundingBox'%3E%3Cstop offset='0' stop-color='%23aa80f9'/%3E%3Cstop offset='0.996' stop-color='%236165d7'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' x1='-7.167' y1='0.082' x2='-6.229' y2='1.712' xlink:href='%23j'/%3E%3C/defs%3E%3Cg transform='translate(0)'%3E%3Cg transform='translate(4.847 4.921)'%3E%3Cpath class='b' d='M-1462.936,1120.316a2.9,2.9,0,0,0-2.087-2.891c-.042-.01-.089-.019-.133-.026a2.369,2.369,0,0,0-.4-.036l-24.945-.146-24.613-.144c-.052,0-.1,0-.154,0a2.882,2.882,0,0,0-1.737.7l-.026.023q-.1.09-.2.189l0,0q-.056.059-.109.121a3.235,3.235,0,0,0-.77,2.112v2.271h0v35.644a3.277,3.277,0,0,0,.095.786,3.113,3.113,0,0,0,.141.434,2.845,2.845,0,0,0,2.153,1.756,2.822,2.822,0,0,0,.611.034l37.666-1.95h0l11.9-.616a2.972,2.972,0,0,0,2.612-3.074v-33.083h0Z' transform='translate(1518.285 -1116.981)'/%3E%3Cg transform='translate(0 0.029)'%3E%3Cpath class='c' d='M-1467.58,1119.662v35.228a2.969,2.969,0,0,1-2.612,3.075l-12.072.625-37.591,1.946a2.958,2.958,0,0,1-3.071-2.647c-.014-.12-.106-38.324-.106-38.324a3.336,3.336,0,0,1,.579-1.735c.009-.014.059-.027.068-.041a2.981,2.981,0,0,1,2.509-1.377l5.729.033,43.95.257A2.814,2.814,0,0,1-1467.58,1119.662Z' transform='translate(1523.032 -1116.374)'/%3E%3Cpath class='d' d='M-1488.505,1187.4a1.982,1.982,0,0,1-2.044-2.052v-37.909a2.093,2.093,0,0,1,2.044-2.146l49.66.225a1.913,1.913,0,0,1,1.778,2.013V1182.8a2.023,2.023,0,0,1-1.778,2.094Z' transform='translate(1491.683 -1144.245)'/%3E%3Cpath class='b' d='M-1465.449,1116.706l-49.66-.29a3.072,3.072,0,0,0-3.006,3.152v2.274l55.275-.068v-2.11A2.809,2.809,0,0,0-1465.449,1116.706Z' transform='translate(1518.287 -1116.376)'/%3E%3Cpath class='c' d='M-1418.976,1169.572a.958.958,0,0,1-.975.942.963.963,0,0,1-.978-.947.958.958,0,0,1,.978-.942A.964.964,0,0,1-1418.976,1169.572Z' transform='translate(1424.494 -1166.764)'/%3E%3Cpath class='c' d='M-1320.944,1169.906a.952.952,0,0,1-.967.938.957.957,0,0,1-.969-.942.952.952,0,0,1,.969-.938A.957.957,0,0,1-1320.944,1169.906Z' transform='translate(1329.868 -1167.09)'/%3E%3Cpath class='c' d='M-1223.787,1170.237a.945.945,0,0,1-.958.934.95.95,0,0,1-.96-.938.945.945,0,0,1,.96-.934A.95.95,0,0,1-1223.787,1170.237Z' transform='translate(1236.085 -1167.413)'/%3E%3Cpath class='b' d='M-1369.019,1450.641l-48.726,2.323v-29.84l48.726-.423Z' transform='translate(1421.421 -1411.968)'/%3E%3Cg class='e' transform='translate(3.676 7.839)'%3E%3Cpath class='c' d='M-1391.57,1342.818l-26.175.121v1.612l26.175-.177Z' transform='translate(1417.745 -1342.714)'/%3E%3Cpath class='c' d='M-101.9,1339.834v1.515l2.787-.019v-1.509Z' transform='translate(147.836 -1339.821)'/%3E%3C/g%3E%3Cg class='f'%3E%3Cpath class='c' d='M-1482.265,1157.5l-37.59,1.947a2.967,2.967,0,0,1-3.08-2.646c0-.035-.1-38.341-.1-38.341a3.381,3.381,0,0,1,.57-1.718c.009-.014.064-.027.073-.041a2.982,2.982,0,0,1,2.53-1.416l5.7.034c0,.013.014.026.019.039.106.329.226.663.354,1a20.9,20.9,0,0,0,2.085,4.125c.055.085.112.168.169.251a17.455,17.455,0,0,0,2.112,2.568,16.573,16.573,0,0,0,1.826,1.578,18.66,18.66,0,0,0,2.254,1.437c5.523,3.012,11.71,3.282,15.806,9.457,3.5,5.284.995,8.165,4.383,16.289q.552,1.324,1.183,2.528.534,1.03,1.117,1.978C-1482.661,1156.884-1482.464,1157.194-1482.265,1157.5Z' transform='translate(1523.032 -1115.281)'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(18.89 33.175)'%3E%3Cpath class='c' d='M-978.068,2083.348a2.082,2.082,0,0,1-1.941,2.094,1.888,1.888,0,0,1-1.952-1.937,2.081,2.081,0,0,1,1.952-2.095A1.889,1.889,0,0,1-978.068,2083.348Z' transform='translate(981.962 -2080.826)'/%3E%3Cpath class='c' d='M-752.288,2074.884a2.049,2.049,0,0,1-1.9,2.07,1.858,1.858,0,0,1-1.909-1.916,2.048,2.048,0,0,1,1.909-2.071A1.859,1.859,0,0,1-752.288,2074.884Z' transform='translate(763.981 -2072.677)'/%3E%3Cpath class='c' d='M-531.44,2066.6a2.017,2.017,0,0,1-1.858,2.047,1.829,1.829,0,0,1-1.868-1.9,2.015,2.015,0,0,1,1.868-2.047A1.83,1.83,0,0,1-531.44,2066.6Z' transform='translate(550.765 -2064.706)'/%3E%3C/g%3E%3Cg transform='translate(6.581 0)'%3E%3Cg class='g'%3E%3Cg transform='translate(1.684 0.163)'%3E%3Cpath class='h' d='M-1265.342,1764.642c-13.19.691-17.912,2.654-20.068-.135-1.994-2.579-.341-12.2,2.028-14.94,3.719-4.307,9.624-4.638,17.571-5.024,7.339-.357,11.8-.574,15.285,2.494,3.234,2.845,5.286,12.85,3.285,15.739C-1249.106,1765.468-1253.123,1764-1265.342,1764.642Z' transform='translate(1286.301 -1722.516)'/%3E%3Cpath class='i' d='M-878.995,1732.087l-1.54.425a.578.578,0,0,0-.34.867c1.05,1.606,3.82,5.616,5.545,6.045,1.776.441,5.074-4.783,6.166-6.611a.555.555,0,0,0-.307-.822l-1.1-.332a7.242,7.242,0,0,0-2.812-.266l-4.17.423A8.712,8.712,0,0,0-878.995,1732.087Z' transform='translate(895.118 -1709.982)'/%3E%3Cpath class='j' d='M-800.756,1579.239s.842,6.036-.323,6.639l3.308,3.525,3.324-4.329s-1.254-.923-.923-5.909Z' transform='translate(818.019 -1563.104)'/%3E%3Cpath class='k' d='M-856.393,1275.433c-.12.163-1.688,7.829,3.713,8.558,5.333.719,5.567-4.874,5.5-7.245s-2.5-3.23-3.9-3.394S-855.966,1274.855-856.393,1275.433Z' transform='translate(871.694 -1267.956)'/%3E%3Cpath class='l' d='M-898.34,1441.286s-.271-1.248-1.2-.461.549,2.846,1.767,2.747Z' transform='translate(913.327 -1429.341)'/%3E%3Cpath class='m' d='M-605.152,1426.021a24.28,24.28,0,0,0-.59,3.013s.765.082,1.319-.966S-603.606,1424.956-605.152,1426.021Z' transform='translate(629.502 -1415.02)'/%3E%3Cpath class='n' d='M-950.883,1124.565c-.556-.93-1.963-.489-2.375-1.388-.346-.756.467-1.465.031-2.119-.365-.548-1.259-.537-1.418-.535-1.211.014-1.489.977-2.355.953-1.06-.029-1.1-1.482-2.508-2.1a3.773,3.773,0,0,0-4.193.988c-.634.869-.095,1.51-.927,2.628-.573.77-1.081.8-1.366,1.559a2.913,2.913,0,0,0,.055,1.886c.34,1.2.973,1.728,1.927,3a20.417,20.417,0,0,1,1.614,2.52,28.42,28.42,0,0,1,.947,3.007c.3,1.187.285,1.429.568,1.81.974,1.313,3.19,1.147,4.119,1.078,1.063-.08,2.381-.178,3.043-1.112.357-.5.313-.954.4-2.16a30.031,30.031,0,0,1,.458-3.534,10.819,10.819,0,0,1,.431-1.5c.384-1.033.781-1.2,1.213-2.266C-950.878,1126.424-950.431,1125.322-950.883,1124.565Zm-4.39,8.078a5.864,5.864,0,0,1-1.99-.012c-1.788-.084-2.355.761-3.2.4a2.176,2.176,0,0,1-1.348-1.4,6.633,6.633,0,0,1-.056-2.117c.141-1.037.3-2.234,1.136-2.765,1.2-.77,2.738.541,3.836-.315a1.984,1.984,0,0,0,.664-1.2,4.785,4.785,0,0,1,2.878,2.844,4.673,4.673,0,0,1-.026,3.023A3.489,3.489,0,0,1-955.274,1132.644Z' transform='translate(977.311 -1119.111)'/%3E%3Cpath class='o' d='M-765.3,1540.4a4.4,4.4,0,0,0,2.887-.117c.12-.047.223.083.123.156a2.682,2.682,0,0,1-1.678.581,3.453,3.453,0,0,1-1.434-.452C-765.512,1540.511-765.424,1540.367-765.3,1540.4Z' transform='translate(783.636 -1525.573)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(19.135 33.539)'%3E%3Cpath class='c' d='M-971.573,2092.086a1.757,1.757,0,0,1-1.684,1.736,1.609,1.609,0,0,1-1.69-1.613,1.757,1.757,0,0,1,1.69-1.737A1.609,1.609,0,0,1-971.573,2092.086Z' transform='translate(974.947 -2089.935)'/%3E%3Cpath class='c' d='M-746.246,2084.317a1.733,1.733,0,0,1-1.653,1.72,1.587,1.587,0,0,1-1.659-1.6,1.733,1.733,0,0,1,1.659-1.72A1.587,1.587,0,0,1-746.246,2084.317Z' transform='translate(757.427 -2082.452)'/%3E%3Cpath class='c' d='M-525.044,2076.691a1.709,1.709,0,0,1-1.623,1.7,1.565,1.565,0,0,1-1.629-1.585,1.709,1.709,0,0,1,1.629-1.7A1.565,1.565,0,0,1-525.044,2076.691Z' transform='translate(543.89 -2075.105)'/%3E%3C/g%3E%3C/g%3E%3Cg transform='translate(0 0)'%3E%3Cpath class='p' d='M-1640.67,986.706a7.2,7.2,0,0,0,1.656-4.513c0-4.805-5.117-8.7-11.428-8.7s-11.428,3.9-11.428,8.7,5.117,8.7,11.428,8.7a14.013,14.013,0,0,0,6.386-1.484c1.205.206,3.076.551,4.063.735a.38.38,0,0,0,.425-.507Z' transform='translate(1661.87 -973.492)'/%3E%3Cg class='q' transform='translate(0 1.38)'%3E%3Cpath class='r' d='M-1644.188,1022.2c-2.563-1.077-5.38,1.2-7.142-.39s.143-4.76-1.558-7.012a5.222,5.222,0,0,0-3.732-1.76c-3.158,1.548-5.249,4.248-5.249,7.32,0,4.805,5.117,8.7,11.428,8.7a14.015,14.015,0,0,0,6.386-1.484c.951.162,2.316.411,3.335.6C-1641.472,1024.275-1642.854,1022.756-1644.188,1022.2Z' transform='translate(1661.87 -1013.034)'/%3E%3C/g%3E%3Cg transform='translate(4.237 5.082)'%3E%3Cpath class='c' d='M-1525.75,1119.506a.439.439,0,0,1-.439.439h-13.893a.439.439,0,0,1-.439-.439h0a.439.439,0,0,1,.439-.439h13.893a.439.439,0,0,1,.439.439Z' transform='translate(1540.52 -1119.067)'/%3E%3Cg transform='translate(0 2.632)'%3E%3Cpath class='c' d='M-1525.75,1194.907a.439.439,0,0,1-.439.439h-13.893a.439.439,0,0,1-.439-.439h0a.439.439,0,0,1,.439-.439h13.893a.439.439,0,0,1,.439.439Z' transform='translate(1540.52 -1194.468)'/%3E%3Cpath class='c' d='M-1532.33,1270.307a.439.439,0,0,1-.439.439h-7.312a.439.439,0,0,1-.439-.439h0a.439.439,0,0,1,.439-.439h7.312a.439.439,0,0,1,.439.439Z' transform='translate(1540.52 -1267.236)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
+                        <div class="banner_content">
+                            <b>نتایجتو دقیقتر کن</b>
+                            <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+    <script src="/assets/plugins/jquery/jquery.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

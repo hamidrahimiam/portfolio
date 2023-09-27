@@ -1,0 +1,32 @@
+@font-face {
+    font-family: iyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/eot/yekanbold.eot');
+    src: url('fonts/eot/yekanbold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/yekanbold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/yekanbold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/yekanbold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/eot/yekanlight.eot');
+    src: url('fonts/eot/yekanlight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/yekanlight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/yekanlight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/yekanlight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: iyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/eot/yekanregular.eot');
+    src: url('fonts/eot/yekanregular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/yekanregular.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/yekanregular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/yekanregular.ttf') format('truetype');
+}
