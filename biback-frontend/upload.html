@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Css Files -->
+    <link rel="stylesheet" href="assets/main/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/main/font/lineicon/lineicons.css">
+    <link rel="stylesheet" href="assets/main/css/main.css">
+
+    <title>BiBack Fronend</title>
+</head>
+<body class="">
+    <nav class="main_nav">
+        <div class="main_wrap">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/main/img/logo.png">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                </ul>
+            </div>
+            <div class="control">
+                <a href="index.html#pricing" class="btn btn-primary lift mb-2"><b>قیمت‌ها</b></a>
+                <a href="upload.html" class="btn btn-primary lift mb-2">حذف پس زمینه تصویر</a>
+                <a href="profile.html" class="btn btn-secondary lift mb-2">پروفایل</a>
+                <a href="auth.html" class="btn btn-secondary lift mb-2">ورود یا عضویت</a>
+            </div>
+            <div class="toggle">
+                <button class="btn btn-primary-soft lift"><i class="lni lni-menu"></i></button>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+    <section class="main_remove_hero">
+        <div class="main_wrap">
+            <div class="row">
+                <div class="col-12 col-md-3 col-lg-3"></div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <h1 class="title">
+                    آپلود و حذف پس‌زمینه تصویر
+                    </h1>
+    
+                    <p class="lead text-muted mb-2">
+                    با بی‌بک  پس زمینه هر تصویری رو می‌تونی حذف کنی! همین حالا امتحان کن
+                    </p>
+    
+                    <div class="upload-type">
+                        <div class="upload-type-item rounded lift selected" data-type="cheap">
+                            <b class="text-dark">HQ</b>
+                            <small class="text-muted">تصاویر با کیفیت پایین</small>
+                            <span class="text-dark"><strong class="text-primary">5</strong> عدد باقی مانده</span>
+                        </div>
+                        <div class="upload-type-item rounded lift" data-type="charge">
+                            <b class="text-dark">HD</b>
+                            <small class="text-muted">تصاویر با کیفیت بالا</small>
+                            <span class="text-dark"><strong class="text-primary">2</strong> عدد باقی مانده</span>
+                        </div>
+                    </div>
+    
+                    <div class="upload-box bg-primary-soft p-5 rounded d-flex justify-content-center align-items-center border-1 border-primary shadow lift" id="BoxImageUpload">
+                        <div class="uplad-content">
+                            <button class="btn btn-primary shadow lift btn-upload" id="BtnImageUpload">
+                                انتخاب تصویر
+                            </button>
+                        </div>
+                    </div>
+    
+                    <form action="upload" method="post" enctype="multipart/form-data" style="display: none;" id="FrmImageUpload">
+                        <input type="hidden" name="type" value="cheap">
+                        <input type="file" class="form-control" id="InpImageUpload" name="img" required>
+                    </form>
+    
+                </div>
+                <div class="col-12 col-md-3 col-lg-3"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <footer class="main_footer">
+        <div class="main_wrap">
+            <div class="row">
+                <div class="footer_col footer_info col-12 col-md-4 col-lg-3">
+            
+                    <!-- Brand -->
+                    <img src="assets/main/img/logo.png" alt="..." class="footer-brand img-fluid mb-2 w-50">
+            
+                    <!-- Text -->
+                    <p class="">
+                    پس زمینه تصاویر رو با بی‌بک حذف کن
+                    </p>
+            
+                    <!-- Social -->
+                    <ul class="list-unstyled list-inline list-social">
+                        <li class="list-inline-item list-social-item">
+                            <a href="#!" class="text-decoration-none">
+                                <i class="lni lni-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="#!" class="text-decoration-none">
+                                <i class="lni lni-telegram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="#!" class="text-decoration-none">
+                                <i class="lni lni-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_col col-6 col-md-4 col-lg-2">
+            
+                    <!-- Heading -->
+                    <h6 class="fw-bold">
+                    لینک‌ها
+                    </h6>
+            
+                    <!-- List -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+                <div class="footer_col col-6 col-md-4 col-lg-2">
+            
+                                        <!-- Heading -->
+                                        <h6 class="fw-bold">
+                    لینک‌ها
+                    </h6>
+            
+                    <!-- List -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+                <div class="footer_col col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+            
+                                        <!-- Heading -->
+                                        <h6 class="fw-bold">
+                    لینک‌ها
+                    </h6>
+            
+                    <!-- List -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+                <div class="footer_col col-6 col-md-4 col-lg-2">
+            
+                    <!-- Heading -->
+                    <h6 class="fw-bold">
+                    لینک‌ها
+                    </h6>
+            
+                    <!-- List -->
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!" class="text-reset">
+                            لینک آیتم
+                            </a>
+                        </li>
+                    </ul>
+            
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="copy_right text-center">
+                تمامی حقوق برای BiBack محفوظ می‌باشد. 
+            </div>
+        </div>
+    </footer>
+
+    <div class="main_loading"><div class="loading_content"><div class="lds-dual-ring"></div><b>تصویر مورد نظر در حال بارگذاری می‌باشد، لطفا کمی صبر کنید ...</b></div></div>
+
+    <!--Javascript Files-->
+    <script src="assets/main/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/main/js/axios.min.js"></script>
+    <script src="assets/main/js/sweetalert2.min.js"></script>
+    <script src="assets/main/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/main/js/main.js"></script>
+    </body>
+</html>
