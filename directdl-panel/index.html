@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DirectDl</title>
+    <link href="assets/css/directdl.css" rel="stylesheet">
+</head>
+
+<body class="">
+    <div class="container d-flex flex-row">
+        <nav class="nav bg-white radius-m">
+            <div class="logo text-center">
+                <a href="" class="desktop">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="235.887" height="59.619" viewBox="0 0 235.887 59.619"> <defs> <linearGradient id="linear-gradient" x1="0.16" y1="0.188" x2="1.459" y2="1.407" gradientUnits="objectBoundingBox"> <stop offset="0" stop-color="#0089c4"></stop> <stop offset="0.67" stop-color="#23d5ff"></stop> <stop offset="1" stop-color="#0073d7"></stop> </linearGradient> <linearGradient id="linear-gradient-2" x1="0.209" y1="0.465" x2="2.233" y2="1.408" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-3" x1="0.463" y1="0.493" x2="4.215" y2="1.499" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-4" x1="0.117" y1="0.358" x2="1.725" y2="1.458" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-5" x1="0.998" y1="0.316" x2="-0.439" y2="1.188" gradientUnits="objectBoundingBox"> <stop offset="0" stop-color="#0089c4"></stop> <stop offset="0.67" stop-color="#8755ff"></stop> <stop offset="1" stop-color="#0073d7"></stop> </linearGradient> <linearGradient id="linear-gradient-6" x1="0.257" y1="0.437" x2="1.154" y2="0.854" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-7" x1="0.028" y1="0.376" x2="2.297" y2="0.985" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-8" x1="0.501" y1="0.613" x2="0.838" y2="1.007" xlink:href="#linear-gradient"></linearGradient> </defs> <g id="dd" transform="translate(-4.3 -6.3)"> <path id="Path_11" data-name="Path 11" d="M50.43,19.5q17.368,0,17.354,14.723A15.573,15.573,0,0,1,65.8,42.252a12.82,12.82,0,0,1-5.6,5.168A18.892,18.892,0,0,1,51.766,49.2H42.32V19.513ZM60.5,42.63a10.634,10.634,0,0,0,2.982-8.191q0-5.641-3.09-8.407t-9.446-2.766h-4.4V45.437h4.98Q57.461,45.437,60.5,42.63Z" transform="translate(13.287 4.613)" fill="#0089c4"></path> <path id="Path_12" data-name="Path 12" d="M65.312,23.533a2.6,2.6,0,0,1,0-3.644,2.577,2.577,0,0,1,1.9-.729,2.618,2.618,0,0,1,1.9.729,2.7,2.7,0,0,1,0,3.644,2.618,2.618,0,0,1-1.9.729A2.577,2.577,0,0,1,65.312,23.533ZM69.2,49.321H65.151V28.391H69.2Z" transform="translate(21.062 4.494)" fill="#0089c4"></path> <path id="Path_13" data-name="Path 13" d="M83.082,29.689q-3.522,0-5.141,4.048c-1.066,2.7-1.592,7.1-1.592,13.265H72.3V26.059h4.048l-.256,7.031a11.4,11.4,0,0,1,2.888-5.614,6.315,6.315,0,0,1,4.4-1.795,5.722,5.722,0,0,1,2.213.337l-.675,3.846A5.533,5.533,0,0,0,83.082,29.689Z" transform="translate(23.764 6.771)" fill="#0089c4"></path> <path id="Path_14" data-name="Path 14" d="M88.982,46.23a8.691,8.691,0,0,1-3.94-3.617,11.484,11.484,0,0,1-1.349-5.789,12.752,12.752,0,0,1,1.349-5.776,9.811,9.811,0,0,1,8.866-5.317,9.136,9.136,0,0,1,4.777,1.134,7.341,7.341,0,0,1,2.847,3.279,12.145,12.145,0,0,1,1,5.141,18.713,18.713,0,0,1-.162,2.55h-14.6A6.032,6.032,0,0,0,89.71,42.29a8.1,8.1,0,0,0,7.989.9,5.951,5.951,0,0,0,2.4-2.051l2.348,2.335a9.284,9.284,0,0,1-8.1,3.94,11.74,11.74,0,0,1-5.371-1.188Zm.837-15.721a7.382,7.382,0,0,0-1.97,4.345H98.954a6.18,6.18,0,0,0-1.215-4.561,4.777,4.777,0,0,0-3.792-1.5,5.4,5.4,0,0,0-4.129,1.714Z" transform="translate(27.742 6.788)" fill="#0089c4"></path> <path id="Path_15" data-name="Path 15" d="M103.033,44.577a10.634,10.634,0,0,1-2.7-7.678,12.6,12.6,0,0,1,1.349-5.857,9.784,9.784,0,0,1,3.765-3.927,10.634,10.634,0,0,1,5.479-1.349,8.1,8.1,0,0,1,7.611,4.048l-2.928,2.213a5.007,5.007,0,0,0-4.723-2.7,5.7,5.7,0,0,0-4.6,2.092,8.259,8.259,0,0,0-1.754,5.519A7.328,7.328,0,0,0,106.1,42a5.7,5.7,0,0,0,4.494,1.754,5.4,5.4,0,0,0,5.114-2.82l2.847,2.308a8.745,8.745,0,0,1-8.1,4.143,9.811,9.811,0,0,1-7.422-2.807Z" transform="translate(33.555 6.795)" fill="#0089c4"></path> <path id="Path_16" data-name="Path 16" d="M119.728,46.423a6.882,6.882,0,0,1-1.889-5.317l.121-10.661h-3.63v-3.32H118V22.78h3.981v4.345h7.071v3.347h-7.071l-.121,10.3a4.116,4.116,0,0,0,.972,3.009,3.859,3.859,0,0,0,2.955,1.08,6.815,6.815,0,0,0,1.889-.243,5.1,5.1,0,0,0,1.66-.918l1.268,3.131A6.883,6.883,0,0,1,128.3,48a9.919,9.919,0,0,1-2.928.418,7.571,7.571,0,0,1-5.641-2Z" transform="translate(38.452 5.759)" fill="#0089c4"></path> <path id="Path_17" data-name="Path 17" d="M136.55,19.5q17.354,0,17.354,14.723a15.573,15.573,0,0,1-1.984,8.029,12.86,12.86,0,0,1-5.614,5.168,18.892,18.892,0,0,1-8.421,1.781H128.44V19.513ZM146.6,42.63a10.593,10.593,0,0,0,3.036-8.191q0-5.641-3.1-8.407c-2.051-1.849-5.209-2.766-9.446-2.766h-4.44V45.437h4.98C141.6,45.437,144.58,44.465,146.6,42.63Z" transform="translate(43.383 4.613)" fill="#0089c4"></path> <path id="Path_18" data-name="Path 18" d="M152.553,48.39a5.735,5.735,0,0,1-1.43-4.129V18.54h4.048V43.8c0,1.7.769,2.55,2.294,2.55a4.129,4.129,0,0,0,2.011-.54l1.053,2.928a5.019,5.019,0,0,1-1.66.823,7.5,7.5,0,0,1-2.146.31,5.479,5.479,0,0,1-4.17-1.484Z" transform="translate(51.306 4.277)" fill="#0089c4"></path> <path id="Path_19" data-name="Path 19" d="M160.289,42a1.552,1.552,0,0,1-.459-1.147,1.5,1.5,0,0,1,.459-1.134,1.687,1.687,0,0,1,1.188-.445,1.619,1.619,0,0,1,1.161.445,1.511,1.511,0,0,1,.472,1.134A1.552,1.552,0,0,1,162.637,42a1.579,1.579,0,0,1-1.161.459A1.633,1.633,0,0,1,160.289,42Z" transform="translate(54.352 11.522)" fill="#0089c4"></path> <path id="Path_20" data-name="Path 20" d="M164.794,43.309a5.776,5.776,0,0,1-1.471-4.21,6.95,6.95,0,0,1,.729-3.212,5.587,5.587,0,0,1,2.065-2.159,5.965,5.965,0,0,1,3.009-.756,4.467,4.467,0,0,1,4.183,2.254L171.7,36.441a2.7,2.7,0,0,0-2.6-1.511,3.158,3.158,0,0,0-2.523,1.134,4.629,4.629,0,0,0-.958,3.036,4.048,4.048,0,0,0,.864,2.78,3.144,3.144,0,0,0,2.47.958,2.969,2.969,0,0,0,2.793-1.538l1.565,1.268a4.818,4.818,0,0,1-4.453,2.267A5.4,5.4,0,0,1,164.794,43.309Z" transform="translate(55.569 9.318)" fill="#0089c4"></path> <path id="Path_21" data-name="Path 21" d="M173.124,43.3a5.776,5.776,0,0,1-1.471-4.21,6.95,6.95,0,0,1,.729-3.212,5.587,5.587,0,0,1,2.065-2.159A5.965,5.965,0,0,1,177.523,33a4.467,4.467,0,0,1,4.183,2.254L180.1,36.471a2.7,2.7,0,0,0-2.6-1.511,3.158,3.158,0,0,0-2.523,1.134,4.629,4.629,0,0,0-.958,3.036,4.049,4.049,0,0,0,.864,2.78,3.144,3.144,0,0,0,2.47.958,2.969,2.969,0,0,0,2.793-1.538l1.565,1.268a4.818,4.818,0,0,1-4.453,2.267,5.4,5.4,0,0,1-4.129-1.565Z" transform="translate(58.48 9.328)" fill="#0089c4"></path> <path id="Path_22" data-name="Path 22" d="M42.814,24.768A31.173,31.173,0,0,1,11.641,55.941H4.3c.972-.432,2.065-.931,3.239-1.525l1.147-.567c1.242-.634,2.577-1.349,3.954-2.173l.648-.364,1.349-.783c.648-.4,1.349-.837,1.984-1.282s1.349-.891,2.038-1.349,1.349-.972,2.065-1.484,1.349-1.053,2.065-1.606l.688-.567.688-.58c.688-.567,1.349-1.174,2.051-1.795l.675-.634A60.929,60.929,0,0,0,33.5,34c.351-.445.688-.9,1.026-1.349s.4-.553.594-.837l.486-.7.189-.283.432-.648c.486-.742.945-1.5,1.349-2.267.175-.3.351-.594.513-.891s.459-.823.675-1.255.324-.607.472-.918.31-.621.445-.931c.337-.7.661-1.417.958-2.132l.243-.594c.432-1.066.823-2.146,1.188-3.252a32.132,32.132,0,0,1,.742,6.828Z" transform="translate(0 4.068)" fill="url(#linear-gradient)"></path> <path id="Path_23" data-name="Path 23" d="M29.759,11.131v.864a.459.459,0,0,0,0,.148c0,.256-.067.526-.094.8a.229.229,0,0,1,0,.094,1.869,1.869,0,0,1-.108.756c-.081.567-.175,1.107-.283,1.673a3.269,3.269,0,0,1-.175.783,43.466,43.466,0,0,1-1.606,5.587l-.216.58c-.067.175-.135.364-.216.54-.27.715-.553,1.444-.864,2.173l-.324.715c-.364.823-.756,1.66-1.161,2.483l-.58,1.161-.391.742A99.509,99.509,0,0,1,16.089,42.25c-.648.891-1.282,1.754-1.93,2.577-.2.256-.391.513-.594.756-3.347,4.264-6.477,7.705-8.515,9.851l5.857-20.107v-.148l2.955-10.134,3.509-12L19.341,6.3a26.234,26.234,0,0,1,9.109,3.873C28.855,10.443,29.273,10.767,29.759,11.131Z" transform="translate(0.262)" fill="url(#linear-gradient-2)"></path> <path id="Path_24" data-name="Path 24" d="M15.811,12.995,17.633,6.72a25.639,25.639,0,0,0-3.684-.27H4.3v46l9.784-33.534Z" transform="translate(0 0.052)" fill="url(#linear-gradient-3)"></path> <path id="Path_25" data-name="Path 25" d="M24.226,29.95a55.558,55.558,0,0,0,6.518-17.88l6.545,9.446C33.6,36.684,19.881,48.411,6.17,54.187,12.607,47.8,19.435,37.75,24.226,29.95Z" transform="translate(0.654 2.016)" fill="url(#linear-gradient-4)"></path> <path id="Path_26" data-name="Path 26" d="M42.814,24.768A31.173,31.173,0,0,1,11.641,55.941H4.3c.972-.432,2.065-.931,3.239-1.525l1.147-.567c1.242-.634,2.577-1.349,3.954-2.173l.648-.364,1.349-.783c.648-.4,1.349-.837,1.984-1.282s1.349-.891,2.038-1.349,1.349-.972,2.065-1.484,1.349-1.053,2.065-1.606l.688-.567.688-.58c.688-.567,1.349-1.174,2.051-1.795l.675-.634A60.929,60.929,0,0,0,33.5,34c.351-.445.688-.9,1.026-1.349s.4-.553.594-.837l.486-.7.189-.283.432-.648c.486-.742.945-1.5,1.349-2.267.175-.3.351-.594.513-.891s.459-.823.675-1.255.324-.607.472-.918.31-.621.445-.931c.337-.7.661-1.417.958-2.132l.243-.594c.432-1.066.823-2.146,1.188-3.252a32.132,32.132,0,0,1,.742,6.828Z" transform="translate(0 4.068)" fill="url(#linear-gradient-5)"></path> <path id="Path_27" data-name="Path 27" d="M29.759,11.131v.864a.459.459,0,0,0,0,.148c0,.256-.067.526-.094.8a.229.229,0,0,1,0,.094,1.869,1.869,0,0,1-.108.756c-.081.567-.175,1.107-.283,1.673a3.269,3.269,0,0,1-.175.783,43.466,43.466,0,0,1-1.606,5.587l-.216.58c-.067.175-.135.364-.216.54-.27.715-.553,1.444-.864,2.173l-.324.715c-.364.823-.756,1.66-1.161,2.483l-.58,1.161-.391.742A99.509,99.509,0,0,1,16.089,42.25c-.648.891-1.282,1.754-1.93,2.577-.2.256-.391.513-.594.756-3.347,4.264-6.477,7.705-8.515,9.851l5.857-20.107v-.148l2.955-10.134,3.509-12L19.341,6.3a26.234,26.234,0,0,1,9.109,3.873C28.855,10.443,29.273,10.767,29.759,11.131Z" transform="translate(0.262)" fill="url(#linear-gradient-6)"></path> <path id="Path_28" data-name="Path 28" d="M15.811,12.995,17.633,6.72a25.639,25.639,0,0,0-3.684-.27H4.3v46l9.784-33.534Z" transform="translate(0 0.052)" fill="url(#linear-gradient-7)"></path> <path id="Path_29" data-name="Path 29" d="M24.226,29.95a55.558,55.558,0,0,0,6.518-17.88l6.545,9.446C33.6,36.684,19.881,48.411,6.17,54.187,12.607,47.8,19.435,37.75,24.226,29.95Z" transform="translate(0.654 2.016)" fill="url(#linear-gradient-8)"></path> <path id="Path_30" data-name="Path 30" d="M30.409,47.917V47H22.42V45.178h7.989V44.26l3.171,1.822Z" transform="translate(6.332 13.266)" fill="#0089c4"></path> <path id="Path_31" data-name="Path 31" d="M33.58,48.7v1.808H25.591v.918L22.42,49.605l3.171-1.835V48.7Z" transform="translate(6.332 14.492)" fill="#0089c4"></path> </g> </svg>
+                </a>
+                <a href="" class="mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65.797" height="66.27" viewBox="0 0 65.797 66.27"> <defs> <linearGradient id="linear-gradient" x1="0.16" y1="0.188" x2="1.459" y2="1.407" gradientUnits="objectBoundingBox"> <stop offset="0" stop-color="#0089c4"></stop> <stop offset="0.67" stop-color="#23d5ff"></stop> <stop offset="1" stop-color="#0073d7"></stop> </linearGradient> <linearGradient id="linear-gradient-2" x1="0.209" y1="0.465" x2="2.233" y2="1.408" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-3" x1="0.463" y1="0.493" x2="4.215" y2="1.499" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-4" x1="0.117" y1="0.358" x2="1.725" y2="1.458" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-5" x1="0.998" y1="0.316" x2="-0.439" y2="1.188" gradientUnits="objectBoundingBox"> <stop offset="0" stop-color="#0089c4"></stop> <stop offset="0.67" stop-color="#8755ff"></stop> <stop offset="1" stop-color="#0073d7"></stop> </linearGradient> <linearGradient id="linear-gradient-6" x1="0.257" y1="0.437" x2="1.154" y2="0.854" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-7" x1="0.028" y1="0.376" x2="2.297" y2="0.985" xlink:href="#linear-gradient"></linearGradient> <linearGradient id="linear-gradient-8" x1="0.501" y1="0.613" x2="0.838" y2="1.007" xlink:href="#linear-gradient"></linearGradient> </defs> <g id="dd" transform="translate(-20.219 11)"> <g id="Group_969" data-name="Group 969" transform="translate(20.219 44.077)"> <path id="Path_3946" data-name="Path 3946" d="M45.211,19.5q6.191,0,6.186,5.248a5.551,5.551,0,0,1-.707,2.862,4.57,4.57,0,0,1-2,1.842,6.735,6.735,0,0,1-3.007.635H42.32V19.5ZM48.8,27.745a3.791,3.791,0,0,0,1.063-2.92,3.82,3.82,0,0,0-1.1-3,4.928,4.928,0,0,0-3.367-.986H43.826v7.9H45.6A4.559,4.559,0,0,0,48.8,27.745Z" transform="translate(-42.32 -19.038)" fill="#0089c4"></path> <path id="Path_3947" data-name="Path 3947" d="M64.834,20.718a.928.928,0,0,1,0-1.3.919.919,0,0,1,.678-.26.933.933,0,0,1,.678.26.962.962,0,0,1,0,1.3.933.933,0,0,1-.678.26A.919.919,0,0,1,64.834,20.718ZM66.22,29.91H64.776V22.45H66.22Z" transform="translate(-53.866 -18.861)" fill="#0089c4"></path> <path id="Path_3948" data-name="Path 3948" d="M76.144,27.106a1.937,1.937,0,0,0-1.833,1.443,14.017,14.017,0,0,0-.568,4.729H72.3V25.812h1.443l-.091,2.506a4.065,4.065,0,0,1,1.029-2,2.251,2.251,0,0,1,1.568-.64,2.04,2.04,0,0,1,.789.12L76.8,27.169A1.972,1.972,0,0,0,76.144,27.106Z" transform="translate(-57.878 -22.243)" fill="#0089c4"></path> <path id="Path_3949" data-name="Path 3949" d="M85.573,33.034a3.1,3.1,0,0,1-1.4-1.289,4.094,4.094,0,0,1-.481-2.064,4.546,4.546,0,0,1,.481-2.059,3.5,3.5,0,0,1,3.16-1.9,3.257,3.257,0,0,1,1.7.4A2.617,2.617,0,0,1,90.047,27.3a4.33,4.33,0,0,1,.356,1.833,6.67,6.67,0,0,1-.058.909h-5.2a2.15,2.15,0,0,0,.693,1.587,2.886,2.886,0,0,0,2.848.322,2.121,2.121,0,0,0,.856-.731l.837.832a3.31,3.31,0,0,1-2.886,1.4A4.185,4.185,0,0,1,85.573,33.034Zm.3-5.6a2.631,2.631,0,0,0-.7,1.549h3.959a2.2,2.2,0,0,0-.433-1.626,1.7,1.7,0,0,0-1.352-.534,1.924,1.924,0,0,0-1.472.611Z" transform="translate(-63.787 -22.269)" fill="#0089c4"></path> <path id="Path_3950" data-name="Path 3950" d="M101.286,32.458a3.791,3.791,0,0,1-.962-2.737,4.493,4.493,0,0,1,.481-2.088,3.488,3.488,0,0,1,1.342-1.4,3.791,3.791,0,0,1,1.953-.481,2.886,2.886,0,0,1,2.713,1.443l-1.044.789a1.785,1.785,0,0,0-1.684-.962,2.03,2.03,0,0,0-1.64.746,2.944,2.944,0,0,0-.625,1.967,2.612,2.612,0,0,0,.558,1.8,2.03,2.03,0,0,0,1.6.625,1.924,1.924,0,0,0,1.823-1.005l1.015.823a3.117,3.117,0,0,1-2.886,1.477A3.5,3.5,0,0,1,101.286,32.458Z" transform="translate(-72.419 -22.279)" fill="#0089c4"></path> <path id="Path_3951" data-name="Path 3951" d="M116.254,31.208a2.453,2.453,0,0,1-.673-1.9l.043-3.8H114.33V24.329h1.308V22.78h1.419v1.549h2.521v1.193h-2.521l-.043,3.67a1.467,1.467,0,0,0,.346,1.073,1.376,1.376,0,0,0,1.053.385,2.429,2.429,0,0,0,.673-.087,1.818,1.818,0,0,0,.592-.327l.452,1.116a2.453,2.453,0,0,1-.823.419,3.536,3.536,0,0,1-1.044.149A2.7,2.7,0,0,1,116.254,31.208Z" transform="translate(-79.69 -20.74)" fill="#0089c4"></path> <path id="Path_3952" data-name="Path 3952" d="M131.331,19.5q6.186,0,6.186,5.248a5.551,5.551,0,0,1-.707,2.862,4.585,4.585,0,0,1-2,1.842,6.734,6.734,0,0,1-3,.635H128.44V19.5Zm3.584,8.245A3.776,3.776,0,0,0,136,24.825a3.811,3.811,0,0,0-1.106-3,4.914,4.914,0,0,0-3.367-.986h-1.583v7.9h1.775A4.616,4.616,0,0,0,134.915,27.745Z" transform="translate(-87.013 -19.038)" fill="#0089c4"></path> <path id="Path_3953" data-name="Path 3953" d="M151.626,29.181a2.045,2.045,0,0,1-.51-1.472V18.54h1.443v9.005c0,.606.274.909.818.909a1.472,1.472,0,0,0,.717-.192l.375,1.044a1.789,1.789,0,0,1-.592.293,2.675,2.675,0,0,1-.765.111,1.953,1.953,0,0,1-1.486-.529Z" transform="translate(-98.779 -18.54)" fill="#0089c4"></path> <path id="Path_3954" data-name="Path 3954" d="M159.993,40.241a.553.553,0,0,1-.164-.409.534.534,0,0,1,.164-.4.6.6,0,0,1,.423-.159.577.577,0,0,1,.414.159.539.539,0,0,1,.168.4.553.553,0,0,1-.168.409.563.563,0,0,1-.414.164A.582.582,0,0,1,159.993,40.241Z" transform="translate(-103.302 -29.298)" fill="#0089c4"></path> <path id="Path_3955" data-name="Path 3955" d="M163.84,36.651a2.059,2.059,0,0,1-.524-1.5,2.477,2.477,0,0,1,.26-1.145,1.992,1.992,0,0,1,.736-.77,2.126,2.126,0,0,1,1.073-.269,1.592,1.592,0,0,1,1.491.8l-.572.433a.962.962,0,0,0-.928-.539,1.126,1.126,0,0,0-.9.4,1.65,1.65,0,0,0-.342,1.082,1.443,1.443,0,0,0,.308.991,1.121,1.121,0,0,0,.88.342,1.058,1.058,0,0,0,1-.548l.558.452a1.717,1.717,0,0,1-1.587.808A1.924,1.924,0,0,1,163.84,36.651Z" transform="translate(-105.11 -26.025)" fill="#0089c4"></path> <path id="Path_3956" data-name="Path 3956" d="M172.17,36.667a2.059,2.059,0,0,1-.524-1.5,2.478,2.478,0,0,1,.26-1.145,1.992,1.992,0,0,1,.736-.77,2.126,2.126,0,0,1,1.1-.255,1.592,1.592,0,0,1,1.491.8l-.572.433a.962.962,0,0,0-.928-.539,1.126,1.126,0,0,0-.9.4,1.65,1.65,0,0,0-.342,1.082,1.443,1.443,0,0,0,.308.991,1.121,1.121,0,0,0,.88.342,1.058,1.058,0,0,0,1-.548l.558.452a1.717,1.717,0,0,1-1.587.808A1.924,1.924,0,0,1,172.17,36.667Z" transform="translate(-109.433 -26.04)" fill="#0089c4"></path> </g> <g id="Group_970" data-name="Group 970" transform="translate(36.679 -11)"> <path id="Path_3957" data-name="Path 3957" d="M37.178,23.769A26.611,26.611,0,0,1,10.567,50.38H4.3c.829-.369,1.763-.795,2.765-1.3l.979-.484c1.06-.541,2.2-1.152,3.375-1.855l.553-.311,1.152-.668c.553-.346,1.152-.714,1.693-1.094s1.152-.76,1.74-1.152,1.152-.829,1.763-1.267,1.152-.9,1.763-1.371l.588-.484.588-.5c.588-.484,1.152-1,1.751-1.532l.576-.541a52.013,52.013,0,0,0,5.645-6.175c.3-.38.588-.772.876-1.152s.346-.472.507-.714l.415-.6.161-.242.369-.553c.415-.634.806-1.279,1.152-1.935.15-.253.3-.507.438-.76s.392-.7.576-1.071.276-.518.4-.783.265-.53.38-.795c.288-.6.564-1.21.818-1.82l.207-.507c.369-.91.7-1.832,1.014-2.776A27.43,27.43,0,0,1,37.178,23.769Z" transform="translate(-4.3 -4.531)" fill="url(#linear-gradient)"></path> <path id="Path_3958" data-name="Path 3958" d="M26.143,10.424v.737a.392.392,0,0,0,0,.127c0,.219-.058.449-.081.68a.2.2,0,0,1,0,.081,1.6,1.6,0,0,1-.092.645c-.069.484-.15.945-.242,1.428a2.791,2.791,0,0,1-.15.668,37.106,37.106,0,0,1-1.371,4.769l-.184.5c-.058.15-.115.311-.184.461-.23.611-.472,1.233-.737,1.855l-.276.611c-.311.7-.645,1.417-.991,2.12l-.5.991-.334.634a84.948,84.948,0,0,1-6.532,10.264c-.553.76-1.094,1.5-1.647,2.2-.173.219-.334.438-.507.645-2.857,3.64-5.53,6.578-7.269,8.41l5-17.165v-.127L12.573,22.3l3-10.241L17.25,6.3a22.4,22.4,0,0,1,7.776,3.306C25.371,9.837,25.728,10.113,26.143,10.424Z" transform="translate(-4.186 -6.3)" fill="url(#linear-gradient-2)"></path> <path id="Path_3959" data-name="Path 3959" d="M14.127,12.037,15.682,6.68a21.888,21.888,0,0,0-3.145-.23H4.3V45.722l8.352-28.627Z" transform="translate(-4.3 -6.278)" fill="url(#linear-gradient-3)"></path> <path id="Path_3960" data-name="Path 3960" d="M21.584,27.334A47.428,47.428,0,0,0,27.148,12.07l5.587,8.064C29.59,33.082,17.874,43.093,6.17,48.024,11.665,42.575,17.494,33.993,21.584,27.334Z" transform="translate(-4.016 -5.423)" fill="url(#linear-gradient-4)"></path> <path id="Path_3961" data-name="Path 3961" d="M37.178,23.769A26.611,26.611,0,0,1,10.567,50.38H4.3c.829-.369,1.763-.795,2.765-1.3l.979-.484c1.06-.541,2.2-1.152,3.375-1.855l.553-.311,1.152-.668c.553-.346,1.152-.714,1.693-1.094s1.152-.76,1.74-1.152,1.152-.829,1.763-1.267,1.152-.9,1.763-1.371l.588-.484.588-.5c.588-.484,1.152-1,1.751-1.532l.576-.541a52.013,52.013,0,0,0,5.645-6.175c.3-.38.588-.772.876-1.152s.346-.472.507-.714l.415-.6.161-.242.369-.553c.415-.634.806-1.279,1.152-1.935.15-.253.3-.507.438-.76s.392-.7.576-1.071.276-.518.4-.783.265-.53.38-.795c.288-.6.564-1.21.818-1.82l.207-.507c.369-.91.7-1.832,1.014-2.776A27.43,27.43,0,0,1,37.178,23.769Z" transform="translate(-4.3 -4.531)" fill="url(#linear-gradient-5)"></path> <path id="Path_3962" data-name="Path 3962" d="M26.143,10.424v.737a.392.392,0,0,0,0,.127c0,.219-.058.449-.081.68a.2.2,0,0,1,0,.081,1.6,1.6,0,0,1-.092.645c-.069.484-.15.945-.242,1.428a2.791,2.791,0,0,1-.15.668,37.106,37.106,0,0,1-1.371,4.769l-.184.5c-.058.15-.115.311-.184.461-.23.611-.472,1.233-.737,1.855l-.276.611c-.311.7-.645,1.417-.991,2.12l-.5.991-.334.634a84.948,84.948,0,0,1-6.532,10.264c-.553.76-1.094,1.5-1.647,2.2-.173.219-.334.438-.507.645-2.857,3.64-5.53,6.578-7.269,8.41l5-17.165v-.127L12.573,22.3l3-10.241L17.25,6.3a22.4,22.4,0,0,1,7.776,3.306C25.371,9.837,25.728,10.113,26.143,10.424Z" transform="translate(-4.186 -6.3)" fill="url(#linear-gradient-6)"></path> <path id="Path_3963" data-name="Path 3963" d="M14.127,12.037,15.682,6.68a21.888,21.888,0,0,0-3.145-.23H4.3V45.722l8.352-28.627Z" transform="translate(-4.3 -6.278)" fill="url(#linear-gradient-7)"></path> <path id="Path_3964" data-name="Path 3964" d="M21.584,27.334A47.428,47.428,0,0,0,27.148,12.07l5.587,8.064C29.59,33.082,17.874,43.093,6.17,48.024,11.665,42.575,17.494,33.993,21.584,27.334Z" transform="translate(-4.016 -5.423)" fill="url(#linear-gradient-8)"></path> <path id="Path_3965" data-name="Path 3965" d="M29.24,47.382V46.6H22.42V45.043h6.82V44.26l2.707,1.555Z" transform="translate(-1.546 -0.53)" fill="#0089c4"></path> <path id="Path_3966" data-name="Path 3966" d="M31.947,48.565v1.544h-6.82v.783L22.42,49.337l2.707-1.567v.795Z" transform="translate(-1.546 0.003)" fill="#0089c4"></path> </g> </g></svg>
+                </a>
+                <button class="toggle-medium" id="toggleMedium">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.545" height="14.171" viewBox="0 0 16.545 14.171"> <path id="fi-rr-arrow-small-left" d="M21.363,11.909H9.545l3.888-3.888a1.182,1.182,0,0,0-1.666-1.678L6.7,11.425A2.364,2.364,0,0,0,6,13.091H6a2.364,2.364,0,0,0,.7,1.655l5.07,5.082a1.182,1.182,0,1,0,1.666-1.678L9.545,14.273H21.363a1.182,1.182,0,0,0,0-2.364Z" transform="translate(-6 -5.999)"></path></svg>
+                </button>
+            </div>
+            <div class="online cursor-default">
+                <div class="desktop">
+                    <b class="d-block mb-m">Hamid Rahimi</b>
+                    <span class="d-block fs-m">hamidrah.com@gmail.com</span>
+                </div>
+                <div class="mobile">
+                    <b>HR</b>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li class="active">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.031" height="19.577"
+                                viewBox="0 0 23.031 19.577">
+                                <path id="Icon_material-home" data-name="Icon material-home"
+                                    d="M12.212,24.077V17.167h4.606v6.909h5.758V14.864h3.455L14.516,4.5,3,14.864H6.455v9.213Z"
+                                    transform="translate(-3 -4.5)"></path>
+                            </svg>
+                            <b>صفحه اصلی</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26.031" height="19.523"
+                                viewBox="0 0 26.031 19.523">
+                                <path id="Icon_awesome-folder" data-name="Icon awesome-folder"
+                                    d="M23.591,7.754H13.829L10.575,4.5H2.44A2.44,2.44,0,0,0,0,6.94V21.583a2.44,2.44,0,0,0,2.44,2.44h21.15a2.44,2.44,0,0,0,2.44-2.44V10.194A2.44,2.44,0,0,0,23.591,7.754Z"
+                                    transform="translate(0 -4.5)"></path>
+                            </svg>
+                            <b>مدیریت فایل</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30.031" height="25.741"
+                                viewBox="0 0 30.031 25.741">
+                                <path id="Icon_material-history" data-name="Icon material-history"
+                                    d="M18.661,4.5A12.872,12.872,0,0,0,5.79,17.371H1.5l5.563,5.563.1.2,5.777-5.763H8.65A10.058,10.058,0,1,1,11.6,24.435L9.566,26.466A12.867,12.867,0,1,0,18.661,4.5Zm-1.43,7.15V18.8l6.121,3.632,1.03-1.73-5.005-2.975V11.65Z"
+                                    transform="translate(-1.5 -4.5)"></path>
+                            </svg>
+                            <b>تاریخچه درخواست‌ها</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.031" height="23.031"
+                                viewBox="0 0 23.031 23.031">
+                                <path id="Icon_metro-power" data-name="Icon metro-power"
+                                    d="M11.207,1.928,2.571,13.444h8.637L5.45,24.959,25.6,10.565H14.086l8.637-8.637Z"
+                                    transform="translate(-2.571 -1.928)"></path>
+                            </svg>
+                            <b>ارتقاء حساب</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.031" height="22.031"
+                                viewBox="0 0 22.031 22.031">
+                                <path id="Icon_awesome-user-alt" data-name="Icon awesome-user-alt"
+                                    d="M11.016,12.393a6.2,6.2,0,1,0-6.2-6.2A6.2,6.2,0,0,0,11.016,12.393Zm5.508,1.377H14.152a7.49,7.49,0,0,1-6.274,0H5.508A5.507,5.507,0,0,0,0,19.277v.688a2.066,2.066,0,0,0,2.065,2.065h17.9a2.066,2.066,0,0,0,2.065-2.065v-.688A5.507,5.507,0,0,0,16.523,13.77Z">
+                                </path>
+                            </svg>
+                            <b>حساب کاربری</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="23.031" height="23.403"
+                                viewBox="0 0 23.031 23.403">
+                                <path id="Icon_awesome-power-off" data-name="Icon awesome-power-off"
+                                    d="M18.765,2.512a11.514,11.514,0,1,1-13.382,0,1.118,1.118,0,0,1,1.625.358l.734,1.3a1.114,1.114,0,0,1-.306,1.439,7.8,7.8,0,1,0,9.282,0,1.108,1.108,0,0,1-.3-1.435l.734-1.3a1.113,1.113,0,0,1,1.616-.362Zm-4.829,9.746V1.114A1.112,1.112,0,0,0,12.821,0H11.335a1.112,1.112,0,0,0-1.114,1.114V12.259a1.112,1.112,0,0,0,1.114,1.114h1.486A1.112,1.112,0,0,0,13.935,12.259Z"
+                                    transform="translate(-0.562)"></path>
+                            </svg>
+                            <b>خروج</b>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="app d-flex flex-col">
+
+
+            <div class="app-head order-m1">
+                <div class="toggle">
+                    <button class="btn bg-transparent radius-m" id="toggleResponsive">
+                        <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/></svg>
+                    </button>
+                </div>
+                <div class="title">
+                    <b>داشبورد</b>
+                </div>
+                <div class="control">
+                    <button class="lang radius-c btn bg-primary-light text-primary cursor-pointer" id="toggleLanguageBox">
+                        <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#3276DA"><path d="M98.9,184.7l1.8,2.1l136,156.5c4.6,5.3,11.5,8.6,19.2,8.6c7.7,0,14.6-3.4,19.2-8.6L411,187.1l2.3-2.6  c1.7-2.5,2.7-5.5,2.7-8.7c0-8.7-7.4-15.8-16.6-15.8v0H112.6v0c-9.2,0-16.6,7.1-16.6,15.8C96,179.1,97.1,182.2,98.9,184.7z"/></svg>
+                        <b>FA</b>
+                    </button>
+                    <div class="lang-box bg-white radius-m border-1 border-silver-dark d-none" id="languageBox">
+                        <ul>
+                            <li class="border-bottom-1 border-silver"><a href="">EN - US English</a></li>
+                            <li><a href="">FA - فارسی</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-row app-tabs mb-5 order-m1">
+                <ul class="app-control-tabs clear-after">   
+                    <li class="active" data-tab="url" id="btnUrlTab">اضافه کردن لینک</li>
+                    <li class="" data-tab="file" id="btnFileTab">اضافه کردن مگنت</li>
+                </ul>
+                <div class="app-widget app-widget-tabs bg-white">
+                    <div class="app-content-tabs">
+                        <div class="app-content-tab" data-tab="url" id="ctnUrlTab">url</div>
+                        <div class="app-content-tab d-none" data-tab="file" id="ctnFileTab">file</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="app-row mb-4">
+                <div class="app-widget bg-white radius-m">
+                    <div class="app-stats-simple">
+                        <a class="app-stats-simple-col app-stats-simple-graph bg-primary-light radius-n">
+                            <svg height=58.976 viewBox="0 0 58.976 58.976"width=58.976 xmlns=http://www.w3.org/2000/svg><g data-name="Ellipse 7"fill=none id=Ellipse_7 stroke=#dee4fc stroke-width=15><circle cx=29.488 cy=29.488 r=29.488 stroke=none></circle><circle cx=29.488 cy=29.488 r=21.988 fill=none></circle></g></svg>
+                            <b>تیکت پشتیبانی</b>
+                            <span>
+                                <strong>استفاده شده : 60%</strong>
+                                <strong>خالی : 40%</strong>
+                            </span>
+                        </a>
+                        <a href="" class="app-stats-simple-col app-stats-simple-link bg-secondary-light radius-n">
+                            <svg height=45 viewBox="0 0 45 45"width=45 xmlns=http://www.w3.org/2000/svg><g id=Group_8 transform="translate(-1240 -212)"data-name="Group 8"><path d=M22.5,0A22.5,22.5,0,1,1,0,22.5,22.5,22.5,0,0,1,22.5,0Z data-name="Path 40"fill=#5d45fa id=Path_40 transform="translate(1240 212)"></path><g id=fi-rr-ticket transform="translate(1251 223)"><path d=M16,0h-.13a2.02,2.02,0,0,0-1.941,1.532,2,2,0,0,1-3.858,0A2.02,2.02,0,0,0,8.13,0H8A5.006,5.006,0,0,0,3,5V21a3,3,0,0,0,3,3H8.13a2.02,2.02,0,0,0,1.941-1.532,2,2,0,0,1,3.858,0A2.02,2.02,0,0,0,15.87,24H18a3,3,0,0,0,3-3V5A5.006,5.006,0,0,0,16,0Zm2,22-2.143-.063A4,4,0,0,0,8.13,22H6a1,1,0,0,1-1-1V17H7a1,1,0,0,0,0-2H5V5A3,3,0,0,1,8,2l.143.063A4.01,4.01,0,0,0,12,5a4.071,4.071,0,0,0,3.893-3H16a3,3,0,0,1,3,3V15H17a1,1,0,0,0,0,2h2v4A1,1,0,0,1,18,22Z data-name="Path 38"fill=#fff id=Path_38></path><path d=M13,15H11a1,1,0,0,0,0,2h2a1,1,0,0,0,0-2Z data-name="Path 39"fill=#fff id=Path_39></path></g></g></svg>
+                            <b>تیکت پشتیبانی</b>
+                            <span class="text-secondary">به زودی</span>
+                        </a>
+                        <a href="" class="app-stats-simple-col app-stats-simple-link bg-success-light radius-n">
+                            <svg height=45 viewBox="0 0 45 45"width=45 xmlns=http://www.w3.org/2000/svg><g id=Group_5 transform="translate(-913 -212)"data-name="Group 5"><circle cx=22.5 cy=22.5 data-name="Ellipse 2"fill=#02b182 id=Ellipse_2 r=22.5 transform="translate(913 212)"></circle><g id=fi-rr-settings transform="translate(923.5 222.5)"><path d=M12,8a4,4,0,1,0,4,4A4,4,0,0,0,12,8Zm0,6a2,2,0,1,1,2-2A2,2,0,0,1,12,14Z data-name="Path 36"fill=#fff id=Path_36></path><path d=M21.294,13.9l-.444-.256a9.1,9.1,0,0,0,0-3.29l.444-.256a3,3,0,1,0-3-5.2l-.445.257A8.977,8.977,0,0,0,15,3.513V3A3,3,0,1,0,9,3v.513A8.977,8.977,0,0,0,6.152,5.159L5.7,4.9a3,3,0,1,0-3,5.2l.444.256a9.1,9.1,0,0,0,0,3.29L2.7,13.9a3,3,0,0,0,3,5.2l.445-.257A8.977,8.977,0,0,0,9,20.487V21a3,3,0,0,0,6,0v-.513a8.977,8.977,0,0,0,2.848-1.646l.447.258a3,3,0,1,0,3-5.2Zm-2.548-3.776a7.048,7.048,0,0,1,0,3.75,1,1,0,0,0,.464,1.133l1.084.626a1,1,0,1,1-1,1.733l-1.086-.628a1,1,0,0,0-1.215.165,6.984,6.984,0,0,1-3.243,1.875,1,1,0,0,0-.751.969V21a1,1,0,0,1-2,0V19.748a1,1,0,0,0-.751-.969A6.984,6.984,0,0,1,7.006,16.9a1,1,0,0,0-1.215-.165l-1.084.627a1,1,0,1,1-1-1.732L4.791,15a1,1,0,0,0,.464-1.133,7.048,7.048,0,0,1,0-3.75A1,1,0,0,0,4.79,8.992L3.706,8.366a1,1,0,0,1,1-1.733l1.086.628A1,1,0,0,0,7.006,7.1a6.984,6.984,0,0,1,3.243-1.875A1,1,0,0,0,11,4.252V3a1,1,0,1,1,2,0V4.252a1,1,0,0,0,.751.969A6.984,6.984,0,0,1,16.994,7.1a1,1,0,0,0,1.215.165l1.084-.627a1,1,0,1,1,1,1.732L19.209,9a1,1,0,0,0-.463,1.129Z data-name="Path 37"fill=#fff id=Path_37></path></g></g></svg>
+                            <b>تنظیمات</b>
+                            <span class="text-success">حساب کاربری خود را مدیریت کنید</span>
+                        </a>
+                        <a href="" class="app-stats-simple-col app-stats-simple-link bg-warning-light radius-n">
+                            <svg height=45 viewBox="0 0 45 45"width=45 xmlns=http://www.w3.org/2000/svg><g id=Group_3 transform="translate(-586 -212)"data-name="Group 3"><circle cx=22.5 cy=22.5 data-name="Ellipse 1"fill=#ffbc17 id=Ellipse_1 r=22.5 transform="translate(586 212)"></circle><g id=fi-rr-info transform="translate(597.502 223.502)"><path d=M11,0A11,11,0,1,0,22,11,11,11,0,0,0,11,0Zm0,20.163A9.165,9.165,0,1,1,20.163,11,9.165,9.165,0,0,1,11,20.163Z data-name="Path 34"fill=#fff id=Path_34></path><path d=M11.833,10h-.916a.916.916,0,1,0,0,1.833h.916v5.5a.916.916,0,0,0,1.833,0v-5.5A1.833,1.833,0,0,0,11.833,10Z data-name="Path 35"fill=#fff id=Path_35 transform="translate(-0.835 -0.835)"></path><circle cx=1.375 cy=1.375 data-name="Ellipse 9"fill=#fff id=Ellipse_9 r=1.375 transform="translate(9.623 4.582)"></circle></g></g></svg>
+                            <b>راهنمای کاربران</b>
+                            <span class="text-warning">راهنمای استفاده از سایت</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row app-row-flex app-md-col-flex mb-5">
+                <div class="app-col-status mb-md-5">
+                    <div class="app-widget bg-white radius-m mb-4">
+                        <strong class="d-block mb-2 cursor-default">شما هستید : </strong>
+                        <b class="d-block mb-2 cursor-default">عضو حق بیمه رایگان</b>
+                        <time class="d-block fs-m cursor-default"><span>تاریخ انقضاء:</span> <i class="text-normal text-bold text-primary">2022/03/03</i></time>
+                    </div>
+                    <div class="app-widget bg-white radius-m app-widget-upgrade">
+                        <strong class="d-block mb-2 cursor-default">برنامه شما این است:</strong>
+                        <b class="d-block mb-2 cursor-default">رایگان PK/3</b>
+                        <a href="" class="d-block text-info fs-m">در مورد طرح‌ها بیشتر بخوانید</a>
+                        <a href="" class="btn bg-success-dright text-white radius-n d-inline-block app-widget-upgrade-btn fs-l">ارتقاء دهید</a>
+                    </div>
+                </div>
+                <div class="app-col-usage">
+                    <div class="app-widget bg-white radius-m">
+                        <strong class="d-block mb-2 cursor-default fs-5">آمار استفاده</strong>
+                        <span class="label">MB</span>
+                        <canvas id="myChart" height="27" width="100%"></canvas>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-list bg-white radius-m">
+                    <div class="app-widget-title">5 درخواست آخر</div>
+                    <div class="list list-download">
+                        <div class="list-row list-head">
+                            <div class="list-cell">نام</div>
+                            <div class="list-cell md-hide">اندازه</div>
+                            <div class="list-cell md-hide">تاریخ درخواست</div>
+                            <div class="list-cell md-hide">Speed/leech</div>
+                            <div class="list-cell">عملکرد</div>
+                        </div>
+                        <div class="list-row">
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37.142" height="29.404" viewBox="0 0 37.142 29.404"> <g id="Icon" transform="translate(-294 -224.208)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-0.537)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(0 -1.071)" fill="#ffc107"></path> </g></svg>
+                                </div>
+                                <div class="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                    <small class="fs-m text-warning">/سورس</small>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100">
+                                <div class="d-block d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">اندازه:</span>
+                                    <div class="d-block d-md-flex mb-m ml-md-1">2GB</div>
+                                    <div class="d-block d-md-flex fs-m text-success-bright">در حال دانلود</div>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">تاریخ درخواست:</span>
+                                    <span class="d-md-flex">سه شنبه 1401/03/02 10:30</span>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">Seed/Leach:</span>
+                                    <span>20/2</span>
+                                </div>
+                            </div>
+                            <div class="list-cell list-progress w-md-100">
+                                <div class="w-md-100">
+                                    <div class="mb-m w-100">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 16"> <path data-name="Path 32" d="M8,0H233a8,8,0,0,1,0,16H8A8,8,0,0,1,8,0Z" fill="#f5f6fa" width="100%"></path> <rect width="20%" height="16" rx="8" fill="#00bc3a"></rect></svg>
+                                    </div>
+                                    <div class="app-row app-row-flex fs-m fw-bold">
+                                        <div class="">
+                                            ETA: 2 Hours
+                                        </div>
+                                        <div class="text-left">
+                                            368.4 Kb/S
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-list bg-white radius-m">
+                    <div class="app-widget-title">آخرین 5 فایل دانلود شده</div>
+                    <div class="list list-download">
+                        <div class="list-row list-head">
+                            <div class="list-cell">نام</div>
+                            <div class="list-cell md-hide">اندازه</div>
+                            <div class="list-cell md-hide">تاریخ درخواست</div>
+                            <div class="list-cell">عملکرد</div>
+                        </div>
+                        <div class="list-row">
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37.142" height="29.404" viewBox="0 0 37.142 29.404"> <g id="Icon" transform="translate(-294 -224.208)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-0.537)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(0 -1.071)" fill="#ffc107"></path> </g></svg>
+                                </div>
+                                <div>
+                                    <b class="d-block mb-m">Folder 1</b>
+                                    <small class="fs-m text-warning">/سورس</small>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100">
+                                <div class="d-block d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">اندازه:</span>
+                                    <div class="d-block d-md-flex mb-m ml-md-1">2GB</div>
+                                    <div class="d-block d-md-flex fs-m text-success-bright">در حال دانلود</div>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">تاریخ درخواست:</span>
+                                    <span class="d-md-flex">سه شنبه 1401/03/02 10:30</span>
+                                </div>
+                            </div>
+                            <div class="list-cell">
+                                <div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-list bg-white radius-m">
+                    <div class="app-widget-title">5 درخواست آخر</div>
+                    <div class="list list-download">
+                        <div class="list-row list-head">
+                            <div class="list-cell">نام</div>
+                            <div class="list-cell md-hide">اندازه</div>
+                            <div class="list-cell md-hide">تاریخ درخواست</div>
+                            <div class="list-cell md-hide">Speed/leech</div>
+                            <div class="list-cell">عملکرد</div>
+                        </div>
+                        <div class="list-empty cursor-default">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40.5" height="27" viewBox="0 0 40.5 27"> <path id="Icon_awesome-inbox" data-name="Icon awesome-inbox" d="M39.933,17.15,32.5,6a3.375,3.375,0,0,0-2.808-1.5H10.806A3.375,3.375,0,0,0,8,6L.567,17.15A3.375,3.375,0,0,0,0,19.022v9.1A3.375,3.375,0,0,0,3.375,31.5h33.75A3.375,3.375,0,0,0,40.5,28.125v-9.1a3.375,3.375,0,0,0-.567-1.872ZM11.408,9H29.092l6,9H26.438l-2.25,4.5H16.313L14.063,18H5.408l6-9Z" transform="translate(0 -4.5)" fill="#d0d0d0"></path></svg>
+                            <span>بدون انتقال فایل</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-search-file bg-primary radius-m">
+                    <div class="title text-white cursor-default">جستجوی فایل‌ها</div>
+                    <div class="search-file">
+                        <input type="text" class="inp radius-c" placeholder="فایل خود را جستجو کنید">
+                        <button type="button" class="btn bg-warning text-white radius-c">
+                            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff"><path d="M448.3,424.7L335,311.3c20.8-26,33.3-59.1,33.3-95.1c0-84.1-68.1-152.2-152-152.2c-84,0-152,68.2-152,152.2  s68.1,152.2,152,152.2c36.2,0,69.4-12.7,95.5-33.8L425,448L448.3,424.7z M120.1,312.6c-25.7-25.7-39.8-59.9-39.8-96.3  s14.2-70.6,39.8-96.3S180,80,216.3,80c36.3,0,70.5,14.2,96.2,39.9s39.8,59.9,39.8,96.3s-14.2,70.6-39.8,96.3  c-25.7,25.7-59.9,39.9-96.2,39.9C180,352.5,145.8,338.3,120.1,312.6z"/></svg>
+                            <span>جستجو کردن</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-files bg-white radius-m">
+                    <div class="app-widget-title">پوشه‌ها</div>
+                    <div class="files">
+                        <div class="file radius-m border-1 border-silver-dark transition-all">
+                            <div class="file-head">
+                                <a href="">
+                                    <svg id="Group_1917" data-name="Group 1917" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="35" cy="35" r="35" fill="#fff8eb"></circle> <g id="Icon" transform="translate(16 20)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-294.537 -224.208)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(-294 -225.28)" fill="#ffc107"></path> </g></svg>
+                                </a>
+                                <button class="radius-c">
+                                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"/><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"/><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="file-title">
+                                <a href="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                </a>
+                            </div>
+                            <div class="file-size">
+                                <span>اندازه : <span>2GB</span></span>
+                            </div>
+                            <div class="file-date">
+                                <svg id="fi-rr-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <path id="Path_41" data-name="Path 41" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" transform="translate(0 0)" fill="#878787"></path> <path id="Path_42" data-name="Path 42" d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z" transform="translate(0 0)" fill="#878787"></path></svg>
+                                <span>تاریخ درخواست : <span>سه شنبه 1401/03/02 10:30</span><span>
+                            </div>
+                        </div>
+                        <div class="file radius-m border-1 border-silver-dark transition-all">
+                            <div class="file-head">
+                                <a href="">
+                                    <svg id="Group_1917" data-name="Group 1917" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="35" cy="35" r="35" fill="#fff8eb"></circle> <g id="Icon" transform="translate(16 20)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-294.537 -224.208)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(-294 -225.28)" fill="#ffc107"></path> </g></svg>
+                                </a>
+                                <button class="radius-c">
+                                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"/><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"/><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="file-title">
+                                <a href="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                </a>
+                            </div>
+                            <div class="file-size">
+                                <span>اندازه : <span>2GB</span></span>
+                            </div>
+                            <div class="file-date">
+                                <svg id="fi-rr-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <path id="Path_41" data-name="Path 41" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" transform="translate(0 0)" fill="#878787"></path> <path id="Path_42" data-name="Path 42" d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z" transform="translate(0 0)" fill="#878787"></path></svg>
+                                <span>تاریخ درخواست : <span>سه شنبه 1401/03/02 10:30</span><span>
+                            </div>
+                        </div>
+                        <div class="file radius-m border-1 border-silver-dark transition-all">
+                            <div class="file-head">
+                                <a href="">
+                                    <svg id="Group_1917" data-name="Group 1917" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="35" cy="35" r="35" fill="#fff8eb"></circle> <g id="Icon" transform="translate(16 20)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-294.537 -224.208)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(-294 -225.28)" fill="#ffc107"></path> </g></svg>
+                                </a>
+                                <button class="radius-c">
+                                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"/><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"/><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="file-title">
+                                <a href="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                </a>
+                            </div>
+                            <div class="file-size">
+                                <span>اندازه : <span>2GB</span></span>
+                            </div>
+                            <div class="file-date">
+                                <svg id="fi-rr-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <path id="Path_41" data-name="Path 41" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" transform="translate(0 0)" fill="#878787"></path> <path id="Path_42" data-name="Path 42" d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z" transform="translate(0 0)" fill="#878787"></path></svg>
+                                <span>تاریخ درخواست : <span>سه شنبه 1401/03/02 10:30</span><span>
+                            </div>
+                        </div>
+                        <div class="file radius-m border-1 border-silver-dark transition-all">
+                            <div class="file-head">
+                                <a href="">
+                                    <svg id="Group_1917" data-name="Group 1917" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="35" cy="35" r="35" fill="#fff8eb"></circle> <g id="Icon" transform="translate(16 20)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-294.537 -224.208)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(-294 -225.28)" fill="#ffc107"></path> </g></svg>
+                                </a>
+                                <button class="radius-c">
+                                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"/><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"/><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="file-title">
+                                <a href="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                </a>
+                            </div>
+                            <div class="file-size">
+                                <span>اندازه : <span>2GB</span></span>
+                            </div>
+                            <div class="file-date">
+                                <svg id="fi-rr-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <path id="Path_41" data-name="Path 41" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" transform="translate(0 0)" fill="#878787"></path> <path id="Path_42" data-name="Path 42" d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z" transform="translate(0 0)" fill="#878787"></path></svg>
+                                <span>تاریخ درخواست : <span>سه شنبه 1401/03/02 10:30</span><span>
+                            </div>
+                        </div>
+                        <div class="file radius-m border-1 border-silver-dark transition-all">
+                            <div class="file-head">
+                                <a href="">
+                                    <svg id="Group_1917" data-name="Group 1917" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="35" cy="35" r="35" fill="#fff8eb"></circle> <g id="Icon" transform="translate(16 20)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-294.537 -224.208)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(-294 -225.28)" fill="#ffc107"></path> </g></svg>
+                                </a>
+                                <button class="radius-c">
+                                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"/><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"/><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="file-title">
+                                <a href="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                </a>
+                            </div>
+                            <div class="file-size">
+                                <span>اندازه : <span>2GB</span></span>
+                            </div>
+                            <div class="file-date">
+                                <svg id="fi-rr-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <path id="Path_41" data-name="Path 41" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" transform="translate(0 0)" fill="#878787"></path> <path id="Path_42" data-name="Path 42" d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z" transform="translate(0 0)" fill="#878787"></path></svg>
+                                <span>تاریخ درخواست : <span>سه شنبه 1401/03/02 10:30</span><span>
+                            </div>
+                        </div>
+                        <div class="file radius-m border-1 border-silver-dark transition-all">
+                            <div class="file-head">
+                                <a href="">
+                                    <svg id="Group_1917" data-name="Group 1917" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="35" cy="35" r="35" fill="#fff8eb"></circle> <g id="Icon" transform="translate(16 20)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-294.537 -224.208)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(-294 -225.28)" fill="#ffc107"></path> </g></svg>
+                                </a>
+                                <button class="radius-c">
+                                    <svg style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M256,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S273.7,224,256,224L256,224z"/><path d="M128.4,224c-17.7,0-32,14.3-32,32s14.3,32,32,32c17.7,0,32-14.3,32-32S146,224,128.4,224L128.4,224z"/><path d="M384,224c-17.7,0-32,14.3-32,32s14.3,32,32,32s32-14.3,32-32S401.7,224,384,224L384,224z"/></g></svg>
+                                </button>
+                            </div>
+                            <div class="file-title">
+                                <a href="">
+                                    <b class="d-block mb-m">Folder 1</b>
+                                </a>
+                            </div>
+                            <div class="file-size">
+                                <span>اندازه : <span>2GB</span></span>
+                            </div>
+                            <div class="file-date">
+                                <svg id="fi-rr-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"> <path id="Path_41" data-name="Path 41" d="M12,0A12,12,0,1,0,24,12,12,12,0,0,0,12,0Zm0,22A10,10,0,1,1,22,12,10,10,0,0,1,12,22Z" transform="translate(0 0)" fill="#878787"></path> <path id="Path_42" data-name="Path 42" d="M12,6a1,1,0,0,0-1,1v4.325L7.629,13.437a1,1,0,0,0,1.062,1.7l3.84-2.4A1,1,0,0,0,13,11.879V7A1,1,0,0,0,12,6Z" transform="translate(0 0)" fill="#878787"></path></svg>
+                                <span>تاریخ درخواست : <span>سه شنبه 1401/03/02 10:30</span><span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-filestats bg-white radius-m">
+                    <div class="filestats">
+                        <a href="" class="filestat radius-m border-1 border-silver-dark transition-all">
+                            <div class="filestat-head">
+                                <div class="filestat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65"> <ellipse id="Ellipse_182" data-name="Ellipse 182" cx="32" cy="32.5" rx="32" ry="32.5" fill="#e2efff"></ellipse> <g id="fi-rr-picture" transform="translate(19.377 20.218)"> <path id="Path_3919" data-name="Path 3919" d="M19.861,0H5.227A5.233,5.233,0,0,0,0,5.227V19.861a5.233,5.233,0,0,0,5.227,5.227H19.861a5.233,5.233,0,0,0,5.227-5.227V5.227A5.233,5.233,0,0,0,19.861,0ZM5.227,2.091H19.861A3.136,3.136,0,0,1,23,5.227V19.861a3.085,3.085,0,0,1-.314,1.343l-9.578-9.578a5.227,5.227,0,0,0-7.393,0L2.091,15.247V5.227A3.136,3.136,0,0,1,5.227,2.091ZM5.227,23a3.136,3.136,0,0,1-3.136-3.136V18.2l5.1-5.1a3.136,3.136,0,0,1,4.436,0L21.2,22.683A3.085,3.085,0,0,1,19.861,23Z" fill="#3276da"></path> <path id="Path_3920" data-name="Path 3920" d="M16.159,10.817A3.659,3.659,0,1,0,12.5,7.159a3.659,3.659,0,0,0,3.659,3.659Zm0-5.227a1.568,1.568,0,1,1-1.568,1.568A1.568,1.568,0,0,1,16.159,5.591Z" transform="translate(0.567 0.159)" fill="#3276da"></path> </g></svg>
+                                </div>
+                                <div class="filestat-info">
+                                    <b class="d-block text-dark">تصاویر</b>
+                                    <span class="text-silver-darken">استفاده از فضای ذخیره سازی <span>25%</span></span>
+                                </div>
+                            </div>
+                            <div class="filestat-foot">
+                                <div class="mb-m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 16"> <path data-name="Path 32" d="M8,0H233a8,8,0,0,1,0,16H8A8,8,0,0,1,8,0Z" fill="#f5f6fa" widget="100%"></path> <rect width="20%" height="16" rx="8" fill="#3276da"></rect></svg>
+                                </div>
+                                <div class="app-row app-row-flex fs-m fw-bold text-primary">
+                                    <div class="ltr">
+                                        64GB
+                                    </div>
+                                    <div class="text-left ltr">
+                                        24GB
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="filestat radius-m border-1 border-silver-dark transition-all">
+                            <div class="filestat-head">
+                                <div class="filestat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65"> <ellipse id="Ellipse_182" data-name="Ellipse 182" cx="32" cy="32.5" rx="32" ry="32.5" fill="#e5fdec"></ellipse> <path id="fi-rr-document" d="M17.231,14.78a1.036,1.036,0,0,1-1.015,1.056H8.092a1.057,1.057,0,0,1,0-2.111h8.123A1.036,1.036,0,0,1,17.231,14.78Zm-4.061,3.167H8.092a1.057,1.057,0,0,0,0,2.111h5.077a1.057,1.057,0,0,0,0-2.111Zm9.138-6.878v8.989a5.187,5.187,0,0,1-5.077,5.279H7.077A5.187,5.187,0,0,1,2,20.059V5.279A5.187,5.187,0,0,1,7.077,0h4.584a6.931,6.931,0,0,1,5.026,2.164l3.538,3.68A7.489,7.489,0,0,1,22.307,11.069ZM15.252,3.657a5.106,5.106,0,0,0-1.067-.823V7.39A1.036,1.036,0,0,0,15.2,8.446h4.382a5.252,5.252,0,0,0-.793-1.109Zm5.025,7.412c0-.174-.032-.341-.048-.512H15.2A3.108,3.108,0,0,1,12.154,7.39V2.161c-.164-.016-.326-.05-.492-.05H7.077A3.108,3.108,0,0,0,4.031,5.279v14.78a3.108,3.108,0,0,0,3.046,3.167H17.231a3.108,3.108,0,0,0,3.046-3.167Z" transform="translate(19.696 19.906)" fill="#51b495"></path></svg>
+                                </div>
+                                <div class="filestat-info">
+                                    <b class="d-block text-dark">اسناد</b>
+                                    <span class="text-silver-darken">استفاده از فضای ذخیره سازی <span>25%</span></span>
+                                </div>
+                            </div>
+                            <div class="filestat-foot">
+                                <div class="mb-m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 16"> <path data-name="Path 32" d="M8,0H233a8,8,0,0,1,0,16H8A8,8,0,0,1,8,0Z" fill="#f5f6fa" widget="100%"></path> <rect width="20%" height="16" rx="8" fill="#51b495"></rect></svg>
+                                </div>
+                                <div class="app-row app-row-flex fs-m fw-bold text-success">
+                                    <div class="ltr">
+                                        64GB
+                                    </div>
+                                    <div class="text-left ltr">
+                                        24GB
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="filestat radius-m border-1 border-silver-dark transition-all">
+                            <div class="filestat-head">
+                                <div class="filestat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65"> <circle id="Ellipse_182" data-name="Ellipse 182" cx="32.5" cy="32.5" r="32.5" fill="#fff3e3"></circle> <path id="fi-rr-play-alt" d="M20.059,25.337H5.279A5.285,5.285,0,0,1,0,20.059V5.279A5.285,5.285,0,0,1,5.279,0h14.78a5.285,5.285,0,0,1,5.279,5.279v14.78A5.285,5.285,0,0,1,20.059,25.337ZM5.279,2.111A3.167,3.167,0,0,0,2.111,5.279v14.78a3.167,3.167,0,0,0,3.167,3.167h14.78a3.167,3.167,0,0,0,3.167-3.167V5.279a3.167,3.167,0,0,0-3.167-3.167ZM9.862,17.952a2.5,2.5,0,0,1-1.252-.341,2.442,2.442,0,0,1-1.229-2.134V9.859a2.467,2.467,0,0,1,3.695-2.142L16.649,10.5a2.466,2.466,0,0,1,.052,4.312l-5.676,2.837a2.323,2.323,0,0,1-1.162.305ZM9.836,9.507a.331.331,0,0,0-.166.044.345.345,0,0,0-.177.308v5.619a.356.356,0,0,0,.528.309L15.7,12.949a.331.331,0,0,0,.127-.281.343.343,0,0,0-.178-.308L10.077,9.578a.488.488,0,0,0-.241-.072Z" transform="translate(19.711 19.906)" fill="#ef7f5a"></path></svg>
+                                </div>
+                                <div class="filestat-info">
+                                    <b class="d-block text-dark">ویدیوها</b>
+                                    <span class="text-silver-darken">استفاده از فضای ذخیره سازی <span>25%</span></span>
+                                </div>
+                            </div>
+                            <div class="filestat-foot">
+                                <div class="mb-m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 16"> <path data-name="Path 32" d="M8,0H233a8,8,0,0,1,0,16H8A8,8,0,0,1,8,0Z" fill="#f5f6fa" widget="100%"></path> <rect width="20%" height="16" rx="8" fill="#ef7f5a"></rect></svg>
+                                </div>
+                                <div class="app-row app-row-flex fs-m fw-bold text-orange">
+                                    <div class="ltr">
+                                        64GB
+                                    </div>
+                                    <div class="text-left ltr">
+                                        24GB
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="filestat radius-m border-1 border-silver-dark transition-all">
+                            <div class="filestat-head">
+                                <div class="filestat-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="65" viewBox="0 0 64 65"> <ellipse id="Ellipse_182" data-name="Ellipse 182" cx="32" cy="32.5" rx="32" ry="32.5" fill="#fff8eb"></ellipse> <path id="fi-rr-document-signed" d="M19.535,3.122,17.879,1.464A4.968,4.968,0,0,0,14.343,0H8A5.006,5.006,0,0,0,3,5V19a5.006,5.006,0,0,0,5,5h8a5.006,5.006,0,0,0,5-5V6.657a4.968,4.968,0,0,0-1.465-3.535ZM18.121,4.536A2.932,2.932,0,0,1,18.5,5H16V2.5a3.1,3.1,0,0,1,.465.38ZM19,19a3,3,0,0,1-3,3H8a3,3,0,0,1-3-3V5A3,3,0,0,1,8,2h6V5a2,2,0,0,0,2,2h3ZM16,9a1,1,0,0,1,0,2H8A1,1,0,0,1,8,9Zm1,5a1,1,0,0,1-1,1H8a1,1,0,0,1,0-2h8A1,1,0,0,1,17,14Zm-.192,3.413a1,1,0,0,1-.217,1.394A6.464,6.464,0,0,1,13.135,20a3.252,3.252,0,0,1-2-.7c-.328-.225-.453-.3-.7-.3a3.951,3.951,0,0,0-1.832.794,1,1,0,0,1-1.214-1.588A5.861,5.861,0,0,1,10.439,17a3.025,3.025,0,0,1,1.832.655,1.347,1.347,0,0,0,.864.345,4.586,4.586,0,0,0,2.277-.809,1,1,0,0,1,1.4.222Z" transform="translate(20 19)" fill="#ffbf3a"></path></svg>
+                                </div>
+                                <div class="filestat-info">
+                                    <b class="d-block text-dark">دیگر</b>
+                                    <span class="text-silver-darken">استفاده از فضای ذخیره سازی <span>25%</span></span>
+                                </div>
+                            </div>
+                            <div class="filestat-foot">
+                                <div class="mb-m">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241 16"> <path data-name="Path 32" d="M8,0H233a8,8,0,0,1,0,16H8A8,8,0,0,1,8,0Z" fill="#f5f6fa" widget="100%"></path> <rect width="20%" height="16" rx="8" fill="#ffca1f"></rect></svg>
+                                </div>
+                                <div class="app-row app-row-flex fs-m fw-bold text-warning">
+                                    <div class="ltr">
+                                        64GB
+                                    </div>
+                                    <div class="text-left ltr">
+                                        24GB
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-list bg-white radius-m">
+                    <div class="app-widget-title d-flex flex-row justify-space-between align-items-center">
+                        <div class="path">
+                            <ul>
+                                <li>
+                                    <a href="" class="btn bg-transparent radius-m">\</a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn bg-transparent radius-m">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="37.142" height="29.404" viewBox="0 0 37.142 29.404"> <g id="Icon" transform="translate(-294 -224.208)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-0.537)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(0 -1.071)" fill="#ffc107"></path> </g></svg>
+                                        <b>Folder 1</b>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="control">
+                            <a href="" class="btn bg-transparent text-black radius-c">
+                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g data-name="1" id="_1"><path d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/></g></svg>
+                                <b>بازگشت</b>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="list list-download list-checker">
+                        <div class="list-row list-head">
+                            <div class="list-cell">
+                                <div class="chk">
+                                    <input type="checkbox" id="all-row">
+                                    <label for="all-row"></label>
+                                </div>
+                            </div>
+                            <div class="list-cell">نام</div>
+                            <div class="list-cell md-hide">اندازه</div>
+                            <div class="list-cell md-hide">تاریخ درخواست</div>
+                            <div class="list-cell">عملکرد</div>
+                            <div class="list-cell md-hide"></div>
+                        </div>
+                        <div class="list-row">
+                            <div class="list-cell">
+                                <div class="chk">
+                                    <input type="checkbox" id="1-row">
+                                    <label for="1-row"></label>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="ml-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="37.142" height="29.404" viewBox="0 0 37.142 29.404"> <g id="Icon" transform="translate(-294 -224.208)"> <path id="Vector" d="M326.262,224.208H299.953a3.86,3.86,0,0,0-3.832,4.372.774.774,0,0,0,1.159.568,2.191,2.191,0,0,1,1.125-.3h5.51a2.334,2.334,0,0,1,2.2,1.575l.131.424a3.888,3.888,0,0,0,3.673,2.643h17.89a2.321,2.321,0,0,1,1.156.31.775.775,0,0,0,1.165-.669v-5.058A3.869,3.869,0,0,0,326.262,224.208Z" transform="translate(-0.537)" fill="#ffa000"></path> <path id="Vector-2" data-name="Vector" d="M329.212,233.541a3.847,3.847,0,0,0-1.939-.523h-17.89a2.334,2.334,0,0,1-2.2-1.575l-.132-.424a3.887,3.887,0,0,0-3.672-2.643h-5.509a3.7,3.7,0,0,0-1.894.5A3.86,3.86,0,0,0,294,232.244v18.571a3.869,3.869,0,0,0,3.869,3.869h29.4a3.869,3.869,0,0,0,3.869-3.869V236.887A3.842,3.842,0,0,0,329.212,233.541Z" transform="translate(0 -1.071)" fill="#ffc107"></path> </g></svg>
+                                </div>
+                                <div>
+                                    <b class="d-block mb-m">Folder 1</b>
+                                    <small class="fs-m text-warning">/سورس</small>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100">
+                                <div class="d-block d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">اندازه:</span>
+                                    <div class="d-block d-md-flex mb-m ml-md-1">2GB</div>
+                                </div>
+                            </div>
+                            <div class="list-cell w-md-100 mb-md-2">
+                                <div class="d-md-flex w-md-100">
+                                    <span class="d-none d-md-flex ml-md-1 fw-bold">تاریخ درخواست:</span>
+                                    <span class="d-md-flex">سه شنبه 1401/03/02 10:30</span>
+                                </div>
+                            </div>
+                            <div class="list-cell">
+                                <div>
+                                    
+                                </div>
+                            </div>
+                            <div class="list-cell">
+                                <a href="">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="24" viewBox="0 0 20 24"> <g id="fi-rr-trash" transform="translate(-2)"> <path id="Path_3931" data-name="Path 3931" d="M21,4H17.9A5.009,5.009,0,0,0,13,0H11A5.009,5.009,0,0,0,6.1,4H3A1,1,0,0,0,3,6H4V19a5.006,5.006,0,0,0,5,5h6a5.006,5.006,0,0,0,5-5V6h1a1,1,0,0,0,0-2ZM11,2h2a3.006,3.006,0,0,1,2.829,2H8.171A3.006,3.006,0,0,1,11,2Zm7,17a3,3,0,0,1-3,3H9a3,3,0,0,1-3-3V6H18Z" fill="#ff3838"></path> <path id="Path_3932" data-name="Path 3932" d="M10,18a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,10,18Zm4,0a1,1,0,0,0,1-1V11a1,1,0,0,0-2,0v6A1,1,0,0,0,14,18Z" fill="#ff3838"></path> </g></svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="app-row mb-5">
+                <div class="app-widget app-widget-plans bg-white radius-m">
+                    <div class="plans-head d-flex justify-space-between app-md-col-flex align-items-center mb-40">
+                        <div class="plans-head-info cursor-default">
+                            <h1 class="plans-head-title text-primary-darker">پلان خود را انتخاب کنید</h1>
+                            <p class="plans-head-desc fs-m text-silent">با توجه به حجم دیسک مورد نیاز خود طرحی را انتخاب کنید</p>
+                        </div>
+                        <div class="plans-head-control d-flex align-items-center justify-start">
+                            <b class="text-primary-darker ml-5 cursor-default">پلان ماهیانه</b>
+                            <div class="swt">
+                                <label class="switch">
+                                    <input type="checkbox" /><div></div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plans-body d-flex justify-space-between app-md-col-flex">
+                        <div class="plans-body-plans col-half w-md-100">
+                            <div class="plans-body-plan d-flex flex-row justify-space-between align-items-center border-1 border-primary radius-m">
+                                <div class="chk">
+                                    <input type="checkbox" id="1-c">
+                                    <label for="1-c"></label>
+                                </div>
+                                <div class="title">طرح PK1</div>
+                                <div class="economy"><span>20% صرفه جویی</span></div>
+                                <div class="price">10000 ریال</div>
+                                <div class="period">/ماه</div>
+                            </div>
+                            <div class="plans-body-plan d-flex flex-row justify-space-between align-items-center border-1 border-primary radius-m">
+                                <div class="chk">
+                                    <input type="checkbox" id="2-c">
+                                    <label for="2-c"></label>
+                                </div>
+                                <div class="title">طرح PK1</div>
+                                <div class="economy"><span>20% صرفه جویی</span></div>
+                                <div class="price">10000 ریال</div>
+                                <div class="period">/ماه</div>
+                            </div>
+                            <div class="plans-body-plan d-flex flex-row justify-space-between align-items-center border-1 border-primary radius-m">
+                                <div class="chk">
+                                    <input type="checkbox" id="3-c">
+                                    <label for="3-c"></label>
+                                </div>
+                                <div class="title">طرح PK1</div>
+                                <div class="economy"><span>20% صرفه جویی</span></div>
+                                <div class="price">10000 ریال</div>
+                                <div class="period">/ماه</div>
+                            </div>
+                            <div class="plans-body-plan d-flex flex-row justify-space-between align-items-center border-1 border-primary radius-m">
+                                <div class="chk">
+                                    <input type="checkbox" id="4-c">
+                                    <label for="4-c"></label>
+                                </div>
+                                <div class="title">طرح PK1</div>
+                                <div class="economy"><span>20% صرفه جویی</span></div>
+                                <div class="price">10000 ریال</div>
+                                <div class="period">/ماه</div>
+                            </div>
+                        </div>
+                        <div class="plans-body-details col-half w-md-100">
+                            <div class="plans-details-box border-1 border-primary radius-m cursor-default">
+                                <div class="plans-details-head bg-primary text-white radius-tm">
+                                    <div class="d-flex justify-space-between align-items-center">
+                                        <div>جزئیات</div>
+                                        <div>طرح PK1</div>
+                                    </div>
+                                </div>
+                                <div class="plans-details-body text-primary-darker">
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-space-between align-items-center">
+                                            <div>ظرفیت دیسک : 150 گیگابایت</div>
+                                            <div>
+                                                <svg id="Layer_1" width="30px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                                    .st0{fill:#51B495;}
+                                                    .st1{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}
+                                                </style><path class="st0" d="M489,255.9c0-0.2,0-0.5,0-0.7c0-1.6,0-3.2-0.1-4.7c0-0.9-0.1-1.8-0.1-2.8c0-0.9-0.1-1.8-0.1-2.7  c-0.1-1.1-0.1-2.2-0.2-3.3c0-0.7-0.1-1.4-0.1-2.1c-0.1-1.2-0.2-2.4-0.3-3.6c0-0.5-0.1-1.1-0.1-1.6c-0.1-1.3-0.3-2.6-0.4-4  c0-0.3-0.1-0.7-0.1-1C474.3,113.2,375.7,22.9,256,22.9S37.7,113.2,24.5,229.5c0,0.3-0.1,0.7-0.1,1c-0.1,1.3-0.3,2.6-0.4,4  c-0.1,0.5-0.1,1.1-0.1,1.6c-0.1,1.2-0.2,2.4-0.3,3.6c0,0.7-0.1,1.4-0.1,2.1c-0.1,1.1-0.1,2.2-0.2,3.3c0,0.9-0.1,1.8-0.1,2.7  c0,0.9-0.1,1.8-0.1,2.8c0,1.6-0.1,3.2-0.1,4.7c0,0.2,0,0.5,0,0.7c0,0,0,0,0,0.1s0,0,0,0.1c0,0.2,0,0.5,0,0.7c0,1.6,0,3.2,0.1,4.7  c0,0.9,0.1,1.8,0.1,2.8c0,0.9,0.1,1.8,0.1,2.7c0.1,1.1,0.1,2.2,0.2,3.3c0,0.7,0.1,1.4,0.1,2.1c0.1,1.2,0.2,2.4,0.3,3.6  c0,0.5,0.1,1.1,0.1,1.6c0.1,1.3,0.3,2.6,0.4,4c0,0.3,0.1,0.7,0.1,1C37.7,398.8,136.3,489.1,256,489.1s218.3-90.3,231.5-206.5  c0-0.3,0.1-0.7,0.1-1c0.1-1.3,0.3-2.6,0.4-4c0.1-0.5,0.1-1.1,0.1-1.6c0.1-1.2,0.2-2.4,0.3-3.6c0-0.7,0.1-1.4,0.1-2.1  c0.1-1.1,0.1-2.2,0.2-3.3c0-0.9,0.1-1.8,0.1-2.7c0-0.9,0.1-1.8,0.1-2.8c0-1.6,0.1-3.2,0.1-4.7c0-0.2,0-0.5,0-0.7  C489,256,489,256,489,255.9C489,256,489,256,489,255.9z" id="XMLID_3_"/><g id="XMLID_1_"><line class="st1" id="XMLID_2_" x1="213.6" x2="369.7" y1="344.2" y2="188.2"/><line class="st1" id="XMLID_4_" x1="233.8" x2="154.7" y1="345.2" y2="266.1"/></g></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-space-between align-items-center">
+                                            <div>چک کردن فایل‌ها با آنتی ویروس</div>
+                                            <div>
+                                                <svg id="Layer_1" width="30px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                                    .st0{fill:#51B495;}
+                                                    .st1{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}
+                                                </style><path class="st0" d="M489,255.9c0-0.2,0-0.5,0-0.7c0-1.6,0-3.2-0.1-4.7c0-0.9-0.1-1.8-0.1-2.8c0-0.9-0.1-1.8-0.1-2.7  c-0.1-1.1-0.1-2.2-0.2-3.3c0-0.7-0.1-1.4-0.1-2.1c-0.1-1.2-0.2-2.4-0.3-3.6c0-0.5-0.1-1.1-0.1-1.6c-0.1-1.3-0.3-2.6-0.4-4  c0-0.3-0.1-0.7-0.1-1C474.3,113.2,375.7,22.9,256,22.9S37.7,113.2,24.5,229.5c0,0.3-0.1,0.7-0.1,1c-0.1,1.3-0.3,2.6-0.4,4  c-0.1,0.5-0.1,1.1-0.1,1.6c-0.1,1.2-0.2,2.4-0.3,3.6c0,0.7-0.1,1.4-0.1,2.1c-0.1,1.1-0.1,2.2-0.2,3.3c0,0.9-0.1,1.8-0.1,2.7  c0,0.9-0.1,1.8-0.1,2.8c0,1.6-0.1,3.2-0.1,4.7c0,0.2,0,0.5,0,0.7c0,0,0,0,0,0.1s0,0,0,0.1c0,0.2,0,0.5,0,0.7c0,1.6,0,3.2,0.1,4.7  c0,0.9,0.1,1.8,0.1,2.8c0,0.9,0.1,1.8,0.1,2.7c0.1,1.1,0.1,2.2,0.2,3.3c0,0.7,0.1,1.4,0.1,2.1c0.1,1.2,0.2,2.4,0.3,3.6  c0,0.5,0.1,1.1,0.1,1.6c0.1,1.3,0.3,2.6,0.4,4c0,0.3,0.1,0.7,0.1,1C37.7,398.8,136.3,489.1,256,489.1s218.3-90.3,231.5-206.5  c0-0.3,0.1-0.7,0.1-1c0.1-1.3,0.3-2.6,0.4-4c0.1-0.5,0.1-1.1,0.1-1.6c0.1-1.2,0.2-2.4,0.3-3.6c0-0.7,0.1-1.4,0.1-2.1  c0.1-1.1,0.1-2.2,0.2-3.3c0-0.9,0.1-1.8,0.1-2.7c0-0.9,0.1-1.8,0.1-2.8c0-1.6,0.1-3.2,0.1-4.7c0-0.2,0-0.5,0-0.7  C489,256,489,256,489,255.9C489,256,489,256,489,255.9z" id="XMLID_3_"/><g id="XMLID_1_"><line class="st1" id="XMLID_2_" x1="213.6" x2="369.7" y1="344.2" y2="188.2"/><line class="st1" id="XMLID_4_" x1="233.8" x2="154.7" y1="345.2" y2="266.1"/></g></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-space-between align-items-center">
+                                            <div>ظرفیت دیسک : 150 گیگابایت</div>
+                                            <div>
+                                                <svg id="Layer_1" width="30px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                                    .st0{fill:#51B495;}
+                                                    .st1{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}
+                                                </style><path class="st0" d="M489,255.9c0-0.2,0-0.5,0-0.7c0-1.6,0-3.2-0.1-4.7c0-0.9-0.1-1.8-0.1-2.8c0-0.9-0.1-1.8-0.1-2.7  c-0.1-1.1-0.1-2.2-0.2-3.3c0-0.7-0.1-1.4-0.1-2.1c-0.1-1.2-0.2-2.4-0.3-3.6c0-0.5-0.1-1.1-0.1-1.6c-0.1-1.3-0.3-2.6-0.4-4  c0-0.3-0.1-0.7-0.1-1C474.3,113.2,375.7,22.9,256,22.9S37.7,113.2,24.5,229.5c0,0.3-0.1,0.7-0.1,1c-0.1,1.3-0.3,2.6-0.4,4  c-0.1,0.5-0.1,1.1-0.1,1.6c-0.1,1.2-0.2,2.4-0.3,3.6c0,0.7-0.1,1.4-0.1,2.1c-0.1,1.1-0.1,2.2-0.2,3.3c0,0.9-0.1,1.8-0.1,2.7  c0,0.9-0.1,1.8-0.1,2.8c0,1.6-0.1,3.2-0.1,4.7c0,0.2,0,0.5,0,0.7c0,0,0,0,0,0.1s0,0,0,0.1c0,0.2,0,0.5,0,0.7c0,1.6,0,3.2,0.1,4.7  c0,0.9,0.1,1.8,0.1,2.8c0,0.9,0.1,1.8,0.1,2.7c0.1,1.1,0.1,2.2,0.2,3.3c0,0.7,0.1,1.4,0.1,2.1c0.1,1.2,0.2,2.4,0.3,3.6  c0,0.5,0.1,1.1,0.1,1.6c0.1,1.3,0.3,2.6,0.4,4c0,0.3,0.1,0.7,0.1,1C37.7,398.8,136.3,489.1,256,489.1s218.3-90.3,231.5-206.5  c0-0.3,0.1-0.7,0.1-1c0.1-1.3,0.3-2.6,0.4-4c0.1-0.5,0.1-1.1,0.1-1.6c0.1-1.2,0.2-2.4,0.3-3.6c0-0.7,0.1-1.4,0.1-2.1  c0.1-1.1,0.1-2.2,0.2-3.3c0-0.9,0.1-1.8,0.1-2.7c0-0.9,0.1-1.8,0.1-2.8c0-1.6,0.1-3.2,0.1-4.7c0-0.2,0-0.5,0-0.7  C489,256,489,256,489,255.9C489,256,489,256,489,255.9z" id="XMLID_3_"/><g id="XMLID_1_"><line class="st1" id="XMLID_2_" x1="213.6" x2="369.7" y1="344.2" y2="188.2"/><line class="st1" id="XMLID_4_" x1="233.8" x2="154.7" y1="345.2" y2="266.1"/></g></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <div class="d-flex justify-space-between align-items-center">
+                                            <div>چک کردن فایل‌ها با آنتی ویروس</div>
+                                            <div>
+                                                <svg id="Layer_1" width="30px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                                                    .st0{fill:#51B495;}
+                                                    .st1{fill:none;stroke:#FFFFFF;stroke-width:30;stroke-miterlimit:10;}
+                                                </style><path class="st0" d="M489,255.9c0-0.2,0-0.5,0-0.7c0-1.6,0-3.2-0.1-4.7c0-0.9-0.1-1.8-0.1-2.8c0-0.9-0.1-1.8-0.1-2.7  c-0.1-1.1-0.1-2.2-0.2-3.3c0-0.7-0.1-1.4-0.1-2.1c-0.1-1.2-0.2-2.4-0.3-3.6c0-0.5-0.1-1.1-0.1-1.6c-0.1-1.3-0.3-2.6-0.4-4  c0-0.3-0.1-0.7-0.1-1C474.3,113.2,375.7,22.9,256,22.9S37.7,113.2,24.5,229.5c0,0.3-0.1,0.7-0.1,1c-0.1,1.3-0.3,2.6-0.4,4  c-0.1,0.5-0.1,1.1-0.1,1.6c-0.1,1.2-0.2,2.4-0.3,3.6c0,0.7-0.1,1.4-0.1,2.1c-0.1,1.1-0.1,2.2-0.2,3.3c0,0.9-0.1,1.8-0.1,2.7  c0,0.9-0.1,1.8-0.1,2.8c0,1.6-0.1,3.2-0.1,4.7c0,0.2,0,0.5,0,0.7c0,0,0,0,0,0.1s0,0,0,0.1c0,0.2,0,0.5,0,0.7c0,1.6,0,3.2,0.1,4.7  c0,0.9,0.1,1.8,0.1,2.8c0,0.9,0.1,1.8,0.1,2.7c0.1,1.1,0.1,2.2,0.2,3.3c0,0.7,0.1,1.4,0.1,2.1c0.1,1.2,0.2,2.4,0.3,3.6  c0,0.5,0.1,1.1,0.1,1.6c0.1,1.3,0.3,2.6,0.4,4c0,0.3,0.1,0.7,0.1,1C37.7,398.8,136.3,489.1,256,489.1s218.3-90.3,231.5-206.5  c0-0.3,0.1-0.7,0.1-1c0.1-1.3,0.3-2.6,0.4-4c0.1-0.5,0.1-1.1,0.1-1.6c0.1-1.2,0.2-2.4,0.3-3.6c0-0.7,0.1-1.4,0.1-2.1  c0.1-1.1,0.1-2.2,0.2-3.3c0-0.9,0.1-1.8,0.1-2.7c0-0.9,0.1-1.8,0.1-2.8c0-1.6,0.1-3.2,0.1-4.7c0-0.2,0-0.5,0-0.7  C489,256,489,256,489,255.9C489,256,489,256,489,255.9z" id="XMLID_3_"/><g id="XMLID_1_"><line class="st1" id="XMLID_2_" x1="213.6" x2="369.7" y1="344.2" y2="188.2"/><line class="st1" id="XMLID_4_" x1="233.8" x2="154.7" y1="345.2" y2="266.1"/></g></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <footer class="footer d-block text-center">
+        <ul>
+            <li>
+                <a href="">
+                    <b>خانه</b>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"> <g id="Group_535" data-name="Group 535" transform="translate(-679 -1998)"> <circle id="Oval" cx="26.5" cy="26.5" r="26.5" transform="translate(679 1998)" fill="#eceef0"></circle> <path id="fi-rr-home" d="M23.121,9.069,15.536,1.483a5.008,5.008,0,0,0-7.072,0L.879,9.069A2.978,2.978,0,0,0,0,11.19v9.817a3,3,0,0,0,3,3H21a3,3,0,0,0,3-3V11.19A2.978,2.978,0,0,0,23.121,9.069ZM15,22.007H9V18.073a3,3,0,1,1,6,0Zm7-1a1,1,0,0,1-1,1H17V18.073a5,5,0,1,0-10,0v3.934H3a1,1,0,0,1-1-1V11.19a1.008,1.008,0,0,1,.293-.707L9.878,2.9a3.008,3.008,0,0,1,4.244,0l7.585,7.586a1.008,1.008,0,0,1,.293.7Z" transform="translate(693 2012.979)"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <b>سوالات متداول</b>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"> <g id="Group_534" data-name="Group 534" transform="translate(-810 -1998)"> <circle id="Oval" cx="26.5" cy="26.5" r="26.5" transform="translate(810 1998)" fill="#eceef0"></circle> <path id="fi-rr-comment-info" d="M13.5,6.5A1.5,1.5,0,1,1,12,5a1.5,1.5,0,0,1,1.5,1.5ZM24,19V12.34A12.209,12.209,0,0,0,12.836.028,12,12,0,0,0,.029,12.854C.471,19.208,6.082,24,13.083,24H19A5.006,5.006,0,0,0,24,19ZM12.7,2.024A10.2,10.2,0,0,1,22,12.34V19a3,3,0,0,1-3,3H13.083C7.049,22,2.4,18.1,2.025,12.716A10,10,0,0,1,12.016,2C12.243,2,12.472,2.009,12.7,2.024ZM14,18V12a2,2,0,0,0-2-2H11a1,1,0,0,0,0,2h1v6a1,1,0,0,0,2,0Z" transform="translate(824.002 2012.001)"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <b>قیمت گذاری</b>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"> <g id="Group_533" data-name="Group 533" transform="translate(-952 -1998)"> <circle id="Oval" cx="26.5" cy="26.5" r="26.5" transform="translate(952 1998)" fill="#eceef0"></circle> <path id="fi-rr-dollar" d="M13.932,4A3.071,3.071,0,0,1,17,7.068a1,1,0,0,0,2,0V6.945A5.073,5.073,0,0,0,13.932,2H13V1a1,1,0,1,0-2,0V2h-.932a5.068,5.068,0,0,0-1.6,9.875L11,12.72V20h-.932A3.071,3.071,0,0,1,7,16.932a1,1,0,0,0-2,0v.123A5.073,5.073,0,0,0,10.068,22H11v1a1,1,0,0,0,2,0V22h.932a5.068,5.068,0,0,0,1.6-9.875L13,11.28V4Zm.97,10.021A3.068,3.068,0,0,1,13.932,20H13V13.387ZM11,10.613,9.1,9.979A3.068,3.068,0,0,1,10.068,4H11Z" transform="translate(967 2013)"></path> </g></svg>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <b>تماس با ما</b>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="53" viewBox="0 0 53 53"> <g id="Group_532" data-name="Group 532" transform="translate(-1101 -1998)"> <circle id="Oval" cx="26.5" cy="26.5" r="26.5" transform="translate(1101 1998)" fill="#eceef0"></circle> <g id="fi-rr-comment-alt" transform="translate(1116 2013)"> <path id="Path_3859" data-name="Path 3859" d="M20,0H4A4,4,0,0,0,0,4V16a4,4,0,0,0,4,4H6.9l4.451,3.763a1,1,0,0,0,1.292,0L17.1,20H20a4,4,0,0,0,4-4V4A4,4,0,0,0,20,0Zm2,16a2,2,0,0,1-2,2H17.1a2,2,0,0,0-1.291.473L12,21.69,8.193,18.473h0A2,2,0,0,0,6.9,18H4a2,2,0,0,1-2-2V4A2,2,0,0,1,4,2H20a2,2,0,0,1,2,2Z"></path> <path id="Path_3860" data-name="Path 3860" d="M7,7h5a1,1,0,0,0,0-2H7A1,1,0,0,0,7,7ZM17,9H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Zm0,4H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z"></path> </g> </g></svg>
+                </a>
+            </li>
+        </ul>
+        <div class="copyright text-silent">
+            <span>تمامی حقوق برای DirectDl محفوظ می‌باشد</span>
+        </div>
+    </footer>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/directdl.js"></script>
+</body>
+</html>
